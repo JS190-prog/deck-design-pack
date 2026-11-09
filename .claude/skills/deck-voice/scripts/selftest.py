@@ -10,6 +10,8 @@
   7. 제목 개체가 없는 자유 배치 덱: 글자가 가장 큰 짧은 글이 제목, 쪽 번호·단독 수치·숨긴 장은 빠지고 표는 숫자 대조에만
   8. corpus/ 를 다시 읽으면 같은 역할 줄이 나온다
   9. 견본에 실제로 쓴 상투구는 금지 목록에서 빠진다
+ 10. 근거 폴더: JSON 은 값으로 읽고 변환 기록(*.conversion_profile.json)은 뺀다. 장마다 반복되는 푸터와
+     대문자 장 라벨은 '근거에 없는 영문 이름'으로 잡지 않는다 (ppt-master 실제 내보내기에서 찾은 오탐)
 """
 import contextlib
 import io
@@ -238,6 +240,7 @@ def main():
         # 5. 1건 = 시험용, --human 없으면 거부
         code, one = run(dv.main, ["build", str(decks[0]), "--out", str(t / "v1"), "--human"])
         assert code == 0 and one["label"] == "문체 시험용(1건)" and one["leave_one_out"] == [], one
+        assert one["roles"] == ["body", "notes"] and "제목 견본이 부족하다" in one["rules"]["title"][0], one   # 제목 6줄 < 10줄
         code, _ = run(dv.main, ["build", str(decks[0]), "--out", str(t / "v2")])
         assert code and not (t / "v2").exists()
         print("5. 1건 시험용 라벨, --human 없이는 거부")
@@ -275,6 +278,67 @@ def main():
         tells = json.loads((t / "v3" / "ai-tells.json").read_text(encoding="utf-8"))
         assert code == 0 and "살펴보겠습니다" not in tells["hard"] and tells["from_corpus"] == ["살펴보겠습니다"], tells
         print("9. 견본에 쓴 상투구는 금지 목록에서 뺌")
+
+        # 10. 근거 폴더(JSON·변환 기록) + 반복 푸터 + 대문자 라벨
+        src = t / "sources"
+        src.mkdir()
+        (src / "source.json").write_text(json.dumps({"budget": {"total": 12.34, "unit": "억원"}, "floors": [4, 5, 6, 7]},
+                                                    ensure_ascii=False), encoding="utf-8")
+        (src / "memo.conversion_profile.json").write_text(json.dumps({"pages": 777}), encoding="utf-8")
+        prs = Presentation()
+        for i in range(4):
+            s = prs.slides.add_slide(prs.slide_layouts[1])
+            s.shapes.title.text = f"슬라이드 {i + 4}층 계획"
+            tf = s.placeholders[1].text_frame
+            tf.text = ["SUMMARY", "총 12.34억원 투입", "층별 배관 교체", "층별 가구 교체"][i]
+            tf.add_paragraph().text = "koscom"
+            tf.add_paragraph().text = "변환 쪽수 777" if i == 3 else f"{i + 4}층 일정 확정"
+        prs.save(t / "chrome.pptx")
+        d = dv.load(t / "chrome.pptx")
+        assert all("koscom" not in s["body"] for s in d["slides"]), d["slides"]
+        f = dv.fidelity_of(dv.facts_text([src]), d["text"])
+        assert f["invented"] == ["777"], f   # 12.34·4·5·6·7 은 source.json 값, 777 은 변환 기록에만 있다
+        print("10. 근거 JSON 읽기, 변환 기록 제외, 반복 푸터·대문자 라벨 오탐 없음")
+
+        # 11. 한글 개조식 .txt (합성 예문): □·기호 글꼴 대제목 -> 제목, ㅇ·-·가. 항목 -> 본문, 결재 문장 -> 노트
+        (t / "보고.txt").write_text(
+            " 개 요 : 본관 승강기 제어반 노후로 교체 필요\n"
+            "  ㅇ (현황) 제어반 설치 후 25년 경과로 고장 빈발\n"
+            "    - 부품 단종으로 수리 기간 지연\n"
+            "□ 추진 계획   (단위: 백만원)\n"
+            "  ㅇ 2개 호기 순차 교체\n"
+            "- 아    래 -\n"
+            "1. 관련근거 : 시설2025-0101(2025. 3. 2.)\n"
+            "  가. 정밀점검 결과 보고\n"
+            "위 근거에 의거 승강기 교체를 추진하고자 하오니 결재하여 주시기 바랍니다.\n", encoding="utf-8")
+        k = dv.load(t / "보고.txt")
+        assert k["titles"] == ["개 요", "추진 계획", "관련근거"], k["titles"]
+        assert [x for s in k["slides"] for x in s["body"]] == [
+            "본관 승강기 제어반 노후로 교체 필요", "(현황) 제어반 설치 후 25년 경과로 고장 빈발", "부품 단종으로 수리 기간 지연",
+            "2개 호기 순차 교체", "시설2025-0101(2025. 3. 2.)", "정밀점검 결과 보고"], k["slides"]
+        assert k["lines"]["notes"] == ["위 근거에 의거 승강기 교체를 추진하고자 하오니 결재하여 주시기 바랍니다."], k["lines"]
+        print("11. 개조식 .txt: 대제목·항목·결재 문장을 역할별로 읽음")
+
+        # 12. 숫자 안의 점·천 단위 쉼표는 문장부호로 세지 않는다
+        m = dv.metrics(["예산 12.34억원 투입", "매출 1,300억원 달성", "’25.3 완료"])
+        assert m["period_per1k"] == 0 and m["comma_per1k"] == 0, m
+        m = dv.metrics(["예산 확보, 일정 확정.", "인력 충원 필요"])
+        assert m["period_per1k"] > 0 and m["comma_per1k"] > 0, m
+        print("12. 소수점·천 단위 쉼표는 문장부호로 세지 않음")
+
+        # 13. 도식 글자(축 날짜, 대문자 장 라벨, 한 장에 3번 이상 같은 막대 글)는 문체에서 빼고 숫자 대조에 남김
+        prs = Presentation()
+        s = prs.slides.add_slide(prs.slide_layouts[1])
+        s.shapes.title.text = "추진 일정"
+        tf = s.placeholders[1].text_frame
+        tf.text = "SCHEDULE"
+        for x in ["’25.3", "’24.10~’25.1", "시범운영", "시범운영", "시범운영", "1단계 본관 장비 교체 후 시험 가동"]:
+            tf.add_paragraph().text = x
+        prs.save(t / "gantt.pptx")
+        g = dv.read_pptx(t / "gantt.pptx")[0]
+        assert g["body"] == ["1단계 본관 장비 교체 후 시험 가동"], g
+        assert "’25.3" in g["extra"] and "SCHEDULE" in g["extra"] and g["extra"].count("시범운영") == 3, g
+        print("13. 도식 글자는 문체 측정에서 빼고 숫자 대조에 남김")
     print("selftest OK")
 
 
