@@ -320,6 +320,11 @@ def windows(lines, w=WINDOW):
 
 
 # ---------------------------------------------------------------- 지표와 밴드
+# 숫자 안의 점(26.04)과 천 단위 쉼표(1,300)는 문장부호가 아니다
+_PERIOD = re.compile(r"(?<!\d)\.|\.(?!\d)")
+_COMMA = re.compile(r"(?<!\d),|,(?!\d{3})")
+
+
 def metrics(lines):
     text = "\n".join(lines)
     n, chars = max(len(lines), 1), max(len(text), 1)
@@ -329,8 +334,8 @@ def metrics(lines):
         **{k: c[k] / n for k in RATIO},
         "line_len": sum(lens) / n,
         "line_len_cv": statistics.pstdev(lens) / statistics.mean(lens) if len(lens) > 2 else 0.0,
-        "period_per1k": text.count(".") / chars * 1000,
-        "comma_per1k": text.count(",") / chars * 1000,
+        "period_per1k": len(_PERIOD.findall(text)) / chars * 1000,
+        "comma_per1k": len(_COMMA.findall(text)) / chars * 1000,
         "paren_per1k": text.count("(") / chars * 1000,
     }
 
@@ -448,7 +453,7 @@ def analyze_role(docs, r):
          "question": _share(lines, lambda x: x.rstrip().endswith("?")),
          "digits": _share(lines, lambda x: re.search(r"\d", x)),
          "label": _share(lines, lambda x: _LABEL.match(x)),
-         "comma_per_line": round(sum(x.count(",") for x in lines) / n, 2)}
+         "comma_per_line": round(sum(len(_COMMA.findall(x)) for x in lines) / n, 2)}
     a["dominant"] = max(RATIO, key=lambda k: a["endings"][k])
     lo, hi = pct(lens, 25), pct(lens, 75)   # 예문: 주된 끝맺음이고 길이가 중간인 줄을 문서마다 고르게 (원문 그대로)
     per = -(-5 // len(docs))

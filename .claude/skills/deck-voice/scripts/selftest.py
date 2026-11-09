@@ -318,6 +318,13 @@ def main():
             "2개 호기 순차 교체", "시설2025-0101(2025. 3. 2.)", "정밀점검 결과 보고"], k["slides"]
         assert k["lines"]["notes"] == ["위 근거에 의거 승강기 교체를 추진하고자 하오니 결재하여 주시기 바랍니다."], k["lines"]
         print("11. 개조식 .txt: 대제목·항목·결재 문장을 역할별로 읽음")
+
+        # 12. 숫자 안의 점·천 단위 쉼표는 문장부호로 세지 않는다
+        m = dv.metrics(["예산 26.04억원 투입", "매출 1,300억원 달성", "’27.6 완료"])
+        assert m["period_per1k"] == 0 and m["comma_per1k"] == 0, m
+        m = dv.metrics(["예산 확보, 일정 확정.", "인력 충원 필요"])
+        assert m["period_per1k"] > 0 and m["comma_per1k"] > 0, m
+        print("12. 소수점·천 단위 쉼표는 문장부호로 세지 않음")
     print("selftest OK")
 
 
