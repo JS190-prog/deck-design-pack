@@ -281,7 +281,7 @@ def main():
         # 10. 근거 폴더(JSON·변환 기록) + 반복 푸터 + 대문자 라벨
         src = t / "sources"
         src.mkdir()
-        (src / "source.json").write_text(json.dumps({"budget": {"total": 26.04, "unit": "억원"}, "floors": [4, 5, 6, 7]},
+        (src / "source.json").write_text(json.dumps({"budget": {"total": 12.34, "unit": "억원"}, "floors": [4, 5, 6, 7]},
                                                     ensure_ascii=False), encoding="utf-8")
         (src / "memo.conversion_profile.json").write_text(json.dumps({"pages": 777}), encoding="utf-8")
         prs = Presentation()
@@ -289,14 +289,14 @@ def main():
             s = prs.slides.add_slide(prs.slide_layouts[1])
             s.shapes.title.text = f"슬라이드 {i + 4}층 계획"
             tf = s.placeholders[1].text_frame
-            tf.text = ["SUMMARY", "총 26.04억원 투입", "층별 배관 교체", "층별 가구 교체"][i]
+            tf.text = ["SUMMARY", "총 12.34억원 투입", "층별 배관 교체", "층별 가구 교체"][i]
             tf.add_paragraph().text = "koscom"
             tf.add_paragraph().text = "변환 쪽수 777" if i == 3 else f"{i + 4}층 일정 확정"
         prs.save(t / "chrome.pptx")
         d = dv.load(t / "chrome.pptx")
         assert all("koscom" not in s["body"] for s in d["slides"]), d["slides"]
         f = dv.fidelity_of(dv.facts_text([src]), d["text"])
-        assert f["invented"] == ["777"], f   # 26.04·4·5·6 은 source.json 값, 777 은 변환 기록에만 있다
+        assert f["invented"] == ["777"], f   # 12.34·4·5·6·7 은 source.json 값, 777 은 변환 기록에만 있다
         print("10. 근거 JSON 읽기, 변환 기록 제외, 반복 푸터·대문자 라벨 오탐 없음")
     print("selftest OK")
 
