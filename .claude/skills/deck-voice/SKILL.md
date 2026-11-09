@@ -59,7 +59,7 @@ python3 .claude/skills/deck-voice/scripts/deck_voice.py gate --voice <project>/v
 ```
 
 - **대상**: `design_spec.md`(§IX의 Title·Subtitle·Core message·Content만 읽는다), 개요 `.md`, 내보낸 `.pptx`.
-- **`--facts`**: 근거 파일이나 폴더(폴더면 `.md .txt .csv .tsv`만 읽는다). 사용자가 대화로 준 수치·날짜·작성자 정보는 `<project>/sources/request_facts.md`에 적어 두고 함께 넘긴다.
+- **`--facts`**: 근거 파일이나 폴더. 폴더면 `.md .txt .csv .tsv .json .jsonl .yaml`을 읽고(JSON은 값만), 변환 기록 `*.conversion_profile.json`은 뺀다. 사용자가 대화로 준 수치·날짜·작성자 정보는 `<project>/sources/request_facts.md`에 적어 두고 함께 넘긴다.
 - **exit 0** = 합격. **exit 3**이면 `rework` 항목만 고친다.
   - `[금지]`: 그 표현을 뺀다.
   - `[제목]`·`[본문]`·`[노트] … 높습니다/낮습니다`: 그 역할의 줄을 `style-guide.md` 규칙 쪽으로 고친다(예: 본문 `~요/~니다` 높음 → 명사형으로, 장표당 어절 수 높음 → 줄이거나 장표를 나눈다).
@@ -72,6 +72,7 @@ python3 .claude/skills/deck-voice/scripts/deck_voice.py gate --voice <project>/v
 
 - 형태소 분석기 없이 정규식으로 끝맺음을 센다(gn-voice 런타임 검사와 같은 근사). '점검'처럼 ㅁ 받침 명사를 `~음`으로 세는 오분류가 조금 있다.
 - 제목 개체가 없는 덱은 글자가 가장 큰 짧은 글을 제목으로 본다. 표·차트 안 글은 문체 측정에서 빼고, 표 글자만 숫자 대조에 넣는다.
+- 덱 절반 이상의 장에 똑같이 반복되는 본문 줄(회사명·푸터·대외비 표기)은 틀로 보고 뺀다. 대문자 장 라벨(`SUMMARY` 등) 줄의 영문은 숫자 대조의 영문 이름에서 뺀다.
 - 스크립트 판정은 문체의 통계적 근사다. 올리기 전 마지막 판단은 사람이 읽고 한다.
 
 ## 출처

@@ -259,9 +259,20 @@ def clean(role, lines):
     return out
 
 
+def drop_chrome(slides):
+    """덱 절반 이상의 장에 똑같이 되풀이되는 본문 줄(회사명, 푸터, 대외비 표기)은 문구가 아니라 틀이라 뺀다."""
+    if len(slides) < 4:
+        return slides
+    seen = Counter(x for s in slides for x in set(s["body"]))
+    chrome = {x for x, c in seen.items() if c >= max(3, len(slides) / 2)}
+    for s in slides:
+        s["body"] = [x for x in s["body"] if x not in chrome]
+    return slides
+
+
 def load(path):
     """문서 하나 -> {'slides', 'lines'(역할별 정리된 줄), 'wps'(장표별 본문 어절 수), 'text'(문구 전체)}."""
-    slides = read_doc(path)
+    slides = drop_chrome(read_doc(path))
     lines = {r: [x for s in slides for x in clean(r, s[r])] for r in ROLES}
     wps = [n for n in (sum(len(x.split()) for x in clean("body", s["body"])) for s in slides) if n]
     return {"slides": slides, "lines": lines, "wps": wps,
@@ -670,6 +681,7 @@ LATIN_RE = re.compile(r"[A-Za-z][A-Za-z0-9_.-]{1,}")
 _LIST_NO = re.compile(r"(?m)^[ \t□■○◦●ㅇ\-\*※•▪·∙]*\d{1,2}\.(?=\s)")    # 줄 머리 번호 '1. '만 뺀다
 _YMD = re.compile(r"\b((?:19|20)\d{2})\.\s?(\d{1,2})(?:\.\s?(\d{1,2}))?(?!\d)")   # '2026.3'은 연·월로 나눈다
 _YY = re.compile(r"['’‘](\d{2})(?=\s?년|\.)")                                      # '’26년'은 2026
+_CAPS_LABEL = re.compile(r"(?m)^[A-Z][A-Z &/.-]{2,}$")   # 'SUMMARY' 같은 대문자 장 라벨 줄은 영문 이름이 아니다
 
 
 def assets(text):
@@ -677,7 +689,8 @@ def assets(text):
     text = _YMD.sub(lambda m: " ".join(g for g in m.groups() if g), text)
     nums = {re.sub(r"[^\d.]", "", m.group()).strip(".") for m in NUM_RE.finditer(text)}
     nums = {x.lstrip("0") if re.fullmatch(r"0\d+", x) else x for x in nums}
-    return {x for x in nums if x}, {m.group().lower() for m in LATIN_RE.finditer(text)}
+    latin = {m.group().lower() for m in LATIN_RE.finditer(_CAPS_LABEL.sub("", text))}
+    return {x for x in nums if x}, latin
 
 
 def fidelity_of(src, out):
@@ -687,16 +700,36 @@ def fidelity_of(src, out):
             "missing": sorted(sn - on) + sorted(sl - ol), "invented": sorted(on - sn) + sorted(ol - sl)}
 
 
-FACT_EXT = (".md", ".markdown", ".txt", ".csv", ".tsv")
+# ppt-master sources/ 의 내용 파일 형식. 변환 기록(*.conversion_profile.json)은 내용이 아니라서 읽지 않는다.
+FACT_EXT = (".md", ".markdown", ".txt", ".csv", ".tsv", ".json", ".jsonl", ".yaml", ".yml")
+
+
+def _json_values(o):
+    """JSON 의 값만 모은다(키 이름은 근거가 아니다)."""
+    if isinstance(o, dict):
+        return [v for x in o.values() for v in _json_values(x)]
+    if isinstance(o, list):
+        return [v for x in o for v in _json_values(x)]
+    return [] if o is None or isinstance(o, bool) else [str(o)]
 
 
 def facts_text(paths):
-    """근거: 파일 또는 폴더(ppt-master 프로젝트의 sources/ 등; .md .txt .csv .tsv 만, 변환 기록 .json 은 읽지 않는다)."""
+    """근거: 파일 또는 폴더(ppt-master 프로젝트의 sources/ 등)."""
     out = []
     for p in map(Path, paths):
-        files = sorted(x for x in p.iterdir() if x.suffix.lower() in FACT_EXT) if p.is_dir() else [p]
+        files = sorted(x for x in p.iterdir() if x.suffix.lower() in FACT_EXT
+                       and not x.name.endswith(".conversion_profile.json")) if p.is_dir() else [p]
         for f in files:
-            out.append(load(f)["text"] if f.suffix.lower() == ".pptx" else f.read_text(encoding="utf-8-sig"))
+            ext = f.suffix.lower()
+            if ext == ".pptx":
+                out.append(load(f)["text"])
+            elif ext == ".json":
+                out += _json_values(json.loads(f.read_text(encoding="utf-8-sig")))
+            elif ext == ".jsonl":
+                out += [v for ln in f.read_text(encoding="utf-8-sig").splitlines() if ln.strip()
+                        for v in _json_values(json.loads(ln))]
+            else:
+                out.append(f.read_text(encoding="utf-8-sig"))
     return "\n".join(out)
 
 

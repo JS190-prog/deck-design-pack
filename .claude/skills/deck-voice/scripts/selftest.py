@@ -10,6 +10,8 @@
   7. 제목 개체가 없는 자유 배치 덱: 글자가 가장 큰 짧은 글이 제목, 쪽 번호·단독 수치·숨긴 장은 빠지고 표는 숫자 대조에만
   8. corpus/ 를 다시 읽으면 같은 역할 줄이 나온다
   9. 견본에 실제로 쓴 상투구는 금지 목록에서 빠진다
+ 10. 근거 폴더: JSON 은 값으로 읽고 변환 기록(*.conversion_profile.json)은 뺀다. 장마다 반복되는 푸터와
+     대문자 장 라벨은 '근거에 없는 영문 이름'으로 잡지 않는다 (ppt-master 실제 내보내기에서 찾은 오탐)
 """
 import contextlib
 import io
@@ -275,6 +277,27 @@ def main():
         tells = json.loads((t / "v3" / "ai-tells.json").read_text(encoding="utf-8"))
         assert code == 0 and "살펴보겠습니다" not in tells["hard"] and tells["from_corpus"] == ["살펴보겠습니다"], tells
         print("9. 견본에 쓴 상투구는 금지 목록에서 뺌")
+
+        # 10. 근거 폴더(JSON·변환 기록) + 반복 푸터 + 대문자 라벨
+        src = t / "sources"
+        src.mkdir()
+        (src / "source.json").write_text(json.dumps({"budget": {"total": 26.04, "unit": "억원"}, "floors": [4, 5, 6, 7]},
+                                                    ensure_ascii=False), encoding="utf-8")
+        (src / "memo.conversion_profile.json").write_text(json.dumps({"pages": 777}), encoding="utf-8")
+        prs = Presentation()
+        for i in range(4):
+            s = prs.slides.add_slide(prs.slide_layouts[1])
+            s.shapes.title.text = f"슬라이드 {i + 4}층 계획"
+            tf = s.placeholders[1].text_frame
+            tf.text = ["SUMMARY", "총 26.04억원 투입", "층별 배관 교체", "층별 가구 교체"][i]
+            tf.add_paragraph().text = "koscom"
+            tf.add_paragraph().text = "변환 쪽수 777" if i == 3 else f"{i + 4}층 일정 확정"
+        prs.save(t / "chrome.pptx")
+        d = dv.load(t / "chrome.pptx")
+        assert all("koscom" not in s["body"] for s in d["slides"]), d["slides"]
+        f = dv.fidelity_of(dv.facts_text([src]), d["text"])
+        assert f["invented"] == ["777"], f   # 26.04·4·5·6 은 source.json 값, 777 은 변환 기록에만 있다
+        print("10. 근거 JSON 읽기, 변환 기록 제외, 반복 푸터·대문자 라벨 오탐 없음")
     print("selftest OK")
 
 
