@@ -12,6 +12,9 @@ venv/
 projects/*
 !projects/README.md
 
+# Writing-voice folders built by deck-voice — they quote the user's own sample text
+voices/
+
 # Template library review artifacts (see templates/README.md — never copied by Step 3)
 .claude/skills/ppt-master/templates/*/*/exports/
 

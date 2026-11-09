@@ -57,6 +57,27 @@ pip install -r requirements.txt
 
 ---
 
+## 내 문체로 쓰기 — gn-voice 결합 (`deck-voice`)
+
+디자인은 템플릿이 맞춰 주지만, 장표에 들어가는 **말투**는 그대로 두면 모델의 평균 문체가 됩니다. `deck-voice` 스킬은 [gn-voice](https://github.com/gongnyang/gn-voice)의 방식, 즉 문체를 느낌이 아니라 측정값으로 다루고 결과를 스크립트로 검사하는 방식을 장표에 맞게 옮겼습니다.
+
+> "내가 예전에 만든 발표자료 3개로 문체 분석해서, 이 보고서로 내 문체 PPT 만들어줘"
+
+```
+내가 쓴 덱·글 2~5건 ──(문체 분석)──> 문체 가이드 + 역할별 허용 범위
+                                          │
+문서 ──> 기획: §IX 장표 문구를 그 문체로 ──[문체·숫자 검사]──> SVG ──> PPTX ──[최종 검사]
+```
+
+- **역할별로 잽니다.** 장표 글은 산문이 아니어서 제목·본문·발표자 노트를 따로 읽고, 끝맺음(명사형·~함·~다·존댓말), 줄 길이, 장표당 어절 수, 마침표, 숫자·날짜 표기, 자주 쓴 표현을 잽니다. PPTX는 제목 개체(없으면 가장 큰 글자)와 노트 페이지로 역할을 나눠 직접 읽습니다.
+- **결과는 사람이 읽는 가이드입니다.** `style-guide.md`에 "제목은 명사로 끝내는 토픽형(94%), 본문 항목은 명사형(89%), 노트는 존댓말" 같은 규칙이 잰 숫자, 원문 예문과 함께 정리됩니다.
+- **판정은 스크립트가 합니다.** 기획 단계의 `design_spec.md`와 내보낸 PPTX를 같은 기준으로 검사해, 벗어난 지표와 근거에 없는 숫자를 고칠 항목으로 돌려줍니다. "살펴보겠습니다" 같은 AI 상투구는 즉시 불합격이지만, 견본에 실제로 쓴 표현은 그 사람의 문체라서 금지 목록에서 뺍니다.
+- **견본이 적어도 됩니다.** 2~3건이면 한 건씩 빼고 검증해 `문체 소표본`, 1건이면 `문체 시험용`(검사는 참고만) 라벨을 붙입니다.
+
+본인이나 팀이 쓴 자료만 넣으세요. gn-voice 저자의 글·지문·개인 장르 팩은 권리가 유보되어 있어 이 저장소에 없고, 가져온 것은 MIT인 방식과 `presentation` 프로파일뿐입니다([NOTICE](.claude/skills/deck-voice/NOTICE.md)). 사용법: [`deck-voice/SKILL.md`](.claude/skills/deck-voice/SKILL.md)
+
+---
+
 ## 11개 덱 템플릿
 
 ### 이 팩이 직접 디자인한 7종
@@ -120,8 +141,10 @@ pip install -r requirements.txt
   codex-image/               이미지 생성 스킬
   native-enhance-pptx/       완성된 PPTX 후처리
   ppt-template-fill/         기존 PPTX 템플릿 채우기
+  deck-voice/                문체 분석·장표 문구 검사 (gn-voice 방식)
 .codex/skills/             Codex 발견용 스텁 (자동 생성, 손으로 고치지 말 것)
 projects/                  내 덱과 원본 자료 (git 추적 제외)
+voices/                    내 문체 폴더 (git 추적 제외)
 previews/                  이 팩 7종의 컨택트 시트
 docs/                      워크플로우 가이드 + 이 팩의 작성 규칙
 install.py                 이 팩을 *다른* ppt-master 워크스페이스로 내보내기
@@ -222,6 +245,6 @@ python3 install.py <workspace> --dry-run                        # 계획만 출�
 
 이 팩이 만든 것 — 덱 템플릿 7종, 브랜드 프리셋 7종, 컨택트 시트, `install.py` — 는 [MIT](LICENSE) © 2026 humanist96.
 
-임베딩된 워크플로우는 [MIT](THIRD_PARTY_NOTICES.md) © 2025-2026 Hugo He이며, [hugohe3/ppt-master](https://github.com/hugohe3/ppt-master)를 한국어 작업에 맞게 커스터마이즈한 [byungjunjang/slide-master](https://github.com/byungjunjang/slide-master)에서 가져왔습니다. 원 저장소의 README는 [`docs/slide-master-README.md`](docs/slide-master-README.md)에 원문 그대로 보존했습니다. 폰트와 스킬별 라이선스는 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)에 정리되어 있습니다.
+임베딩된 워크플로우는 [MIT](THIRD_PARTY_NOTICES.md) © 2025-2026 Hugo He이며, [hugohe3/ppt-master](https://github.com/hugohe3/ppt-master)를 한국어 작업에 맞게 커스터마이즈한 [byungjunjang/slide-master](https://github.com/byungjunjang/slide-master)에서 가져왔습니다. 원 저장소의 README는 [`docs/slide-master-README.md`](docs/slide-master-README.md)에 원문 그대로 보존했습니다. `deck-voice`는 [gongnyang/gn-voice](https://github.com/gongnyang/gn-voice)의 MIT 부분(방식, `presentation` 프로파일)을 옮겼습니다. 폰트와 스킬별 라이선스는 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)에 정리되어 있습니다.
 
 기존 6종 템플릿은 제3자의 상표·로고·워드마크·사진을 일절 번들하지 않습니다. `koscom-chevron`은 코스콤 자사 샘플 덱을 바탕으로 만든 하우스 템플릿입니다 — 코스콤 이름과 셰브론 마크는 코스콤(주)의 것이고, **로고 이미지는 번들하지 않으며**(텍스트 `{{BRAND_MARK}}` 슬롯만), 함께 넣은 KoPub 폰트는 자체 무료 라이선스를 따릅니다. 스펙이 특정 회사를 언급하는 경우, 그것은 디자인 *어법*을 참조점으로 식별하는 서술적 비교이지 보증이나 제휴 주장이 아닙니다. 전체 입장: [`TRADEMARKS.md`](TRADEMARKS.md)
