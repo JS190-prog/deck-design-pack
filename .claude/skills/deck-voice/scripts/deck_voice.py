@@ -173,9 +173,32 @@ _SLIDE_NO = re.compile(r"^(?:S|Slide|슬라이드|장표)\s*0*\d+\s*(?:[—–:|
 _NOTE_HEAD = re.compile(r"^(?:speaker notes|notes|노트|발표자 노트|스피커 노트|발표 노트)$", re.I)
 _NOTE_LINE = re.compile(r"^\(?\s*(?:노트|발표자 노트|note|notes)\s*[:：]\s*(.*?)\)?$", re.I)
 _LIST = re.compile(r"^(?:[-*+•]|\d{1,2}[.)])\s+")
+# 한글 개조식 .txt (한글 보고서·기안문에서 뽑은 글): □ 대제목, ㅇ·-·* 항목, 짧은 '1. 제목' 줄, '- 아래 -' 구분 줄
+_K_HEAD = re.compile("^[□■\uf071]\\s*")   # \uf071 = 한글 기호 글꼴의 □
+_K_NUM_HEAD = re.compile(r"^\d{1,2}\.\s*(?=\S)")
+_K_ITEM = re.compile(r"^(?:[ㅇ○◦●\-·∙*※▪]\s*|[가-하][.)]\s+)")
+_K_SKIP = re.compile(r"^-?\s*(?:다|아)\s*(?:음|래)\s*-?$|^\(단위[^)]*\)$")
 
 
-def read_md(text):
+def _gaejosik(s, indent):
+    """개조식 줄 -> ('title', 제목, 같은 줄 내용) / ('body', 항목) / ('skip',) / None(문장)."""
+    if _K_SKIP.match(s):
+        return ("skip",)
+    head = None
+    if _K_HEAD.match(s):
+        head = _K_HEAD.sub("", s)
+    elif (indent == 0 and _K_NUM_HEAD.match(s) and (":" in s or len(s) <= 26)
+          and not re.search(r"(다|요|함|임)[.)]?$", s)):
+        head = _K_NUM_HEAD.sub("", s)
+    if head is not None:
+        t, _, rest = re.sub(r"\(단위[^)]*\)", "", head).partition(":")
+        return ("title", t.strip(), rest.strip())
+    if _K_ITEM.match(s):
+        return ("body", _K_ITEM.sub("", s))
+    return None
+
+
+def read_md(text, gaejosik=False):
     spec = bool(_IX.search(text))
     if spec:   # design_spec.md: §IX 만, 다음 '## ' 절 앞까지
         text = re.split(r"(?m)^##\s", _IX.split(text, maxsplit=1)[1], maxsplit=1)[0]
@@ -217,6 +240,15 @@ def read_md(text):
                 cur[f_role].append(_LIST.sub("", s))
             continue
         f_role, f_indent = None, -1
+        k = _gaejosik(s, indent) if gaejosik else None
+        if k:
+            if k[0] == "title":   # 개조식 대제목마다 새 장표
+                slides.append(_slide())
+                slides[-1]["title"] += [k[1]] if k[1] else []
+                slides[-1]["body"] += [k[2]] if k[2] else []
+            elif k[0] == "body":
+                cur["body"].append(k[1])
+            continue
         n = _NOTE_LINE.match(s)
         if n or in_notes:
             cur["notes"].append(n.group(1) if n else s)
@@ -233,7 +265,7 @@ def read_doc(path):
     if ext == ".pptx":
         return read_pptx(p)
     if ext in (".md", ".markdown", ".txt"):
-        return read_md(p.read_text(encoding="utf-8-sig"))
+        return read_md(p.read_text(encoding="utf-8-sig"), gaejosik=ext == ".txt")
     sys.exit(f"{p.name}: 읽을 수 없는 형식입니다(.pptx, .md, .txt). .docx/.pdf 는 "
              "`python3 .claude/skills/ppt-master/scripts/source_to_md.py <파일>` 로 Markdown 을 만든 뒤 넣으세요")
 
