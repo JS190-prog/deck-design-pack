@@ -240,6 +240,7 @@ def main():
         # 5. 1건 = 시험용, --human 없으면 거부
         code, one = run(dv.main, ["build", str(decks[0]), "--out", str(t / "v1"), "--human"])
         assert code == 0 and one["label"] == "문체 시험용(1건)" and one["leave_one_out"] == [], one
+        assert one["roles"] == ["body", "notes"] and "제목 견본이 부족하다" in one["rules"]["title"][0], one   # 제목 6줄 < 10줄
         code, _ = run(dv.main, ["build", str(decks[0]), "--out", str(t / "v2")])
         assert code and not (t / "v2").exists()
         print("5. 1건 시험용 라벨, --human 없이는 거부")

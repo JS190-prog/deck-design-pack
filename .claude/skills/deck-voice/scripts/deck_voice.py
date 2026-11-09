@@ -39,6 +39,8 @@ KST = timezone(timedelta(hours=9))
 ROLES = ("title", "body", "notes")
 ROLE_KO = {"title": "제목", "body": "본문", "notes": "노트"}
 MIN_LEN = {"title": 2, "body": 4, "notes": 8}   # 이보다 짧은 줄은 문구로 보지 않는다
+MIN_ROLE_LINES = 10   # 견본 전체에서 이보다 적은 역할(5줄 묶음 2개 미만)은 기준을 만들지 않는다 -- 보고서의 날짜·첨부 줄 7개가
+                      # '노트 문체'로 굳는 일을 막는다 (사내 보고서 6건 실측, 2026-11-09)
 
 RATIO = ("end_m", "end_da", "end_polite", "end_other")
 KEYS = RATIO + ("line_len", "period_per1k", "comma_per1k", "paren_per1k", "line_len_cv")
@@ -352,11 +354,11 @@ def make_band(points, mult=1.0):
 
 
 def bands_of(docs, mult=1.0):
-    """역할마다 5줄 묶음 점으로 밴드를 만든다. 본문에는 장표당 어절 수(장표가 점)를 더한다. 점이 없는 역할은 뺀다."""
+    """역할마다 5줄 묶음 점으로 밴드를 만든다. 본문에는 장표당 어절 수(장표가 점)를 더한다. 견본이 부족한 역할은 뺀다."""
     out = {}
     for r in ROLES:
         pts = [metrics(w) for d in docs for w in windows(d["lines"][r])]
-        if pts:
+        if pts and sum(len(d["lines"][r]) for d in docs) >= MIN_ROLE_LINES:
             out[r] = make_band(pts, mult)
     wps = [n for d in docs for n in d["wps"]]
     if "body" in out and len(wps) >= 3:
@@ -433,7 +435,7 @@ def _share(lines, pred):
 
 def analyze_role(docs, r):
     lines = [x for d in docs for x in d["lines"][r]]
-    if not lines:
+    if len(lines) < MIN_ROLE_LINES:
         return None
     n = len(lines)
     ends = Counter(end_type(x) for x in lines)
@@ -525,7 +527,7 @@ def rules_of(a, tells):
             R["title"].append(f"'구분: 내용' 꼴 제목을 쓴다({_pc(t['label'])})")
         R["title"].append(_period_rule(t, "제목"))
     else:
-        R["title"].append("제목 견본이 없다: 제목은 ppt-master 기본 규칙과 references/presentation.md 를 따른다")
+        R["title"].append(f"제목 견본이 부족하다({MIN_ROLE_LINES}줄 미만): 제목은 ppt-master 기본 규칙과 references/presentation.md 를 따른다")
     if b:
         R["body"].append(_end_rule(b, "본문 항목은"))
         if b["top_endings"]:
@@ -537,11 +539,13 @@ def rules_of(a, tells):
         if a["wps"]:
             R["body"].append(f"장표 하나의 본문은 보통 {a['wps']['p25']}~{a['wps']['p75']}어절(중앙값 {a['wps']['median']})."
                              " 넘치면 장표를 나눈다")
+    else:
+        R["body"].append(f"본문 견본이 부족하다({MIN_ROLE_LINES}줄 미만): 본문은 references/presentation.md 를 따르고 본문 검사는 생략된다")
     if n:
         R["notes"].append(_end_rule(n, "노트는 말하듯 쓴다:"))
         R["notes"].append(f"노트 한 문장은 평균 {n['len']['mean']}자, 보통 {n['len']['p25']}~{n['len']['p75']}자")
     else:
-        R["notes"].append("노트 견본이 없다: 노트를 쓰면 ppt-master references/speaker-notes.md 규칙을 따르고 노트 검사는 생략된다")
+        R["notes"].append(f"노트 견본이 부족하다({MIN_ROLE_LINES}줄 미만): 노트를 쓰면 ppt-master references/speaker-notes.md 규칙을 따르고 노트 검사는 생략된다")
     if a["dates"]:
         R["common"].append(f"날짜는 '{max(a['dates'], key=lambda x: x[1])[0]}' 꼴로 쓴다")
     if a["quarters"]:
