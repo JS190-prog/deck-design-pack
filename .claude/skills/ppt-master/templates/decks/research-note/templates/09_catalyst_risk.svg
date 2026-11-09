@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="rn-master" data-pptx-master-name="Research Note" data-pptx-layout="rn_catalyst_risk" data-pptx-layout-name="Catalyst Calendar + Risk">
+  <!-- Research Note — 09 Catalyst / risk: dated timeline (5 events) left, risk list with 3-step impact meter right (meter levels are sample data) -->
+  <rect id="master-bg" width="1280" height="720" fill="#F5F3EF" data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="master-top-rule" x="48" y="44" width="1184" height="3" fill="#0B2545" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-footer-rule" x1="48" y1="672" x2="1232" y2="672" stroke="#B8B8B8" stroke-width="1" data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="layout-catalyst-rule" x="48" y="128" width="568" height="2" fill="#0B2545" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-risk-rule" x="664" y="128" width="568" height="2" fill="#0B2545" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="report-header">
+    <text x="48" y="33" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#707070" xml:space="preserve"><tspan font-weight="700" fill="#0B2545">{{BRAND_MARK}}</tspan><tspan fill="#B8B8B8">  |  </tspan><tspan>{{REPORT_TYPE}}</tspan></text>
+    <text x="1232" y="33" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#707070" xml:space="preserve"><tspan>{{DATE}}</tspan><tspan fill="#B8B8B8">  ·  </tspan><tspan>{{CLASSIFICATION}}</tspan></text>
+  </g>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="48 64 1184 44">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="48" y="96" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="30" letter-spacing="-0.4" fill="#1A1A1A">{{TITLE}}</text>
+  </g>
+
+  <g id="catalyst-head">
+    <text x="48" y="162" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="18" fill="#1A1A1A">촉매 일정</text>
+    <text x="616" y="162" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#707070">Catalyst Calendar</text>
+    <line x1="48" y1="178" x2="616" y2="178" stroke="#B8B8B8" stroke-width="1"/>
+  </g>
+
+  <g id="catalyst-events">
+    <line x1="200" y1="196" x2="200" y2="630" stroke="#B8B8B8" stroke-width="1"/>
+    <g text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#0B2545">
+      <text x="180" y="218">{{EVENT_1_DATE}}</text>
+      <text x="180" y="310">{{EVENT_2_DATE}}</text>
+      <text x="180" y="402">{{EVENT_3_DATE}}</text>
+      <text x="180" y="494">{{EVENT_4_DATE}}</text>
+      <text x="180" y="586">{{EVENT_5_DATE}}</text>
+    </g>
+    <circle cx="200" cy="213" r="6" fill="#0B2545"/>
+    <circle cx="200" cy="305" r="5" fill="#F5F3EF" stroke="#0B2545" stroke-width="2"/>
+    <circle cx="200" cy="397" r="5" fill="#F5F3EF" stroke="#0B2545" stroke-width="2"/>
+    <circle cx="200" cy="489" r="5" fill="#F5F3EF" stroke="#0B2545" stroke-width="2"/>
+    <circle cx="200" cy="581" r="5" fill="#F5F3EF" stroke="#0B2545" stroke-width="2"/>
+    <g font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#1A1A1A">
+      <text x="224" y="218">{{EVENT_1_TITLE}}</text>
+      <text x="224" y="310">{{EVENT_2_TITLE}}</text>
+      <text x="224" y="402">{{EVENT_3_TITLE}}</text>
+      <text x="224" y="494">{{EVENT_4_TITLE}}</text>
+      <text x="224" y="586">{{EVENT_5_TITLE}}</text>
+    </g>
+    <g font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#707070">
+      <text x="224" y="244">{{EVENT_1_NOTE}}</text>
+      <text x="224" y="336">{{EVENT_2_NOTE}}</text>
+      <text x="224" y="428">{{EVENT_3_NOTE}}</text>
+      <text x="224" y="520">{{EVENT_4_NOTE}}</text>
+      <text x="224" y="612">{{EVENT_5_NOTE}}</text>
+    </g>
+  </g>
+
+  <g id="risk-head">
+    <text x="664" y="162" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="18" fill="#1A1A1A">리스크 요인</text>
+    <text x="1232" y="162" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#707070">영향도</text>
+    <line x1="664" y1="178" x2="1232" y2="178" stroke="#B8B8B8" stroke-width="1"/>
+  </g>
+
+  <g id="risk-list">
+    <g font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#1A1A1A">
+      <text x="664" y="218">{{RISK_1_TITLE}}</text>
+      <text x="664" y="310">{{RISK_2_TITLE}}</text>
+      <text x="664" y="402">{{RISK_3_TITLE}}</text>
+      <text x="664" y="494">{{RISK_4_TITLE}}</text>
+      <text x="664" y="586">{{RISK_5_TITLE}}</text>
+    </g>
+    <g font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#707070">
+      <text x="664" y="244">{{RISK_1_NOTE}}</text>
+      <text x="664" y="336">{{RISK_2_NOTE}}</text>
+      <text x="664" y="428">{{RISK_3_NOTE}}</text>
+      <text x="664" y="520">{{RISK_4_NOTE}}</text>
+      <text x="664" y="612">{{RISK_5_NOTE}}</text>
+    </g>
+    <g text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13">
+      <text x="1232" y="214" fill="#8C1C13">높음</text>
+      <text x="1232" y="306" fill="#0B2545">중간</text>
+      <text x="1232" y="398" fill="#0B2545">중간</text>
+      <text x="1232" y="490" fill="#707070">낮음</text>
+      <text x="1232" y="582" fill="#707070">낮음</text>
+    </g>
+    <rect x="1166" y="224" width="20" height="8" fill="#8C1C13"/><rect x="1189" y="224" width="20" height="8" fill="#8C1C13"/><rect x="1212" y="224" width="20" height="8" fill="#8C1C13"/>
+    <rect x="1166" y="316" width="20" height="8" fill="#0B2545"/><rect x="1189" y="316" width="20" height="8" fill="#0B2545"/><rect x="1212" y="316" width="20" height="8" fill="#DCDCDC"/>
+    <rect x="1166" y="408" width="20" height="8" fill="#0B2545"/><rect x="1189" y="408" width="20" height="8" fill="#0B2545"/><rect x="1212" y="408" width="20" height="8" fill="#DCDCDC"/>
+    <rect x="1166" y="500" width="20" height="8" fill="#707070"/><rect x="1189" y="500" width="20" height="8" fill="#DCDCDC"/><rect x="1212" y="500" width="20" height="8" fill="#DCDCDC"/>
+    <rect x="1166" y="592" width="20" height="8" fill="#707070"/><rect x="1189" y="592" width="20" height="8" fill="#DCDCDC"/><rect x="1212" y="592" width="20" height="8" fill="#DCDCDC"/>
+    <g stroke="#DCDCDC" stroke-width="1">
+      <line x1="664" y1="270" x2="1232" y2="270"/>
+      <line x1="664" y1="362" x2="1232" y2="362"/>
+      <line x1="664" y1="454" x2="1232" y2="454"/>
+      <line x1="664" y1="546" x2="1232" y2="546"/>
+    </g>
+    <line x1="664" y1="638" x2="1232" y2="638" stroke="#B8B8B8" stroke-width="1"/>
+  </g>
+
+  <g id="disclaimer-slot" data-pptx-placeholder="footer" data-pptx-placeholder-idx="2" data-pptx-placeholder-bounds="48 680 960 24">
+    <text id="disclaimer-carrier" data-pptx-placeholder-carrier="true" x="48" y="695" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="11" fill="#707070">{{DISCLAIMER}}</text>
+  </g>
+
+  <g id="page-number-slot" data-pptx-placeholder="slide-number" data-pptx-placeholder-idx="3" data-pptx-placeholder-bounds="1112 680 120 24">
+    <text id="page-number-carrier" data-pptx-placeholder-carrier="true" x="1232" y="695" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#1A1A1A">{{PAGE_NUM}}</text>
+  </g>
+</svg>

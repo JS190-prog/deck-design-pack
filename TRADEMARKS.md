@@ -16,7 +16,7 @@ Some `design_spec.md` files name a company as a **reference point for the design
 
 One template is different in kind: **`koscom-chevron`** is a corporate *house* template, re-authored from Koscom Co., Ltd.'s own presentation samples and contributed by the pack maintainer. "Koscom" and the chevron (›) mark are Koscom's. The template reproduces the sample's layout grammar, palette and type ramp; it does **not** bundle the logo image (the brand appears only as the text slot `{{BRAND_MARK}}`), and the chevron appears only as an abstract polygon motif. Use of the template for material that represents Koscom is a matter for Koscom.
 
-For the six original templates, identifiers and display names are deliberately original (`midnight-panel`, `polarity`, `gradient-mesh`, `warm-doc`, `open-road`, `signal-green`) so that no third-party mark appears in a product name, file path, or index entry.
+For the original templates, identifiers and display names are deliberately original (`midnight-panel`, `polarity`, `gradient-mesh`, `warm-doc`, `open-road`, `signal-green`, `board-ledger`, `research-note`, `bento-aurora`, `pop-brutal`, `motion-cue`, `scroll-rail`, `depth-field`) so that no third-party mark appears in a product name, file path, or index entry.
 
 All trademarks referenced remain the property of their respective owners.
 
@@ -32,7 +32,7 @@ Because PPTX does not embed fonts, decks exported from these templates require P
 
 ## Images and logos
 
-**No photographs, icons, or logo assets are bundled.**
+**No photographs, icons, or logo assets are bundled.** The only bitmaps are the four `depth-field` backgrounds in `.claude/skills/ppt-master/templates/decks/depth-field/images/`, rendered by this pack from its own three.js scene code (`templates/three/scene.html`); they depict abstract geometry, not any product or mark.
 
 - Brand marks are text slots (`{{BRAND_MARK}}`) that the deck author fills with their own organisation name.
 - The `open-road` template marks photographic regions with an `ltUpDiag` pattern placeholder. The author supplies their own licensed imagery.

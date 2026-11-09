@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="depth-master" data-pptx-master-name="Depth Field" data-pptx-layout="01_cover" data-pptx-layout-name="Cover (Render)">
+  <!-- Depth Field — 01 Cover: three.js terrain render (df_cover.jpg) over an SVG fallback horizon; title in the dark sky -->
+  <defs>
+    <linearGradient id="cover-fallback-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#060B1A"/>
+      <stop offset="54%" stop-color="#0E1630"/>
+      <stop offset="100%" stop-color="#060B1A"/>
+    </linearGradient>
+    <linearGradient id="cover-fallback-grid-stroke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E2A4A" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#1E2A4A" stop-opacity="1"/>
+    </linearGradient>
+    <radialGradient id="cover-fallback-halo-fill" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#5CE1E6" stop-opacity="0.32"/>
+      <stop offset="45%" stop-color="#8B7CFF" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#8B7CFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cover-scrim-left-fill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#060B1A" stop-opacity="0.88"/>
+      <stop offset="45%" stop-color="#060B1A" stop-opacity="0.5"/>
+      <stop offset="78%" stop-color="#060B1A" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="cover-scrim-bottom-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#060B1A" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#060B1A" stop-opacity="0.92"/>
+    </linearGradient>
+  </defs>
+
+  <rect id="master-bg" width="1280" height="720" fill="#060B1A" data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="layout-cover-fallback" width="1280" height="720" fill="url(#cover-fallback-fill)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <path id="layout-cover-fallback-grid" d="M569.8 404.0L0.0 501.3M575.6 404.0L0.0 511.3M581.5 404.0L0.0 523.2M587.3 404.0L0.0 537.8M593.2 404.0L0.0 556.0M599.0 404.0L0.0 579.4M604.9 404.0L0.0 610.7M610.7 404.0L0.0 654.4M616.6 404.0L0.0 720.0M622.4 404.0L160.0 720.0M628.3 404.0L320.0 720.0M634.1 404.0L480.0 720.0M640.0 404.0L640.0 720.0M645.9 404.0L800.0 720.0M651.7 404.0L960.0 720.0M657.6 404.0L1120.0 720.0M663.4 404.0L1280.0 720.0M669.3 404.0L1280.0 654.4M675.1 404.0L1280.0 610.7M681.0 404.0L1280.0 579.4M686.8 404.0L1280.0 556.0M692.7 404.0L1280.0 537.8M698.5 404.0L1280.0 523.2M704.4 404.0L1280.0 511.3M710.2 404.0L1280.0 501.3M0 593.8H1280M0 537.8H1280M0 506.1H1280M0 485.7H1280M0 471.5H1280M0 461.1H1280M0 453.0H1280M0 446.7H1280" fill="none" stroke="url(#cover-fallback-grid-stroke)" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <ellipse id="layout-cover-fallback-halo" cx="900" cy="403" rx="460" ry="64" fill="url(#cover-fallback-halo-fill)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <line id="layout-cover-fallback-horizon" x1="0" y1="403" x2="1280" y2="403" stroke="#5CE1E6" stroke-width="1.5" stroke-opacity="0.55" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <image id="layout-cover-render" href="../images/df_cover.jpg" x="0" y="0" width="1280" height="720" preserveAspectRatio="xMidYMid slice" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-cover-scrim-left" width="1280" height="720" fill="url(#cover-scrim-left-fill)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-cover-scrim-bottom" x="0" y="500" width="1280" height="220" fill="url(#cover-scrim-bottom-fill)" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="80 184 960 76">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="80" y="240" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="64" letter-spacing="-1.2" fill="#EAF0FF">{{TITLE}}</text>
+  </g>
+
+  <g id="subtitle-slot" data-pptx-placeholder="subtitle" data-pptx-placeholder-idx="2" data-pptx-placeholder-bounds="80 262 820 40">
+    <text id="subtitle-carrier" data-pptx-placeholder-carrier="true" x="80" y="290" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="24" letter-spacing="-0.3" fill="#AEB9D6">{{SUBTITLE}}</text>
+  </g>
+
+  <g id="cover-brand">
+    <text x="80" y="82" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="1.5" fill="#EAF0FF">{{BRAND_MARK}}</text>
+  </g>
+
+  <g id="cover-kicker">
+    <rect x="80" y="152" width="24" height="2" fill="#5CE1E6"/>
+    <text x="116" y="158" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="1.5" fill="#5CE1E6">{{KICKER}}</text>
+  </g>
+
+  <g id="cover-presenter">
+    <text x="80" y="616" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#EAF0FF">{{PRESENTER}}</text>
+    <text x="80" y="646" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="16" fill="#AEB9D6">{{DATE}}</text>
+  </g>
+
+  <g id="cover-depth-mark">
+    <text x="1200" y="646" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" letter-spacing="2" fill="#6F7BA0">Z-00</text>
+  </g>
+</svg>

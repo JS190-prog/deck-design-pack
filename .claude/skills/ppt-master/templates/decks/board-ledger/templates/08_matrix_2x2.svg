@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="ledger_content_master" data-pptx-master-name="Board Ledger — Content" data-pptx-layout="ledger_exhibit_rail" data-pptx-layout-name="Exhibit + Takeaway Rail">
+  <!-- Board Ledger — 08 2x2 prioritisation matrix: quadrant labels, sized bubbles, one highlighted (sample positions) -->
+  <rect id="master-bg" width="1280" height="720" fill="#FFFFFF" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-header-rule" x1="64" y1="64" x2="1216" y2="64" stroke="#C6C6C6" stroke-width="1" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-footer-rule" x1="64" y1="664" x2="1216" y2="664" stroke="#E0E0E0" stroke-width="1" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="layout-exhibit-rule" x1="64" y1="202" x2="784" y2="202" stroke="#161616" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <line id="layout-rail-rule" x1="856" y1="202" x2="1216" y2="202" stroke="#161616" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="64 84 1152 76">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="64" y="110" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="28" letter-spacing="-0.4" fill="#161616">{{TITLE}}</text>
+  </g>
+  <g id="source-slot" data-pptx-placeholder="footer" data-pptx-placeholder-idx="2" data-pptx-placeholder-bounds="64 672 800 24">
+    <text id="source-carrier" data-pptx-placeholder-carrier="true" x="64" y="689" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#6F6F6F">{{SOURCE}}</text>
+  </g>
+  <g id="page-number-slot" data-pptx-placeholder="slide-number" data-pptx-placeholder-idx="3" data-pptx-placeholder-bounds="1136 672 80 24">
+    <text id="page-number-carrier" data-pptx-placeholder-carrier="true" x="1216" y="689" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#161616">{{PAGE_NUM}}</text>
+  </g>
+  <g id="tracker">
+    <text x="64" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">01</text>
+    <text x="88" y="52" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{TRACK_1}}</text>
+    <text x="208" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">02</text>
+    <text x="232" y="52" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{TRACK_2}}</text>
+    <text x="352" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#161616">03</text>
+    <text x="376" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#161616">{{TRACK_3}}</text>
+    <text x="496" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">04</text>
+    <text x="520" y="52" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{TRACK_4}}</text>
+    <text x="640" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">05</text>
+    <text x="664" y="52" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{TRACK_5}}</text>
+    <rect x="352" y="62" width="128" height="3" fill="#1E4FD8"/>
+  </g>
+  <g id="header-meta">
+    <text x="1216" y="52" text-anchor="end" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" letter-spacing="0.3" fill="#6F6F6F">{{CLASSIFICATION}}</text>
+  </g>
+  <g id="exhibit-head">
+    <text x="64" y="188" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#161616" xml:space="preserve">Exhibit {{EXHIBIT_NO}}<tspan fill="#C6C6C6">  ·  </tspan><tspan font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" fill="#393939">{{EXHIBIT_TITLE}}</tspan></text>
+    <text x="784" y="188" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">원 크기: {{BUBBLE_SIZE}}</text>
+  </g>
+  <!-- chart-plot-area: 120,228,776,572 -->
+  <g id="matrix-frame">
+    <rect x="448" y="228" width="328" height="172" fill="#F4F4F4"/>
+    <line x1="448" y1="228" x2="448" y2="572" stroke="#C6C6C6" stroke-width="1"/>
+    <line x1="120" y1="400" x2="776" y2="400" stroke="#C6C6C6" stroke-width="1"/>
+    <line x1="120" y1="572" x2="770" y2="572" stroke="#161616" stroke-width="1"/>
+    <line x1="120" y1="572" x2="120" y2="234" stroke="#161616" stroke-width="1"/>
+    <polygon points="776,572 766,567 766,577" fill="#161616"/>
+    <polygon points="120,228 115,238 125,238" fill="#161616"/>
+    <text x="448" y="598" text-anchor="middle" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#393939">{{AXIS_X}}</text>
+    <text x="100" y="400" text-anchor="middle" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#393939" transform="rotate(-90 100 400)">{{AXIS_Y}}</text>
+  </g>
+  <g id="matrix-quadrants">
+    <text x="764" y="252" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#161616">{{QUAD_1}}</text>
+    <text x="136" y="252" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{QUAD_2}}</text>
+    <text x="136" y="558" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{QUAD_3}}</text>
+    <text x="764" y="558" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{QUAD_4}}</text>
+  </g>
+  <g id="matrix-items">
+    <circle cx="632" cy="300" r="26" fill="#1E4FD8" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="666" y="305" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#161616">{{ITEM_1}}</text>
+    <circle cx="540" cy="352" r="17" fill="#C6C6C6" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="565" y="357" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#161616">{{ITEM_2}}</text>
+    <circle cx="300" cy="300" r="15" fill="#C6C6C6" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="323" y="305" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#161616">{{ITEM_3}}</text>
+    <circle cx="628" cy="474" r="21" fill="#C6C6C6" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="657" y="479" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#161616">{{ITEM_4}}</text>
+    <circle cx="240" cy="488" r="12" fill="#C6C6C6" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="260" y="493" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#161616">{{ITEM_5}}</text>
+    <circle cx="392" cy="446" r="14" fill="#C6C6C6" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="414" y="451" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#161616">{{ITEM_6}}</text>
+  </g>
+  <g id="takeaways">
+    <text x="856" y="188" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#161616">시사점</text>
+    <text x="856" y="238" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#6F6F6F">1</text>
+    <text x="884" y="238" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{TAKEAWAY_1}}</text>
+    <line x1="856" y1="330" x2="1216" y2="330" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="856" y="366" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#6F6F6F">2</text>
+    <text x="884" y="366" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{TAKEAWAY_2}}</text>
+    <line x1="856" y1="458" x2="1216" y2="458" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="856" y="494" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#6F6F6F">3</text>
+    <text x="884" y="494" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{TAKEAWAY_3}}</text>
+  </g>
+  <g id="page-foot">
+    <text x="1120" y="689" text-anchor="end" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#393939">{{BRAND_MARK}}</text>
+  </g>
+</svg>

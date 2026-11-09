@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="rn-master" data-pptx-master-name="Research Note" data-pptx-layout="rn_revision" data-pptx-layout-name="Estimate Revision">
+  <!-- Research Note — 07 Estimate revision: before/after table (기존/변경/변화율) with ▲▼ markers, target-price strip, rationale box (values are sample data) -->
+  <rect id="master-bg" width="1280" height="720" fill="#F5F3EF" data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="master-top-rule" x="48" y="44" width="1184" height="3" fill="#0B2545" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-footer-rule" x1="48" y1="672" x2="1232" y2="672" stroke="#B8B8B8" stroke-width="1" data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="layout-revision-panel" x="48" y="190" width="760" height="296" fill="#FFFFFF" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-revision-top-rule" x="48" y="190" width="760" height="2" fill="#0B2545" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-target-strip" x="48" y="566" width="760" height="86" fill="#FFFFFF" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-target-strip-rule" x="48" y="566" width="760" height="2" fill="#0B2545" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-rationale-box" x="840" y="190" width="392" height="462" fill="#E3E8EF" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="report-header">
+    <text x="48" y="33" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#707070" xml:space="preserve"><tspan font-weight="700" fill="#0B2545">{{BRAND_MARK}}</tspan><tspan fill="#B8B8B8">  |  </tspan><tspan>{{REPORT_TYPE}}</tspan></text>
+    <text x="1232" y="33" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#707070" xml:space="preserve"><tspan>{{DATE}}</tspan><tspan fill="#B8B8B8">  ·  </tspan><tspan>{{CLASSIFICATION}}</tspan></text>
+  </g>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="48 64 1184 44">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="48" y="96" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="30" letter-spacing="-0.4" fill="#1A1A1A">{{TITLE}}</text>
+  </g>
+
+  <g id="revision-lead">
+    <text x="48" y="132" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#3A3A3A">{{LEAD}}</text>
+  </g>
+
+  <g id="revision-head">
+    <text x="48" y="176" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="16" fill="#1A1A1A" xml:space="preserve"><tspan fill="#0B2545">Table {{TABLE_NO}}</tspan><tspan>  {{TABLE_TITLE}}</tspan></text>
+    <text x="808" y="176" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#707070">단위: {{TABLE_UNIT}}</text>
+    <rect x="318" y="227" width="98" height="259" fill="#E3E8EF"/>
+    <rect x="612" y="227" width="98" height="259" fill="#E3E8EF"/>
+    <text x="68" y="230" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#707070">구분</text>
+    <text x="367" y="214" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#0B2545">2026E</text>
+    <text x="661" y="214" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#0B2545">2027E</text>
+    <line x1="228" y1="226" x2="506" y2="226" stroke="#B8B8B8" stroke-width="1"/>
+    <line x1="522" y1="226" x2="800" y2="226" stroke="#B8B8B8" stroke-width="1"/>
+    <g text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#707070">
+      <text x="304" y="248">기존</text>
+      <text x="402" y="248" fill="#0B2545">변경</text>
+      <text x="500" y="248">변화율</text>
+      <text x="598" y="248">기존</text>
+      <text x="696" y="248" fill="#0B2545">변경</text>
+      <text x="794" y="248">변화율</text>
+    </g>
+    <line x1="48" y1="258" x2="808" y2="258" stroke="#B8B8B8" stroke-width="1"/>
+  </g>
+
+  <g id="revision-rows" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#1A1A1A">
+    <g id="revision-labels">
+      <text x="68" y="283">매출액</text>
+      <text x="68" y="321">영업이익</text>
+      <text x="68" y="359">영업이익률 (%)</text>
+      <text x="68" y="397">세전이익</text>
+      <text x="68" y="435">지배주주순이익</text>
+      <text x="68" y="473">EPS (원)</text>
+    </g>
+    <g id="revision-before" text-anchor="end" fill="#707070">
+      <text x="304" y="283">147,120</text><text x="598" y="283">176,450</text>
+      <text x="304" y="321">54,880</text><text x="598" y="321">65,020</text>
+      <text x="304" y="359">37.3</text><text x="598" y="359">36.8</text>
+      <text x="304" y="397">58,240</text><text x="598" y="397">69,880</text>
+      <text x="304" y="435">44,310</text><text x="598" y="435">52,960</text>
+      <text x="304" y="473">6,520</text><text x="598" y="473">7,793</text>
+    </g>
+    <g id="revision-after" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif">
+      <text x="402" y="283">156,252</text><text x="696" y="283">172,701</text>
+      <text x="402" y="321">61,530</text><text x="696" y="321">66,912</text>
+      <text x="402" y="359">39.4</text><text x="696" y="359">38.7</text>
+      <text x="402" y="397">64,105</text><text x="696" y="397">70,150</text>
+      <text x="402" y="435">48,610</text><text x="696" y="435">53,180</text>
+      <text x="402" y="473">7,153</text><text x="696" y="473">7,825</text>
+    </g>
+    <g id="revision-change" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" fill="#2E6B3F">
+      <text x="500" y="283">▲ 6.2%</text><text x="794" y="283" fill="#8C1C13">▼ 2.1%</text>
+      <text x="500" y="321">▲ 12.1%</text><text x="794" y="321">▲ 2.9%</text>
+      <text x="500" y="359">▲ 2.1%p</text><text x="794" y="359">▲ 1.9%p</text>
+      <text x="500" y="397">▲ 10.1%</text><text x="794" y="397">▲ 0.4%</text>
+      <text x="500" y="435">▲ 9.7%</text><text x="794" y="435">▲ 0.4%</text>
+      <text x="500" y="473">▲ 9.7%</text><text x="794" y="473">▲ 0.4%</text>
+    </g>
+    <g id="revision-row-rules" stroke="#DCDCDC" stroke-width="1">
+      <line x1="48" y1="296" x2="808" y2="296"/>
+      <line x1="48" y1="334" x2="808" y2="334"/>
+      <line x1="48" y1="372" x2="808" y2="372"/>
+      <line x1="48" y1="410" x2="808" y2="410"/>
+      <line x1="48" y1="448" x2="808" y2="448"/>
+    </g>
+    <line x1="48" y1="486" x2="808" y2="486" stroke="#B8B8B8" stroke-width="1"/>
+    <text x="48" y="512" font-size="12" fill="#707070">주: {{TABLE_NOTE}}</text>
+    <text x="48" y="532" font-size="12" fill="#707070">자료: {{TABLE_SOURCE}}</text>
+  </g>
+
+  <g id="target-strip">
+    <text x="72" y="596" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#707070">목표주가</text>
+    <text x="72" y="634" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#707070" xml:space="preserve"><tspan text-decoration="line-through">{{TP_OLD}}</tspan><tspan>  →  </tspan><tspan font-weight="700" font-size="26" fill="#0B2545">{{TP_NEW}}</tspan><tspan font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#2E6B3F">  ▲ {{TP_CHANGE}}</tspan></text>
+    <line x1="536" y1="582" x2="536" y2="640" stroke="#DCDCDC" stroke-width="1"/>
+    <text x="560" y="596" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#707070">투자의견</text>
+    <text x="560" y="634" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="22" fill="#0B2545">{{KEY_CALL}}</text>
+  </g>
+
+  <g id="rationale">
+    <text x="864" y="226" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="18" fill="#0B2545">변경 사유</text>
+    <text x="1208" y="226" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#707070">Rationale</text>
+    <line x1="864" y1="242" x2="1208" y2="242" stroke="#0B2545" stroke-width="1"/>
+    <text x="864" y="286" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="16" fill="#0B2545">1</text>
+    <text x="888" y="286" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#1A1A1A">{{REASON_1}}</text>
+    <line x1="864" y1="374" x2="1208" y2="374" stroke="#B8B8B8" stroke-width="1"/>
+    <text x="864" y="414" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="16" fill="#0B2545">2</text>
+    <text x="888" y="414" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#1A1A1A">{{REASON_2}}</text>
+    <line x1="864" y1="502" x2="1208" y2="502" stroke="#B8B8B8" stroke-width="1"/>
+    <text x="864" y="542" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="16" fill="#0B2545">3</text>
+    <text x="888" y="542" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#1A1A1A">{{REASON_3}}</text>
+  </g>
+
+  <g id="disclaimer-slot" data-pptx-placeholder="footer" data-pptx-placeholder-idx="2" data-pptx-placeholder-bounds="48 680 960 24">
+    <text id="disclaimer-carrier" data-pptx-placeholder-carrier="true" x="48" y="695" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="11" fill="#707070">{{DISCLAIMER}}</text>
+  </g>
+
+  <g id="page-number-slot" data-pptx-placeholder="slide-number" data-pptx-placeholder-idx="3" data-pptx-placeholder-bounds="1112 680 120 24">
+    <text id="page-number-carrier" data-pptx-placeholder-carrier="true" x="1232" y="695" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#1A1A1A">{{PAGE_NUM}}</text>
+  </g>
+</svg>

@@ -1,15 +1,15 @@
 # Deck Design Pack — 클론 하나로 끝나는 프레젠테이션 워크스페이스
 
 [![Output](https://img.shields.io/badge/output-native%20PPTX%20(DrawingML)-217346)](#자주-묻는-것)
-[![Templates](https://img.shields.io/badge/decks-11%20%C2%B7%20brands%2013-4633E3)](#11개-덱-템플릿)
+[![Templates](https://img.shields.io/badge/decks-18%20%C2%B7%20brands%2013-4633E3)](#18개-덱-템플릿)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-문서를 넣으면 **PowerPoint에서 도형 하나하나 클릭해서 고칠 수 있는 네이티브 `.pptx`** 가 나옵니다. 그 워크플로우([ppt-master](https://github.com/hugohe3/ppt-master) 계열)가 이 저장소 안에 그대로 들어 있고, 여기에 **직접 디자인한 16:9 템플릿 7종**이 이미 설치·등록된 상태입니다.
+문서를 넣으면 **PowerPoint에서 도형 하나하나 클릭해서 고칠 수 있는 네이티브 `.pptx`** 가 나옵니다. 그 워크플로우([ppt-master](https://github.com/hugohe3/ppt-master) 계열)가 이 저장소 안에 그대로 들어 있고, 여기에 **직접 디자인한 16:9 템플릿 14종**이 이미 설치·등록된 상태입니다.
 
 받아야 할 두 번째 저장소도, 템플릿 설치 단계도 없습니다.
 
 ```
-덱 템플릿 11종 · 브랜드 아이덴티티 13종 · 이 팩이 직접 그린 SVG 프로토타입 70장
+덱 템플릿 18종 · 브랜드 아이덴티티 13종 · 이 팩이 직접 그린 SVG 프로토타입 142장
 입력: PDF · DOCX · 웹 URL · Markdown · 엑셀/CSV — 또는 주제 한 줄
 출력: projects/<프로젝트>/exports/<제목>_ver1.pptx — 이미지가 아니라 진짜 DrawingML 도형·텍스트·차트
 ```
@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 > "projects/ 에 넣어둔 3분기 보고서 PDF로 임원 보고용 PPT 만들어줘"
 
-에이전트가 자료를 읽고 → 브라우저 확인 페이지에서 캔버스·페이지 수·색·폰트와 **11종 덱 템플릿 중 하나**를 함께 고르고 → 페이지를 SVG로 한 장씩 그린 뒤 → 겹침·넘침을 자동 검출하고 → 네이티브 `.pptx`로 컴파일합니다.
+에이전트가 자료를 읽고 → 브라우저 확인 페이지에서 캔버스·페이지 수·색·폰트와 **18종 덱 템플릿 중 하나**를 함께 고르고 → 페이지를 SVG로 한 장씩 그린 뒤 → 겹침·넘침을 자동 검출하고 → 네이티브 `.pptx`로 컴파일합니다.
 
 전체 워크플로우 설명, 선택 사항인 AI 이미지 생성·음성 나레이션 설정: [`docs/slide-master-README.md`](docs/slide-master-README.md) · [`docs/getting-started.md`](docs/getting-started.md) · [`docs/faq.md`](docs/faq.md)
 
@@ -78,7 +78,7 @@ pip install -r requirements.txt
 
 ---
 
-## 11개 덱 템플릿
+## 18개 덱 템플릿
 
 ### 이 팩이 직접 디자인한 7종
 
@@ -91,6 +91,21 @@ pip install -r requirements.txt
 | **[Open Road](.claude/skills/ppt-master/templates/decks/open-road/)** | 라이트 + 카본 | `#3E6AE1` | 한 페이지 한 메시지, 풀블리드 사진 | 제품 런칭, 브랜드 키노트, 비전 발표 |
 | **[Signal Green](.claude/skills/ppt-master/templates/decks/signal-green/)** | 블랙 / 화이트 | `#76B900` | 12×12 코너 스퀘어 표식, 각진 2px 지오메트리 | AI·GPU 브리핑, 벤치마크, 개발자 세션 |
 | **[Koscom Chevron](.claude/skills/ppt-master/templates/decks/koscom-chevron/)** | 화이트 + 네이비 + 블랙 | `#EE6D1D` | 앵커 페이지의 오렌지 셰브론(›) 클러스터, KoPub돋움체 Bold 헤드라인 | 코스콤 회사소개, 사업 브리핑, 자본시장 IT 제안 |
+
+### 2026-11 추가 7종 — 전문형 · 화려한형 · 모션 · 스크롤 · 3D
+
+| 템플릿 | 테마 | 주조색 | 시그니처 | 어울리는 자리 |
+|---|---|---|---|---|
+| **[Board Ledger](.claude/skills/ppt-master/templates/decks/board-ledger/)** | 라이트 | `#1E4FD8` | 16단 격자, 상단 진행 위치 표시, 결론형 제목 + Exhibit 번호·단위 줄, 좌하단 출처 · 우하단 쪽번호, 이슈 트리·2×2·간트·의사결정 요청 12장 | 이사회·경영위원회 보고, 경영계획·투자 심의 |
+| **[Research Note](.claude/skills/ppt-master/templates/decks/research-note/)** | 종이색 라이트 | `#0B2545` | 리포트 머리띠, 핵심 판단 상자, 1/3 사이드바, 그림마다 출처가 붙는 Figure, 밀도 높은 표, 면책 줄 | 금융·산업 리서치 브리핑, 실적 분석 |
+| **[Bento Aurora](.claude/skills/ppt-master/templates/decks/bento-aurora/)** | 다크 | `#7C5CFF` | 12단 벤토 타일, 쪽마다 오로라 광원 타일 하나, 120px 이상 큰 숫자 | 서비스 런칭, 데모데이, 성과 하이라이트 |
+| **[Pop Brutal](.claude/skills/ppt-master/templates/decks/pop-brutal/)** | 크림 라이트 | `#FFD23F` | 3px 검은 테두리 + 블러 없는 8px 그림자, 기울인 스티커, 띠 배너 | 해커톤 피칭, 사내 캠페인, 공모전 발표 |
+| **[Motion Cue](.claude/skills/ppt-master/templates/decks/motion-cue/)** | 다크 | `#FFE14D` | 쪽마다 **모션 맵**(주 동작 1 + 보조 1~2 + 홀드)과 그대로 쓰는 `animations.json` 예시, 이징 곡선·타임코드 장식 | 교육·데모 발표, 녹화용 발표 |
+| **[Scroll Rail](.claude/skills/ppt-master/templates/decks/scroll-rail/)** | 종이색 라이트 | `#FF4F2E` | 모든 쪽에 진행 레일, 정지점 하나에 주장 하나, 이웃한 쪽이 같은 대상을 같은 좌표에 두는 handoff 앵커(`-t push` 권장) | 연혁·로드맵, 데이터 스토리, 진단 브리핑 |
+| **[Depth Field](.claude/skills/ppt-master/templates/decks/depth-field/)** | 다크 | `#5CE1E6` | three.js로 직접 렌더한 3D 배경 4장, 원근 격자, 깊이층 도식. 장면 소스 `templates/three/scene.html`로 색을 바꿔 다시 렌더 | 기술 비전, 아키텍처, AI 플랫폼 소개 |
+
+- `motion-cue`는 [awesome-ai-motion](https://github.com/gongnyang/awesome-ai-motion)의 원칙(한 장면 한 초점, 주 동작 하나, 완성 상태 홀드)과 기법 이름을, `scroll-rail`은 [awesome-html-scrolline-deck](https://github.com/gongnyang/awesome-html-scrolline-deck)의 원칙(정지점·handoff·컨셉 문법)을 PowerPoint 네이티브 애니메이션·전환으로 옮겼습니다. 두 저장소의 코드·클립은 들어 있지 않습니다.
+- `depth-field`는 reveal.js-threejs 계열처럼 슬라이드 뒤에 3D 장면을 까는 방식을 따르되, PPTX는 WebGL을 돌릴 수 없어서 장면을 미리 렌더한 이미지로 넣었습니다. 글자는 모두 편집 가능한 텍스트입니다.
 
 ### 워크플로우에 함께 들어 있는 4종
 
@@ -116,7 +131,10 @@ pip install -r requirements.txt
 | **Midnight Panel**<br><img src="previews/midnight-panel.png" width="420"> | **Polarity Mono**<br><img src="previews/polarity.png" width="420"> |
 | **Gradient Mesh Fintech**<br><img src="previews/gradient-mesh.png" width="420"> | **Warm Document**<br><img src="previews/warm-doc.png" width="420"> |
 | **Open Road**<br><img src="previews/open-road.png" width="420"> | **Signal Green**<br><img src="previews/signal-green.png" width="420"> |
-| **Koscom Chevron**<br><img src="previews/koscom-chevron.png" width="420"> | |
+| **Koscom Chevron**<br><img src="previews/koscom-chevron.png" width="420"> | **Board Ledger**<br><img src="previews/board-ledger.png" width="420"> |
+| **Research Note**<br><img src="previews/research-note.png" width="420"> | **Bento Aurora**<br><img src="previews/bento-aurora.jpg" width="420"> |
+| **Pop Brutal**<br><img src="previews/pop-brutal.png" width="420"> | **Motion Cue**<br><img src="previews/motion-cue.png" width="420"> |
+| **Scroll Rail**<br><img src="previews/scroll-rail.png" width="420"> | **Depth Field**<br><img src="previews/depth-field.jpg" width="420"> |
 
 원본 크기 컨택트 시트: [`previews/`](previews/) · 템플릿별 상세: [`docs/gallery.md`](docs/gallery.md)
 
@@ -130,7 +148,7 @@ pip install -r requirements.txt
     scripts/                 Python 진입점 54개 — SVG→PPTX 변환, 품질 검사기,
                                확인 UI, 이미지 백엔드, TTS, 내보낸 PPTX 검증
     templates/
-      decks/                 덱 템플릿 11종 + decks_index.json
+      decks/                 덱 템플릿 18종 + decks_index.json
       brands/                브랜드 아이덴티티 13종 + brands_index.json
       layouts/               레이아웃 템플릿 7종
       charts/                차트 템플릿 79개
@@ -145,7 +163,7 @@ pip install -r requirements.txt
 .codex/skills/             Codex 발견용 스텁 (자동 생성, 손으로 고치지 말 것)
 projects/                  내 덱과 원본 자료 (git 추적 제외)
 voices/                    내 문체 폴더 (git 추적 제외)
-previews/                  이 팩 7종의 컨택트 시트
+previews/                  이 팩 14종의 컨택트 시트
 docs/                      워크플로우 가이드 + 이 팩의 작성 규칙
 install.py                 이 팩을 *다른* ppt-master 워크스페이스로 내보내기
 ```
@@ -167,7 +185,7 @@ install.py                 이 팩을 *다른* ppt-master 워크스페이스로 
 └── 10_closing.svg          # ─┘
 ```
 
-7종이 같은 10페이지 척추를 공유해서 팩 전체가 하나의 시스템으로 읽힙니다. **4번 페이지가 각 템플릿의 정체성이 드러나는 자리**입니다 — 프로덕트 패널, 극성 반전, 그라디언트 진술문, 틴트 카드 스택, 풀블리드 히어로, 블랙 히어로, 블랙 웨이브 필드.
+처음 7종은 같은 10페이지 척추를 공유해서 팩 전체가 하나의 시스템으로 읽힙니다. **4번 페이지가 각 템플릿의 정체성이 드러나는 자리**입니다 — 프로덕트 패널, 극성 반전, 그라디언트 진술문, 틴트 카드 스택, 풀블리드 히어로, 블랙 히어로, 블랙 웨이브 필드.
 
 각 `design_spec.md`는 "조립한 것"이 아니라 "디자인한 것"으로 보이게 만드는 것들을 잠급니다: 색을 남김없이 나열한 목록(여기 없는 색은 생성된 SVG에 나올 수 없음), 일반 기본값을 덮어쓰는 고유 본문 크기 기준선, 차트 문법, 그리고 작성 시점에 거부당하도록 쓴 안티패턴 체크리스트.
 
@@ -193,6 +211,7 @@ install.py                 이 팩을 *다른* ppt-master 워크스페이스로 
 | `template_preview_pptx.py` 리드백 | 10 slides · 1 master · 9 layouts |
 | 엔드투엔드 덱 생성 (`strict` 준수) | 0 errors, 0 warnings · `verify_deck` PASS |
 | 내보낸 패키지 | master 1개 · 레이아웃 선택기 이름 보존 · 플레이스홀더 바인딩 |
+| 2026-11 추가 7종 | `--template-mode` 72/72 페이지 · 0 errors · 0 warnings. 확인용 PPTX를 실제 PowerPoint로 72장 모두 렌더해 확인(`board-ledger`는 마스터 2개 · 테마 2개) |
 
 기존 6종은 구조만이 아니라 **끝까지** 검증했습니다: 각 템플릿에서 `strict` 준수로 7페이지 덱을 생성해(표지·목차·챕터·시그니처 페이지·지표·실제 데이터 차트·클로징) 내보낸 패키지가 PowerPoint 레이아웃 선택기에 그 템플릿의 이름으로 뜨는 것까지 확인했습니다. `koscom-chevron`은 구조 검사가 깨끗하고 컨택트 시트도 렌더했지만, 아직 `verify_deck`까지는 돌리지 않았습니다.
 
@@ -202,7 +221,7 @@ install.py                 이 팩을 *다른* ppt-master 워크스페이스로 
 
 ## 타이포그래피
 
-기존 6종은 **Pretendard**(SIL OFL) 하나로 잠겨 있고, 폰트는 [`assets/fonts/Pretendard/`](.claude/skills/ppt-master/assets/fonts/Pretendard/)에 번들되어 있습니다. `koscom-chevron`만 예외로, 코스콤 공식 자료의 **KoPub돋움체** 락을 유지하며 세 웨이트를 [`decks/koscom-chevron/fonts/`](.claude/skills/ppt-master/templates/decks/koscom-chevron/fonts/FONTS.md)에 함께 넣었습니다.
+`koscom-chevron`을 뺀 13종은 **Pretendard**(SIL OFL) 하나로 잠겨 있고, 폰트는 [`assets/fonts/Pretendard/`](.claude/skills/ppt-master/assets/fonts/Pretendard/)에 번들되어 있습니다. `koscom-chevron`만 예외로, 코스콤 공식 자료의 **KoPub돋움체** 락을 유지하며 세 웨이트를 [`decks/koscom-chevron/fonts/`](.claude/skills/ppt-master/templates/decks/koscom-chevron/fonts/FONTS.md)에 함께 넣었습니다.
 
 위계는 폰트 가족을 바꿔서 만들지 않습니다 — 굵기 폭, 자간, 크기 램프로만 만듭니다.
 
@@ -214,7 +233,7 @@ install.py                 이 팩을 *다른* ppt-master 워크스페이스로 
 
 ## 이미 쓰는 워크스페이스에 이 팩만 넣기
 
-자기 ppt-master 워크스페이스를 이미 운영 중이고 여기 템플릿 7종만 가져가고 싶다면, `install.py`가 복사하고 그쪽 워크스페이스의 인덱스 두 개를 병합해 줍니다.
+자기 ppt-master 워크스페이스를 이미 운영 중이고 여기 템플릿 14종만 가져가고 싶다면, `install.py`가 복사하고 그쪽 워크스페이스의 인덱스 두 개를 병합해 줍니다.
 
 ```bash
 python3 install.py /path/to/your/ppt-master-workspace
@@ -225,7 +244,7 @@ python3 install.py <workspace> --dry-run                        # 계획만 출�
 
 표준 라이브러리 외 의존성이 없습니다(PyYAML이 있으면 씁니다). 대상은 `.claude/skills/ppt-master/templates/`를 가진 디렉터리여야 하고, **이 저장소 자신을 대상으로 지정하면 거부**합니다 — 여기엔 이미 설치돼 있으니까요. 상세: [`docs/install.md`](docs/install.md)
 
-> **왜 워크스페이스의 등록기를 안 쓰고 별도 설치 스크립트인가?** 기본 `register_template.py`는 인덱스 항목을 매번 처음부터 다시 만들면서, 확인 UI가 덱의 1단계 앵커(mode / visual_style / delivery_purpose)를 자동 반영할 때 읽는 `defaults` 블록을 떨어뜨립니다. `install.py`는 그 블록을 각 템플릿 자신의 frontmatter에서 가져오므로, 인덱스를 몇 번을 다시 만들어도 앵커가 살아남습니다.
+> **왜 별도 설치 스크립트인가?** 다른 워크스페이스에는 템플릿 폴더와 인덱스 항목을 함께 옮겨야 하기 때문입니다. `install.py`는 확인 UI가 덱의 1단계 앵커(mode / visual_style / delivery_purpose)를 반영할 때 읽는 `defaults`를 각 템플릿 frontmatter에서 가져와 인덱스에 넣습니다. 이 저장소의 `register_template.py`도 이제 frontmatter의 `defaults`를 그대로 옮기므로, 새 덱을 등록해도 앵커가 빠지지 않습니다.
 
 ---
 
@@ -243,8 +262,8 @@ python3 install.py <workspace> --dry-run                        # 계획만 출�
 
 ## 라이선스 · 크레딧 · 상표
 
-이 팩이 만든 것 — 덱 템플릿 7종, 브랜드 프리셋 7종, 컨택트 시트, `install.py` — 는 [MIT](LICENSE) © 2026 humanist96.
+이 팩이 만든 것 — 덱 템플릿 14종, 브랜드 프리셋 7종, 컨택트 시트, `depth-field`의 3D 렌더 이미지, `install.py` — 는 [MIT](LICENSE) © 2026 humanist96.
 
-임베딩된 워크플로우는 [MIT](THIRD_PARTY_NOTICES.md) © 2025-2026 Hugo He이며, [hugohe3/ppt-master](https://github.com/hugohe3/ppt-master)를 한국어 작업에 맞게 커스터마이즈한 [byungjunjang/slide-master](https://github.com/byungjunjang/slide-master)에서 가져왔습니다. 원 저장소의 README는 [`docs/slide-master-README.md`](docs/slide-master-README.md)에 원문 그대로 보존했습니다. `deck-voice`는 [gongnyang/gn-voice](https://github.com/gongnyang/gn-voice)의 MIT 부분(방식, `presentation` 프로파일)을 옮겼습니다. 폰트와 스킬별 라이선스는 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)에 정리되어 있습니다.
+임베딩된 워크플로우는 [MIT](THIRD_PARTY_NOTICES.md) © 2025-2026 Hugo He이며, [hugohe3/ppt-master](https://github.com/hugohe3/ppt-master)를 한국어 작업에 맞게 커스터마이즈한 [byungjunjang/slide-master](https://github.com/byungjunjang/slide-master)에서 가져왔습니다. 원 저장소의 README는 [`docs/slide-master-README.md`](docs/slide-master-README.md)에 원문 그대로 보존했습니다. `deck-voice`는 [gongnyang/gn-voice](https://github.com/gongnyang/gn-voice)의 MIT 부분(방식, `presentation` 프로파일)을 옮겼습니다. `motion-cue`·`scroll-rail`은 [gongnyang/awesome-ai-motion](https://github.com/gongnyang/awesome-ai-motion)·[gongnyang/awesome-html-scrolline-deck](https://github.com/gongnyang/awesome-html-scrolline-deck)(둘 다 MIT)의 원칙만 참고했고 코드는 들어 있지 않습니다. `depth-field`의 장면 소스는 [three.js](https://github.com/mrdoob/three.js)(MIT)를 CDN 고정 버전으로 불러오며, three.js 자체는 번들하지 않습니다. 폰트와 스킬별 라이선스는 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)에 정리되어 있습니다.
 
-기존 6종 템플릿은 제3자의 상표·로고·워드마크·사진을 일절 번들하지 않습니다. `koscom-chevron`은 코스콤 자사 샘플 덱을 바탕으로 만든 하우스 템플릿입니다 — 코스콤 이름과 셰브론 마크는 코스콤(주)의 것이고, **로고 이미지는 번들하지 않으며**(텍스트 `{{BRAND_MARK}}` 슬롯만), 함께 넣은 KoPub 폰트는 자체 무료 라이선스를 따릅니다. 스펙이 특정 회사를 언급하는 경우, 그것은 디자인 *어법*을 참조점으로 식별하는 서술적 비교이지 보증이나 제휴 주장이 아닙니다. 전체 입장: [`TRADEMARKS.md`](TRADEMARKS.md)
+`koscom-chevron`을 뺀 13종은 제3자의 상표·로고·워드마크·사진을 일절 번들하지 않습니다(`depth-field`의 3D 이미지는 이 팩이 three.js로 직접 렌더한 것입니다). `koscom-chevron`은 코스콤 자사 샘플 덱을 바탕으로 만든 하우스 템플릿입니다 — 코스콤 이름과 셰브론 마크는 코스콤(주)의 것이고, **로고 이미지는 번들하지 않으며**(텍스트 `{{BRAND_MARK}}` 슬롯만), 함께 넣은 KoPub 폰트는 자체 무료 라이선스를 따릅니다. 스펙이 특정 회사를 언급하는 경우, 그것은 디자인 *어법*을 참조점으로 식별하는 서술적 비교이지 보증이나 제휴 주장이 아닙니다. 전체 입장: [`TRADEMARKS.md`](TRADEMARKS.md)

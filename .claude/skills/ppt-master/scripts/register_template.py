@@ -21,7 +21,7 @@ discovery happens exclusively against the index file):
 
 - brand:  ``{ summary, primary_color }``
 - layout: ``{ summary, canvas_format, page_count, page_types[] }``
-- deck:   ``{ summary, canvas_format, page_count, primary_color }``
+- deck:   ``{ summary, canvas_format, page_count, primary_color[, defaults] }``
 
 Usage::
 
@@ -254,6 +254,12 @@ def _extract_entry(kind: str, template_id: str, template_dir: Path) -> dict:
             page_count=int(fm.get("page_count", len(pages))),
             primary_color=str(primary_color),
         )
+        # Confirm UI가 서식 카드를 고를 때 덮어쓰는 Stage-1 기본값(mode 등)
+        defaults = fm.get("defaults")
+        if isinstance(defaults, dict) and defaults:
+            entry["defaults"] = OrderedDict(
+                (str(k), str(v)) for k, v in defaults.items()
+            )
     else:
         raise SpecParseError(f"unknown kind {kind!r}")
 

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="depth-master" data-pptx-master-name="Depth Field" data-pptx-layout="05_depth_layers" data-pptx-layout-name="Depth Layers (Isometric)">
+  <!-- Depth Field — 05 Depth layers: three isometric slabs drawn as primitives, labels on a depth rail -->
+  <defs>
+    <filter id="layer-top-glow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#5CE1E6" flood-opacity="0.45" result="tint"/>
+      <feComposite in="tint" in2="blur" operator="in" result="glow"/>
+      <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect id="master-bg" width="1280" height="720" fill="#060B1A" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="layout-depth-rail" x1="704" y1="232" x2="704" y2="608" stroke="#1E2A4A" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="80 112 1120 56">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="80" y="152" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="40" letter-spacing="-0.6" fill="#EAF0FF">{{TITLE}}</text>
+  </g>
+
+  <g id="page-header">
+    <text x="80" y="96" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="1.5" fill="#5CE1E6">{{DEPTH_TAG}}<tspan fill="#6F7BA0"> · {{KICKER}}</tspan></text>
+    <text x="80" y="196" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="20" letter-spacing="-0.1" fill="#AEB9D6">{{LEAD}}</text>
+  </g>
+
+  <g id="stack-connectors">
+    <line x1="140" y1="320" x2="140" y2="530" stroke="#1E2A4A" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <line x1="640" y1="320" x2="640" y2="530" stroke="#1E2A4A" stroke-width="1.5" stroke-dasharray="4 4"/>
+  </g>
+
+  <g id="layer-3">
+    <polygon points="140,530 390,605 390,615 140,540" fill="#0E1630" stroke="#6F7BA0" stroke-opacity="0.5" stroke-width="1"/>
+    <polygon points="390,605 640,530 640,540 390,615" fill="#060B1A" stroke="#6F7BA0" stroke-opacity="0.5" stroke-width="1"/>
+    <path d="M140 530L390 455L640 530L390 605Z" fill="#0E1630" stroke="#6F7BA0" stroke-width="1.5"/>
+    <path d="M202.5 548.75L452.5 473.75M265 567.5L515 492.5M327.5 586.25L577.5 511.25M202.5 511.25L452.5 586.25M265 492.5L515 567.5M327.5 473.75L577.5 548.75" fill="none" stroke="#1E2A4A" stroke-width="1"/>
+    <line x1="652" y1="530" x2="728" y2="530" stroke="#6F7BA0" stroke-opacity="0.6" stroke-width="1"/>
+    <text x="740" y="504" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="1.5" fill="#6F7BA0">Z-03</text>
+    <text x="740" y="536" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="24" letter-spacing="-0.3" fill="#EAF0FF">{{LAYER_3_TITLE}}</text>
+    <text x="740" y="566" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#AEB9D6">{{LAYER_3_BODY}}</text>
+  </g>
+
+  <g id="layer-2">
+    <polygon points="140,420 390,495 390,505 140,430" fill="#0E1630" stroke="#8B7CFF" stroke-opacity="0.5" stroke-width="1"/>
+    <polygon points="390,495 640,420 640,430 390,505" fill="#060B1A" stroke="#8B7CFF" stroke-opacity="0.5" stroke-width="1"/>
+    <path d="M140 420L390 345L640 420L390 495Z" fill="#0E1630" stroke="#8B7CFF" stroke-width="1.5"/>
+    <path d="M202.5 438.75L452.5 363.75M265 457.5L515 382.5M327.5 476.25L577.5 401.25M202.5 401.25L452.5 476.25M265 382.5L515 457.5M327.5 363.75L577.5 438.75" fill="none" stroke="#1E2A4A" stroke-width="1"/>
+    <circle cx="327.5" cy="401.25" r="4" fill="#8B7CFF"/>
+    <circle cx="452.5" cy="438.75" r="4" fill="#8B7CFF"/>
+    <line x1="652" y1="420" x2="728" y2="420" stroke="#8B7CFF" stroke-opacity="0.6" stroke-width="1"/>
+    <text x="740" y="394" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="1.5" fill="#8B7CFF">Z-02</text>
+    <text x="740" y="426" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="24" letter-spacing="-0.3" fill="#EAF0FF">{{LAYER_2_TITLE}}</text>
+    <text x="740" y="456" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#AEB9D6">{{LAYER_2_BODY}}</text>
+  </g>
+
+  <g id="layer-1">
+    <polygon points="140,310 390,385 390,395 140,320" fill="#0E1630" stroke="#5CE1E6" stroke-opacity="0.5" stroke-width="1"/>
+    <polygon points="390,385 640,310 640,320 390,395" fill="#060B1A" stroke="#5CE1E6" stroke-opacity="0.5" stroke-width="1"/>
+    <path d="M140 310L390 235L640 310L390 385Z" fill="#0E1630" stroke="#5CE1E6" stroke-width="1.5" filter="url(#layer-top-glow)"/>
+    <path d="M202.5 328.75L452.5 253.75M265 347.5L515 272.5M327.5 366.25L577.5 291.25M202.5 291.25L452.5 366.25M265 272.5L515 347.5M327.5 253.75L577.5 328.75" fill="none" stroke="#1E2A4A" stroke-width="1"/>
+    <circle cx="327.5" cy="291.25" r="4" fill="#5CE1E6"/>
+    <circle cx="390" cy="310" r="5" fill="#EAF0FF"/>
+    <circle cx="452.5" cy="328.75" r="4" fill="#5CE1E6"/>
+    <line x1="652" y1="310" x2="728" y2="310" stroke="#5CE1E6" stroke-opacity="0.6" stroke-width="1"/>
+    <text x="740" y="284" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="1.5" fill="#5CE1E6">Z-01</text>
+    <text x="740" y="316" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="24" letter-spacing="-0.3" fill="#EAF0FF">{{LAYER_1_TITLE}}</text>
+    <text x="740" y="346" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#AEB9D6">{{LAYER_1_BODY}}</text>
+  </g>
+
+  <g id="page-foot">
+    <text x="80" y="676" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F7BA0">{{BRAND_MARK}}</text>
+    <text x="1200" y="676" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F7BA0">{{PAGE_LABEL}}</text>
+  </g>
+</svg>

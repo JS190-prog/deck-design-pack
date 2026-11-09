@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="bento-aurora-master" data-pptx-master-name="Bento Aurora" data-pptx-layout="10_closing" data-pptx-layout-name="Closing (Aurora Horizon)">
+  <!-- Bento Aurora — 10 Closing: aurora horizon rising from the bottom edge, centered closing line, brand hero tile -->
+  <defs>
+    <radialGradient id="fieldViolet" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.75"/>
+      <stop offset="50%" stop-color="#7C5CFF" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#7C5CFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fieldCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.46"/>
+      <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fieldPink" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#F472B6" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="aurRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <rect id="master-bg" width="1280" height="720" fill="#07080F" data-pptx-layer="master" data-pptx-editable="false"/>
+
+  <ellipse id="layout-field-pink" cx="230" cy="720" rx="400" ry="230" fill="url(#fieldPink)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <ellipse id="layout-field-cyan" cx="1050" cy="720" rx="400" ry="230" fill="url(#fieldCyan)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <ellipse id="layout-field-violet" cx="640" cy="760" rx="800" ry="360" fill="url(#fieldViolet)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-hero-tile" x="440" y="456" width="400" height="96" rx="24" fill="#10121C" fill-opacity="0.62" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-hero-rim" x="440" y="456" width="400" height="96" rx="24" fill="none" stroke="url(#aurRim)" stroke-width="1.5" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="closing-kicker">
+    <rect x="552" y="176" width="176" height="32" rx="16" fill="#161A29" stroke="#262B40" stroke-width="1"/>
+    <text x="640" y="197" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" letter-spacing="1.2" fill="#B3B8D4">{{KICKER}}</text>
+  </g>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="48 240 1184 100">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="640" y="318" text-anchor="middle" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="76" letter-spacing="-1.6" fill="#F4F6FF">{{CLOSING_LINE}}</text>
+  </g>
+
+  <g id="closing-contact">
+    <text x="640" y="380" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="22" letter-spacing="-0.2" fill="#B3B8D4">{{CONTACT_LINE}}</text>
+  </g>
+
+  <g id="closing-brand">
+    <text x="640" y="515" text-anchor="middle" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="30" letter-spacing="-0.4" fill="#F4F6FF">{{BRAND_MARK}}</text>
+  </g>
+</svg>

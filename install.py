@@ -42,7 +42,7 @@ PACK_TEMPLATES = PACK_ROOT / TEMPLATES_SUBPATH
 # This pack's own ids. The source directory is now shared with the templates that
 # ship with the embedded workflow, so exporting has to name what belongs to the
 # pack rather than sweeping the whole library.
-PACK_IDS = (
+PACK_BRAND_IDS = (
     "gradient-mesh",
     "koscom-chevron",
     "midnight-panel",
@@ -50,6 +50,16 @@ PACK_IDS = (
     "polarity",
     "signal-green",
     "warm-doc",
+)
+# Decks added later ship as decks only (no brand preset of the same id).
+PACK_DECK_IDS = PACK_BRAND_IDS + (
+    "bento-aurora",
+    "board-ledger",
+    "depth-field",
+    "motion-cue",
+    "pop-brutal",
+    "research-note",
+    "scroll-rail",
 )
 
 # Stage-1 anchor keys the Confirm UI honours; anything else is ignored there, so
@@ -137,12 +147,13 @@ def discover(kind: str, only: list[str] | None) -> list[tuple[str, Path]]:
     base = PACK_TEMPLATES / ("decks" if kind == "deck" else "brands")
     if not base.is_dir():
         raise InstallError(f"pack directory missing: {base}")
+    ids = PACK_DECK_IDS if kind == "deck" else PACK_BRAND_IDS
     found = []
     for entry in sorted(base.iterdir()):
         spec = entry / "templates" / "design_spec.md"
-        if entry.name in PACK_IDS and entry.is_dir() and spec.is_file():
+        if entry.name in ids and entry.is_dir() and spec.is_file():
             found.append((entry.name, entry))
-    missing_pack = set(PACK_IDS) - {name for name, _ in found}
+    missing_pack = set(ids) - {name for name, _ in found}
     if missing_pack:
         raise InstallError(
             f"{kind}: pack template(s) missing from {base}: {sorted(missing_pack)}"
@@ -150,7 +161,8 @@ def discover(kind: str, only: list[str] | None) -> list[tuple[str, Path]]:
     if only:
         wanted = set(only)
         found = [item for item in found if item[0] in wanted]
-        missing = wanted - {name for name, _ in found}
+        # a deck-only id is simply absent from the brand pass, not unknown
+        missing = wanted - set(PACK_DECK_IDS) - set(PACK_BRAND_IDS)
         if missing:
             raise InstallError(f"{kind}: unknown id(s) {sorted(missing)}")
     return found

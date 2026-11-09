@@ -10,6 +10,39 @@
       "delivery_purpose": "balanced"
     }
   },
+  "bento-aurora": {
+    "summary": "벤토 그리드 + 오로라 글로우 다크 키노트 덱 — 제품·서비스 런칭, 해커톤 데모데이, 연간 성과 하이라이트, 비전 키노트 (2026 벤토 UI·초대형 타이포·다크 글로우 트렌드에서 착안)",
+    "canvas_format": "ppt169",
+    "page_count": 10,
+    "primary_color": "#7C5CFF",
+    "defaults": {
+      "mode": "showcase",
+      "visual_style": "glassmorphism",
+      "delivery_purpose": "presentation"
+    }
+  },
+  "board-ledger": {
+    "summary": "절제·정밀·근거 우선의 경영진 보고 덱 — 이사회·경영위원회 보고, 경영계획·투자 심의, 전략 검토, 분기 성과 리뷰 (컨설팅 보고서 관용 문법 + 오픈소스 디자인 시스템의 16열 그리드·회색 단계에서 착안)",
+    "canvas_format": "ppt169",
+    "page_count": 12,
+    "primary_color": "#1E4FD8",
+    "defaults": {
+      "mode": "pyramid",
+      "visual_style": "swiss-minimal",
+      "delivery_purpose": "text"
+    }
+  },
+  "depth-field": {
+    "summary": "three.js로 직접 렌더한 3D 장면을 배경에 까는 다크 테크 키노트 덱 — 기술 비전·아키텍처 발표, AI·데이터 플랫폼 소개, 해커톤 데모, 미래 전략 키노트 (reveal.js-threejs 계열의 3D 배경 슬라이드에서 착안)",
+    "canvas_format": "ppt169",
+    "page_count": 10,
+    "primary_color": "#5CE1E6",
+    "defaults": {
+      "mode": "showcase",
+      "visual_style": "dark-tech",
+      "delivery_purpose": "presentation"
+    }
+  },
   "gradient-mesh": {
     "summary": "그라디언트 메시 핀테크 덱 — 파트너 제안서, 핀테크 IR, 제품 이코노믹스, SaaS 가격 설명 (Stripe 계열 인디고 + 메시 그라디언트에서 착안)",
     "canvas_format": "ppt169",
@@ -65,6 +98,17 @@
       "delivery_purpose": "balanced"
     }
   },
+  "motion-cue": {
+    "summary": "다크 모션그래픽 덱 — 교육·설명 발표, 제품 데모, 해커톤 피칭, 사내 교육 오프닝, 영상 녹화용 발표 (한 장면 한 초점, 페이지별 모션 맵 동봉)",
+    "canvas_format": "ppt169",
+    "page_count": 10,
+    "primary_color": "#FFE14D",
+    "defaults": {
+      "mode": "showcase",
+      "visual_style": "dark-tech",
+      "delivery_purpose": "presentation"
+    }
+  },
   "naver_ir": {
     "summary": "NAVER IR 실적발표 스타일 — 분기 실적발표, 재무 보고, 투자자 미팅, 절제된 재무 데이터 덱",
     "canvas_format": "ppt169",
@@ -96,6 +140,39 @@
       "mode": "showcase",
       "visual_style": "swiss-minimal",
       "delivery_purpose": "balanced"
+    }
+  },
+  "pop-brutal": {
+    "summary": "크림 바탕 팝 네오브루탈리즘 덱 — 해커톤 피칭·데모데이, 사내 캠페인·이벤트, 워크숍 오프닝, 공모전 발표 (두꺼운 잉크 외곽선 + 블러 없는 하드 그림자 + 원색 블록 + 스티커·마퀴 띠)",
+    "canvas_format": "ppt169",
+    "page_count": 10,
+    "primary_color": "#FFD23F",
+    "defaults": {
+      "mode": "showcase",
+      "visual_style": "brutalist",
+      "delivery_purpose": "presentation"
+    }
+  },
+  "research-note": {
+    "summary": "페이퍼 톤 리서치 노트 덱 — 금융·산업 리서치 브리핑, 시장 동향 보고, 투자 검토 요약, 분기 실적 분석 (셀사이드 리서치 리포트의 헤더 밴드·사이드바·Figure/자료 표기 관례에서 착안)",
+    "canvas_format": "ppt169",
+    "page_count": 10,
+    "primary_color": "#0B2545",
+    "defaults": {
+      "mode": "briefing",
+      "visual_style": "data-journalism",
+      "delivery_purpose": "text"
+    }
+  },
+  "scroll-rail": {
+    "summary": "이어지는 서사의 라이트 페이퍼 덱 — 연혁·로드맵, 데이터 스토리, 신제품 공개, 진단 브리핑, 키노트 선언 (하단 진행 레일 + 정지점 한 곳 한 주장 + 앵커 라인 handoff)",
+    "canvas_format": "ppt169",
+    "page_count": 10,
+    "primary_color": "#FF4F2E",
+    "defaults": {
+      "mode": "narrative",
+      "visual_style": "editorial",
+      "delivery_purpose": "presentation"
     }
   },
   "signal-green": {

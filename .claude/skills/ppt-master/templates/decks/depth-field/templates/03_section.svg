@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="depth-master" data-pptx-master-name="Depth Field" data-pptx-layout="03_section" data-pptx-layout-name="Section (Render)">
+  <!-- Depth Field — 03 Section: torus-knot render (df_section.jpg) right, chapter number + title left -->
+  <defs>
+    <radialGradient id="section-fallback-fill" cx="0.72" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#8B7CFF" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#060B1A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="section-scrim-fill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#060B1A" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#060B1A" stop-opacity="0.45"/>
+      <stop offset="62%" stop-color="#060B1A" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="section-num-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="blur"/>
+      <feFlood flood-color="#5CE1E6" flood-opacity="0.5" result="tint"/>
+      <feComposite in="tint" in2="blur" operator="in" result="glow"/>
+      <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect id="master-bg" width="1280" height="720" fill="#060B1A" data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="layout-section-fallback" width="1280" height="720" fill="url(#section-fallback-fill)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <image id="layout-section-render" href="../images/df_section.jpg" x="0" y="0" width="1280" height="720" preserveAspectRatio="xMidYMid slice" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-section-scrim" width="1280" height="720" fill="url(#section-scrim-fill)" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="80 374 560 64">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="80" y="422" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="48" letter-spacing="-0.8" fill="#EAF0FF">{{CHAPTER_TITLE}}</text>
+  </g>
+
+  <g id="subtitle-slot" data-pptx-placeholder="subtitle" data-pptx-placeholder-idx="2" data-pptx-placeholder-bounds="80 446 540 64">
+    <text id="subtitle-carrier" data-pptx-placeholder-carrier="true" x="80" y="470" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="20" letter-spacing="-0.1" fill="#AEB9D6">{{CHAPTER_DESC}}</text>
+  </g>
+
+  <g id="page-header">
+    <text x="80" y="226" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="1.5" fill="#5CE1E6">{{DEPTH_TAG}}<tspan fill="#6F7BA0"> · {{KICKER}}</tspan></text>
+  </g>
+
+  <g id="section-number">
+    <text x="74" y="346" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="112" letter-spacing="-2" fill="#5CE1E6" filter="url(#section-num-glow)">{{CHAPTER_NUM}}</text>
+  </g>
+
+  <g id="page-foot">
+    <text x="80" y="676" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F7BA0">{{BRAND_MARK}}</text>
+    <text x="1200" y="676" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F7BA0">{{PAGE_LABEL}}</text>
+  </g>
+</svg>

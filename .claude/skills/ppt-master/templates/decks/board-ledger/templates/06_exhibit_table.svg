@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="ledger_content_master" data-pptx-master-name="Board Ledger — Content" data-pptx-layout="ledger_exhibit_full" data-pptx-layout-name="Exhibit — Full Width">
+  <!-- Board Ledger — 06 Exhibit table: 4 options x 5 criteria, Harvey balls, recommended column tint (sample data) -->
+  <rect id="master-bg" width="1280" height="720" fill="#FFFFFF" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-header-rule" x1="64" y1="64" x2="1216" y2="64" stroke="#C6C6C6" stroke-width="1" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-footer-rule" x1="64" y1="664" x2="1216" y2="664" stroke="#E0E0E0" stroke-width="1" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="layout-exhibit-rule" x1="64" y1="202" x2="1216" y2="202" stroke="#161616" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="64 84 1152 76">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="64" y="110" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="28" letter-spacing="-0.4" fill="#161616">{{TITLE}}</text>
+  </g>
+  <g id="source-slot" data-pptx-placeholder="footer" data-pptx-placeholder-idx="2" data-pptx-placeholder-bounds="64 672 800 24">
+    <text id="source-carrier" data-pptx-placeholder-carrier="true" x="64" y="689" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#6F6F6F">{{SOURCE}}</text>
+  </g>
+  <g id="page-number-slot" data-pptx-placeholder="slide-number" data-pptx-placeholder-idx="3" data-pptx-placeholder-bounds="1136 672 80 24">
+    <text id="page-number-carrier" data-pptx-placeholder-carrier="true" x="1216" y="689" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#161616">{{PAGE_NUM}}</text>
+  </g>
+  <g id="tracker">
+    <text x="64" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">01</text>
+    <text x="88" y="52" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{TRACK_1}}</text>
+    <text x="208" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">02</text>
+    <text x="232" y="52" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{TRACK_2}}</text>
+    <text x="352" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#161616">03</text>
+    <text x="376" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#161616">{{TRACK_3}}</text>
+    <text x="496" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">04</text>
+    <text x="520" y="52" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{TRACK_4}}</text>
+    <text x="640" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">05</text>
+    <text x="664" y="52" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{TRACK_5}}</text>
+    <rect x="352" y="62" width="128" height="3" fill="#1E4FD8"/>
+  </g>
+  <g id="header-meta">
+    <text x="1216" y="52" text-anchor="end" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" letter-spacing="0.3" fill="#6F6F6F">{{CLASSIFICATION}}</text>
+  </g>
+  <g id="exhibit-head">
+    <text x="64" y="188" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#161616" xml:space="preserve">Exhibit {{EXHIBIT_NO}}<tspan fill="#C6C6C6">  ·  </tspan><tspan font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" fill="#393939">{{EXHIBIT_TITLE}}</tspan></text>
+    <text x="1022" y="188" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">낮음</text>
+    <circle cx="1040" cy="183" r="7" fill="#FFFFFF" stroke="#161616" stroke-width="1.5"/>
+    <circle cx="1066" cy="183" r="7" fill="#FFFFFF" stroke="#161616" stroke-width="1.5"/>
+    <path d="M1066 183 L1066 176 A7 7 0 0 1 1073 183 Z" fill="#161616"/>
+    <circle cx="1092" cy="183" r="7" fill="#FFFFFF" stroke="#161616" stroke-width="1.5"/>
+    <path d="M1092 176 A7 7 0 0 1 1092 190 Z" fill="#161616"/>
+    <circle cx="1118" cy="183" r="7" fill="#FFFFFF" stroke="#161616" stroke-width="1.5"/>
+    <path d="M1118 183 L1118 176 A7 7 0 1 1 1111 183 Z" fill="#161616"/>
+    <circle cx="1144" cy="183" r="7" fill="#161616" stroke="#161616" stroke-width="1.5"/>
+    <text x="1158" y="188" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">높음</text>
+  </g>
+  <g id="recommended-column">
+    <rect x="784" y="202" width="216" height="410" fill="#E8EEFC"/>
+    <rect x="784" y="202" width="216" height="3" fill="#1E4FD8"/>
+    <text x="892" y="226" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#1E4FD8">권고안</text>
+  </g>
+  <g id="table-head">
+    <text x="64" y="264" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">평가 기준</text>
+    <text x="336" y="264" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">가중치</text>
+    <text x="460" y="248" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{OPTION_1}}</text>
+    <text x="460" y="266" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{OPTION_1_NOTE}}</text>
+    <text x="676" y="248" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{OPTION_2}}</text>
+    <text x="676" y="266" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{OPTION_2_NOTE}}</text>
+    <text x="892" y="248" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{OPTION_3}}</text>
+    <text x="892" y="266" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{OPTION_3_NOTE}}</text>
+    <text x="1108" y="248" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{OPTION_4}}</text>
+    <text x="1108" y="266" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{OPTION_4_NOTE}}</text>
+    <line x1="64" y1="276" x2="1216" y2="276" stroke="#C6C6C6" stroke-width="1"/>
+  </g>
+  <g id="table-row-1">
+    <text x="64" y="311" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{CRITERION_1}}</text>
+    <text x="336" y="311" text-anchor="end" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#6F6F6F">30%</text>
+    <circle cx="460" cy="305" r="11" fill="#FFFFFF" stroke="#161616" stroke-width="1.5"/>
+    <path d="M460 294 A11 11 0 0 1 460 316 Z" fill="#161616"/>
+    <circle cx="676" cy="305" r="11" fill="#FFFFFF" stroke="#161616" stroke-width="1.5"/>
+    <path d="M676 305 L676 294 A11 11 0 1 1 665 305 Z" fill="#161616"/>
+    <circle cx="892" cy="305" r="11" fill="#161616" stroke="#161616" stroke-width="1.5"/>
+    <circle cx="1108" cy="305" r="11" fill="#FFFFFF" stroke="#161616" stroke-width="1.5"/>
+    <path d="M1108 305 L1108 294 A11 11 0 1 1 1097 305 Z" fill="#161616"/>
+    <line x1="64" y1="332" x2="1216" y2="332" stroke="#E0E0E0" stroke-width="1"/>
+  </g>
+  <g id="table-row-2">
+    <text x="64" y="367" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{CRITERION_2}}</text>
+    <text x="336" y="367" text-anchor="end" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#6F6F6F">25%</text>
+    <circle cx="460" cy="361" r="11" fill="#FFFFFF" stroke="#161616" stroke-width="1.5"/>
+    <path d="M460 361 L460 350 A11 11 0 1 1 449 361 Z" fill="#161616"/>
+    <circle cx="676" cy="361" r="11" fill="#FFFFFF" stroke="#161616" stroke-width="1.5"/>
+    <path d="M676 350 A11 11 0 0 1 676 372 Z" fill="#161616"/>
+    <circle cx="892" cy="361" r="11" fill="#FFFFFF" stroke="#161616" stroke-width="1.5"/>
+    <path d="M892 361 L892 350 A11 11 0 1 1 881 361 Z" fill="#161616"/>
+    <circle cx="1108" cy="361" r="11" fill="#161616" stroke="#161616" stroke-width="1.5"/>
+    <line x1="64" y1="388" x2="1216" y2="388" stroke="#E0E0E0" stroke-width="1"/>
+  </g>
+  <g id="table-row-3">
+    <text x="64" y="423" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{CRITERION_3}}</text>
+    <text x="336" y="423" text-anchor="end" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#6F6F6F">20%</text>
+    <circle cx="460" cy="417" r="11" fill="#161616" stroke="#161616" stroke-width="1.5"/>
+    <circle cx="676" cy="417" r="11" fill="#FFFFFF" stroke="#161616" stroke-width="1.5"/>
+    <path d="M676 406 A11 11 0 0 1 676 428 Z" fill="#161616"/>
+    <circle cx="892" cy="417" r="11" fill="#FFFFFF" stroke="#161616" stroke-width="1.5"/>
+    <path d="M892 417 L892 406 A11 11 0 1 1 881 417 Z" fill="#161616"/>
+    <circle cx="1108" cy="417" r="11" fill="#FFFFFF" stroke="#161616" stroke-width="1.5"/>
+    <path d="M1108 417 L1108 406 A11 11 0 0 1 1119 417 Z" fill="#161616"/>
+    <line x1="64" y1="444" x2="1216" y2="444" stroke="#E0E0E0" stroke-width="1"/>
+  </g>
+  <g id="table-row-4">
+    <text x="64" y="479" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{CRITERION_4}}</text>
+    <text x="336" y="479" text-anchor="end" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#6F6F6F">15%</text>
+    <circle cx="460" cy="473" r="11" fill="#FFFFFF" stroke="#161616" stroke-width="1.5"/>
+    <path d="M460 473 L460 462 A11 11 0 0 1 471 473 Z" fill="#161616"/>
+    <circle cx="676" cy="473" r="11" fill="#FFFFFF" stroke="#161616" stroke-width="1.5"/>
+    <path d="M676 473 L676 462 A11 11 0 1 1 665 473 Z" fill="#161616"/>
+    <circle cx="892" cy="473" r="11" fill="#161616" stroke="#161616" stroke-width="1.5"/>
+    <circle cx="1108" cy="473" r="11" fill="#FFFFFF" stroke="#161616" stroke-width="1.5"/>
+    <path d="M1108 462 A11 11 0 0 1 1108 484 Z" fill="#161616"/>
+    <line x1="64" y1="500" x2="1216" y2="500" stroke="#E0E0E0" stroke-width="1"/>
+  </g>
+  <g id="table-row-5">
+    <text x="64" y="535" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{CRITERION_5}}</text>
+    <text x="336" y="535" text-anchor="end" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#6F6F6F">10%</text>
+    <circle cx="460" cy="529" r="11" fill="#FFFFFF" stroke="#161616" stroke-width="1.5"/>
+    <path d="M460 518 A11 11 0 0 1 460 540 Z" fill="#161616"/>
+    <circle cx="676" cy="529" r="11" fill="#161616" stroke="#161616" stroke-width="1.5"/>
+    <circle cx="892" cy="529" r="11" fill="#FFFFFF" stroke="#161616" stroke-width="1.5"/>
+    <path d="M892 529 L892 518 A11 11 0 1 1 881 529 Z" fill="#161616"/>
+    <circle cx="1108" cy="529" r="11" fill="#FFFFFF" stroke="#161616" stroke-width="1.5"/>
+    <path d="M1108 518 A11 11 0 0 1 1108 540 Z" fill="#161616"/>
+  </g>
+  <g id="table-total">
+    <line x1="64" y1="556" x2="1216" y2="556" stroke="#161616" stroke-width="1"/>
+    <text x="64" y="592" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">가중 평균 (4점 만점)</text>
+    <text x="460" y="593" text-anchor="middle" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#393939">2.50</text>
+    <text x="676" y="593" text-anchor="middle" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#393939">2.65</text>
+    <text x="892" y="593" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="20" fill="#161616">3.45</text>
+    <text x="1108" y="593" text-anchor="middle" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#393939">2.60</text>
+    <line x1="64" y1="612" x2="1216" y2="612" stroke="#161616" stroke-width="1"/>
+    <text x="64" y="638" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">주: 4점 척도(○ 0점 – ● 4점) 가중 평균. 가중치는 경영위원회 사전 검토안 기준</text>
+  </g>
+  <g id="page-foot">
+    <text x="1120" y="689" text-anchor="end" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#393939">{{BRAND_MARK}}</text>
+  </g>
+</svg>

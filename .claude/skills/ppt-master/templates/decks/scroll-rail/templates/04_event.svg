@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="scroll-rail-master" data-pptx-master-name="Scroll Rail" data-pptx-layout="04_event" data-pptx-layout-name="Event Entry">
+  <!-- Scroll Rail — 04 Event: date on anchor line A, title/detail in the right column -->
+  <rect id="master-bg" width="1280" height="720" fill="#FAFAF7" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-rail" x1="80" y1="628" x2="1200" y2="628" stroke="#D5D8DE" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-rail-start" x1="80" y1="621" x2="80" y2="635" stroke="#8A8F98" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-rail-end" x1="1200" y1="621" x2="1200" y2="635" stroke="#8A8F98" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="layout-entry-top" x1="80" y1="268" x2="1200" y2="268" stroke="#D5D8DE" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <line id="layout-entry-bottom" x1="80" y1="476" x2="1200" y2="476" stroke="#D5D8DE" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="440 300 760 64">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="440" y="352" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="40" letter-spacing="-0.8" fill="#14161A">{{TITLE}}</text>
+  </g>
+
+  <g id="detail-slot" data-pptx-placeholder="body" data-pptx-placeholder-idx="1" data-pptx-placeholder-bounds="440 376 760 84">
+    <text id="detail-carrier" data-pptx-placeholder-carrier="true" x="440" y="404" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="22" fill="#3C4048"><tspan x="440" dy="0">{{DETAIL_1}}</tspan><tspan x="440" dy="34">{{DETAIL_2}}</tspan></text>
+  </g>
+
+  <!-- handoff anchor A (80, 352) — receives 03 year -->
+  <g id="event-date">
+    <text x="80" y="352" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="56" letter-spacing="-1" fill="#FF4F2E">{{WHEN}}</text>
+  </g>
+
+  <!-- faded neighbours: the timeline continues above and below the stop -->
+  <g id="event-trail">
+    <text x="80" y="220" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="22" fill="#8A8F98">{{PREV_DATE}}</text>
+    <text x="440" y="220" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="22" fill="#8A8F98">{{PREV_TITLE}}</text>
+    <text x="80" y="540" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="22" fill="#8A8F98">{{NEXT_DATE}}</text>
+    <text x="440" y="540" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="22" fill="#8A8F98">{{NEXT_TITLE}}</text>
+  </g>
+
+  <g id="claim-source">
+    <text x="1200" y="690" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#8A8F98">{{SOURCE}}</text>
+  </g>
+
+  <!-- stop marker — page 4 of 10: x = 80 + 1120 × (4−1)/(10−1) = 453 -->
+  <g id="rail-marker">
+    <line x1="80" y1="628" x2="453" y2="628" stroke="#14161A" stroke-width="2"/>
+    <circle cx="453" cy="628" r="12" fill="#FF4F2E" fill-opacity="0.16"/>
+    <circle cx="453" cy="628" r="6" fill="#FF4F2E"/>
+    <text x="453" y="658" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" letter-spacing="0.4" fill="#14161A">{{STOP_LABEL}}</text>
+  </g>
+
+  <g id="page-foot">
+    <text x="80" y="690" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#8A8F98">{{BRAND_MARK}}</text>
+  </g>
+</svg>

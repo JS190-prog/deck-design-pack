@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="motion-master" data-pptx-master-name="Motion Cue" data-pptx-layout="06_count_up" data-pptx-layout-name="Count-up KPI">
+  <!-- Motion Cue — 06 Count-up: one giant yellow KPI with speed lines, two supporting stats -->
+  <rect id="master-bg" width="1280" height="720" fill="#0D0F14" data-pptx-layer="master" data-pptx-editable="false"/>
+  <path id="master-crop-marks" d="M28 52V28H52 M1228 28H1252V52 M1252 668V692H1228 M52 692H28V668" fill="none" stroke="#6B7280" stroke-width="1.5" data-pptx-layer="master" data-pptx-editable="false"/>
+  <path id="layout-ruler" d="M240 72H1200 M240 63V72 M280 68V72 M320 68V72 M360 68V72 M400 63V72 M440 68V72 M480 68V72 M520 68V72 M560 63V72 M600 68V72 M640 68V72 M680 68V72 M720 63V72 M760 68V72 M800 68V72 M840 68V72 M880 63V72 M920 68V72 M960 68V72 M1000 68V72 M1040 63V72 M1080 68V72 M1120 68V72 M1160 68V72 M1200 63V72" fill="none" stroke="#2A2F3A" stroke-width="1.5" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <line id="layout-kpi-divider" x1="848" y1="224" x2="848" y2="608" stroke="#2A2F3A" stroke-width="1.5" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="80 96 1120 64">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="80" y="146" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="40" letter-spacing="-0.5" fill="#F5F7FA">{{TITLE}}</text>
+  </g>
+  <g id="page-number-slot" data-pptx-placeholder="slide-number" data-pptx-placeholder-idx="12" data-pptx-placeholder-bounds="1040 662 160 28">
+    <text id="page-number-carrier" data-pptx-placeholder-carrier="true" x="1200" y="680" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6B7280">{{PAGE_LABEL}}</text>
+  </g>
+  <g id="page-footer" data-pptx-role="footer">
+    <text x="80" y="680" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6B7280">{{BRAND_MARK}}</text>
+  </g>
+  <g id="timecode-header" data-pptx-role="header">
+    <text x="80" y="77" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="1.5" fill="#A8AEBD">{{TIMECODE}}</text>
+  </g>
+  <g id="kpi">
+    <line x1="80" y1="330" x2="148" y2="330" stroke="#4DD8FF" stroke-width="6" stroke-linecap="round" opacity="1"/>
+    <line x1="100" y1="370" x2="148" y2="370" stroke="#4DD8FF" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+    <line x1="120" y1="410" x2="148" y2="410" stroke="#4DD8FF" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
+    <text x="160" y="448" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="200" fill="#FFE14D" letter-spacing="-5">{{KPI_VALUE}}</text>
+  </g>
+  <g id="value-note">
+    <text x="168" y="512" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="28" fill="#F5F7FA" letter-spacing="-0.2">{{KPI_LABEL}}</text>
+    <text x="168" y="552" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#A8AEBD">{{KPI_NOTE}}</text>
+  </g>
+  <g id="callout-stats">
+    <rect x="888" y="262" width="4" height="48" fill="#4DD8FF"/>
+    <text x="912" y="304" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="48" fill="#F5F7FA" font-weight="700" letter-spacing="-1">{{STAT_1_VALUE}}</text>
+    <text x="912" y="344" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#A8AEBD">{{STAT_1_LABEL}}</text>
+    <line x1="888" y1="400" x2="1200" y2="400" stroke="#2A2F3A" stroke-width="1"/>
+    <rect x="888" y="446" width="4" height="48" fill="#4DD8FF" opacity="0.5"/>
+    <text x="912" y="488" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="48" fill="#F5F7FA" font-weight="700" letter-spacing="-1">{{STAT_2_VALUE}}</text>
+    <text x="912" y="528" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#A8AEBD">{{STAT_2_LABEL}}</text>
+  </g>
+</svg>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="depth-master" data-pptx-master-name="Depth Field" data-pptx-layout="10_closing" data-pptx-layout-name="Closing (Render)">
+  <!-- Depth Field — 10 Closing: particle-globe render (df_closing.jpg) right, closing line + contact left -->
+  <defs>
+    <radialGradient id="closing-fallback-fill" cx="0.72" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#5CE1E6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#060B1A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="closing-scrim-fill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#060B1A" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#060B1A" stop-opacity="0.45"/>
+      <stop offset="62%" stop-color="#060B1A" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect id="master-bg" width="1280" height="720" fill="#060B1A" data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="layout-closing-fallback" width="1280" height="720" fill="url(#closing-fallback-fill)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <image id="layout-closing-render" href="../images/df_closing.jpg" x="0" y="0" width="1280" height="720" preserveAspectRatio="xMidYMid slice" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-closing-scrim" width="1280" height="720" fill="url(#closing-scrim-fill)" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="80 266 620 78">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="80" y="324" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="56" letter-spacing="-1" fill="#EAF0FF">{{CLOSING_MESSAGE}}</text>
+  </g>
+
+  <g id="subtitle-slot" data-pptx-placeholder="subtitle" data-pptx-placeholder-idx="2" data-pptx-placeholder-bounds="80 346 600 44">
+    <text id="subtitle-carrier" data-pptx-placeholder-carrier="true" x="80" y="376" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="22" letter-spacing="-0.2" fill="#AEB9D6">{{ENDING_SUBTITLE}}</text>
+  </g>
+
+  <g id="page-header">
+    <text x="80" y="236" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="1.5" fill="#5CE1E6">{{DEPTH_TAG}}<tspan fill="#6F7BA0"> · {{KICKER}}</tspan></text>
+  </g>
+
+  <g id="closing-contact">
+    <rect x="80" y="532" width="24" height="2" fill="#5CE1E6"/>
+    <text x="80" y="572" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#EAF0FF">{{PRESENTER}}</text>
+    <text x="80" y="602" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#AEB9D6">{{CONTACT_INFO}}</text>
+  </g>
+
+  <g id="page-foot">
+    <text x="80" y="676" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F7BA0">{{BRAND_MARK}}</text>
+    <text x="1200" y="676" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F7BA0">{{PAGE_LABEL}}</text>
+  </g>
+</svg>

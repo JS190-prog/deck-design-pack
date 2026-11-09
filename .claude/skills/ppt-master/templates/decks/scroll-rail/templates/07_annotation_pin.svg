@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="scroll-rail-master" data-pptx-master-name="Scroll Rail" data-pptx-layout="chart_stage" data-pptx-layout-name="Chart Stage">
+  <!-- Scroll Rail — 07 Annotation pin: same chart stage as 06, one pinned callout (sample data) -->
+  <rect id="master-bg" width="1280" height="720" fill="#FAFAF7" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-rail" x1="80" y1="628" x2="1200" y2="628" stroke="#D5D8DE" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-rail-start" x1="80" y1="621" x2="80" y2="635" stroke="#8A8F98" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-rail-end" x1="1200" y1="621" x2="1200" y2="635" stroke="#8A8F98" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="layout-plot-baseline" x1="80" y1="568" x2="1200" y2="568" stroke="#14161A" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="80 96 1120 64">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="80" y="144" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="40" letter-spacing="-0.8" fill="#14161A">{{TITLE}}</text>
+  </g>
+
+  <g id="support-slot" data-pptx-placeholder="body" data-pptx-placeholder-idx="1" data-pptx-placeholder-bounds="80 164 1120 44">
+    <text id="support-carrier" data-pptx-placeholder-carrier="true" x="80" y="192" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="22" fill="#3C4048">{{SUPPORT}}</text>
+  </g>
+
+  <g id="chart-legend">
+    <line x1="80" y1="244" x2="104" y2="244" stroke="#14161A" stroke-width="2.5"/>
+    <text x="114" y="250" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="16" fill="#3C4048">{{LEGEND_A}}</text>
+    <line x1="320" y1="244" x2="344" y2="244" stroke="#0F9D8A" stroke-width="2.5"/>
+    <text x="354" y="250" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="16" fill="#3C4048">{{LEGEND_B}}</text>
+  </g>
+
+  <!-- chart-plot-area: 80,368,1200,568 -->
+  <g id="chart-body">
+    <line x1="80" y1="368" x2="1200" y2="368" stroke="#E6E8EC" stroke-width="1"/>
+    <line x1="80" y1="418" x2="1200" y2="418" stroke="#E6E8EC" stroke-width="1"/>
+    <line x1="80" y1="468" x2="1200" y2="468" stroke="#E6E8EC" stroke-width="1"/>
+    <line x1="80" y1="518" x2="1200" y2="518" stroke="#E6E8EC" stroke-width="1"/>
+    <text x="80" y="362" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="16" fill="#8A8F98">40</text>
+    <text x="80" y="412" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="16" fill="#8A8F98">30</text>
+    <text x="80" y="462" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="16" fill="#8A8F98">20</text>
+    <text x="80" y="512" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="16" fill="#8A8F98">10</text>
+    <text x="80" y="562" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="16" fill="#8A8F98">0</text>
+    <text x="140" y="596" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="16" fill="#8A8F98">2020</text>
+    <text x="344" y="596" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="16" fill="#8A8F98">2021</text>
+    <text x="548" y="596" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="16" fill="#8A8F98">2022</text>
+    <text x="752" y="596" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="16" fill="#8A8F98">2023</text>
+    <text x="956" y="596" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="16" fill="#8A8F98">2024</text>
+    <text x="1160" y="596" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="16" fill="#8A8F98">2025</text>
+  </g>
+
+  <g id="chart-series-b">
+    <path d="M 140 528 L 344 508 L 548 488 L 752 473 L 956 458 L 1160 443" fill="none" stroke="#0F9D8A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g id="chart-series-a">
+    <path d="M 140 508 L 344 473 L 548 433 L 752 398 L 956 393 L 1160 388" fill="none" stroke="#14161A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- the one pin — same stop-marker motif as the rail -->
+  <g id="chart-pin">
+    <line x1="752" y1="384" x2="752" y2="276" stroke="#FF4F2E" stroke-width="1.5"/>
+    <circle cx="752" cy="398" r="12" fill="#FF4F2E" fill-opacity="0.16"/>
+    <circle cx="752" cy="398" r="6" fill="#FF4F2E"/>
+    <text x="768" y="292" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" letter-spacing="-0.2" fill="#14161A">{{PIN_TITLE}}</text>
+    <text x="768" y="322" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#3C4048">{{PIN_NOTE}}</text>
+  </g>
+
+  <g id="claim-source">
+    <text x="1200" y="690" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#8A8F98">{{SOURCE}}</text>
+  </g>
+
+  <!-- stop marker — page 7 of 10: x = 80 + 1120 × (7−1)/(10−1) = 827 -->
+  <g id="rail-marker">
+    <line x1="80" y1="628" x2="827" y2="628" stroke="#14161A" stroke-width="2"/>
+    <circle cx="827" cy="628" r="12" fill="#FF4F2E" fill-opacity="0.16"/>
+    <circle cx="827" cy="628" r="6" fill="#FF4F2E"/>
+    <text x="827" y="658" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" letter-spacing="0.4" fill="#14161A">{{STOP_LABEL}}</text>
+  </g>
+
+  <g id="page-foot">
+    <text x="80" y="690" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#8A8F98">{{BRAND_MARK}}</text>
+  </g>
+</svg>

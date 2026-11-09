@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="scroll-rail-master" data-pptx-master-name="Scroll Rail" data-pptx-layout="02_overview" data-pptx-layout-name="Overview · Journey Rail">
+  <!-- Scroll Rail — 02 Overview: every stop on one journey rail (line A) -->
+  <rect id="master-bg" width="1280" height="720" fill="#FAFAF7" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-rail" x1="80" y1="628" x2="1200" y2="628" stroke="#D5D8DE" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-rail-start" x1="80" y1="621" x2="80" y2="635" stroke="#8A8F98" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-rail-end" x1="1200" y1="621" x2="1200" y2="635" stroke="#8A8F98" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="layout-journey-rail" x1="80" y1="352" x2="1200" y2="352" stroke="#14161A" stroke-width="2" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <line id="layout-journey-end" x1="1200" y1="343" x2="1200" y2="361" stroke="#14161A" stroke-width="2" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="80 96 1120 64">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="80" y="144" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="40" letter-spacing="-0.8" fill="#14161A">{{TITLE}}</text>
+  </g>
+
+  <g id="support-slot" data-pptx-placeholder="body" data-pptx-placeholder-idx="1" data-pptx-placeholder-bounds="80 164 1120 44">
+    <text id="support-carrier" data-pptx-placeholder-carrier="true" x="80" y="192" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="22" fill="#3C4048">{{SUPPORT}}</text>
+  </g>
+
+  <g id="stop-1">
+    <text x="80" y="326" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="16" letter-spacing="0.4" fill="#8A8F98">{{STOP_1_NO}}</text>
+    <circle cx="80" cy="352" r="7" fill="#14161A"/>
+    <text x="80" y="400" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="22" letter-spacing="-0.2" fill="#14161A">{{STOP_1_TITLE}}</text>
+    <text x="80" y="430" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#3C4048">{{STOP_1_DESC}}</text>
+  </g>
+
+  <g id="stop-2">
+    <text x="304" y="326" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="16" letter-spacing="0.4" fill="#8A8F98">{{STOP_2_NO}}</text>
+    <circle cx="304" cy="352" r="7" fill="#FAFAF7" stroke="#14161A" stroke-width="2"/>
+    <text x="304" y="400" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="22" letter-spacing="-0.2" fill="#14161A">{{STOP_2_TITLE}}</text>
+    <text x="304" y="430" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#3C4048">{{STOP_2_DESC}}</text>
+  </g>
+
+  <g id="stop-3">
+    <text x="528" y="326" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="16" letter-spacing="0.4" fill="#8A8F98">{{STOP_3_NO}}</text>
+    <circle cx="528" cy="352" r="7" fill="#FAFAF7" stroke="#14161A" stroke-width="2"/>
+    <text x="528" y="400" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="22" letter-spacing="-0.2" fill="#14161A">{{STOP_3_TITLE}}</text>
+    <text x="528" y="430" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#3C4048">{{STOP_3_DESC}}</text>
+  </g>
+
+  <g id="stop-4">
+    <text x="752" y="326" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="16" letter-spacing="0.4" fill="#8A8F98">{{STOP_4_NO}}</text>
+    <circle cx="752" cy="352" r="7" fill="#FAFAF7" stroke="#14161A" stroke-width="2"/>
+    <text x="752" y="400" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="22" letter-spacing="-0.2" fill="#14161A">{{STOP_4_TITLE}}</text>
+    <text x="752" y="430" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#3C4048">{{STOP_4_DESC}}</text>
+  </g>
+
+  <g id="stop-5">
+    <text x="976" y="326" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="16" letter-spacing="0.4" fill="#8A8F98">{{STOP_5_NO}}</text>
+    <circle cx="976" cy="352" r="7" fill="#FAFAF7" stroke="#14161A" stroke-width="2"/>
+    <text x="976" y="400" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="22" letter-spacing="-0.2" fill="#14161A">{{STOP_5_TITLE}}</text>
+    <text x="976" y="430" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#3C4048">{{STOP_5_DESC}}</text>
+  </g>
+
+  <!-- stop marker — page 2 of 10: x = 80 + 1120 × (2−1)/(10−1) = 204 -->
+  <g id="rail-marker">
+    <line x1="80" y1="628" x2="204" y2="628" stroke="#14161A" stroke-width="2"/>
+    <circle cx="204" cy="628" r="12" fill="#FF4F2E" fill-opacity="0.16"/>
+    <circle cx="204" cy="628" r="6" fill="#FF4F2E"/>
+    <text x="204" y="658" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" letter-spacing="0.4" fill="#14161A">{{STOP_LABEL}}</text>
+  </g>
+
+  <g id="page-foot">
+    <text x="80" y="690" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#8A8F98">{{BRAND_MARK}}</text>
+  </g>
+</svg>

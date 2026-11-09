@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="depth-master" data-pptx-master-name="Depth Field" data-pptx-layout="08_perspective_arch" data-pptx-layout-name="Architecture (Perspective Floor)">
+  <!-- Depth Field — 08 Architecture: five nodes standing on a perspective floor; the core node carries the page's single glow -->
+  <defs>
+    <linearGradient id="arch-floor-stroke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E2A4A" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#1E2A4A" stop-opacity="0.95"/>
+    </linearGradient>
+    <radialGradient id="arch-core-halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#8B7CFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#8B7CFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect id="master-bg" width="1280" height="720" fill="#060B1A" data-pptx-layer="master" data-pptx-editable="false"/>
+  <path id="layout-arch-floor" d="M562.0 318.0L0.0 447.7M568.0 318.0L0.0 460.0M574.0 318.0L0.0 474.5M580.0 318.0L0.0 492.0M586.0 318.0L0.0 513.3M592.0 318.0L0.0 540.0M598.0 318.0L0.0 574.3M604.0 318.0L0.0 620.0M610.0 318.0L0.0 684.0M616.0 318.0L80.0 720.0M622.0 318.0L220.0 720.0M628.0 318.0L360.0 720.0M634.0 318.0L500.0 720.0M640.0 318.0L640.0 720.0M646.0 318.0L780.0 720.0M652.0 318.0L920.0 720.0M658.0 318.0L1060.0 720.0M664.0 318.0L1200.0 720.0M670.0 318.0L1280.0 684.0M676.0 318.0L1280.0 620.0M682.0 318.0L1280.0 574.3M688.0 318.0L1280.0 540.0M694.0 318.0L1280.0 513.3M700.0 318.0L1280.0 492.0M706.0 318.0L1280.0 474.5M712.0 318.0L1280.0 460.0M718.0 318.0L1280.0 447.7M0 570.0H1280M0 498.9H1280M0 457.5H1280M0 430.3H1280M0 411.2H1280M0 396.9H1280M0 385.9H1280M0 377.1H1280M0 370.0H1280" fill="none" stroke="url(#arch-floor-stroke)" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="80 112 1120 56">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="80" y="152" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="40" letter-spacing="-0.6" fill="#EAF0FF">{{TITLE}}</text>
+  </g>
+
+  <g id="page-header">
+    <text x="80" y="96" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="1.5" fill="#5CE1E6">{{DEPTH_TAG}}<tspan fill="#6F7BA0"> · {{KICKER}}</tspan></text>
+    <text x="80" y="196" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="20" letter-spacing="-0.1" fill="#AEB9D6">{{LEAD}}</text>
+  </g>
+
+  <g id="arch-links">
+    <line x1="536" y1="372" x2="492" y2="452" stroke="#5CE1E6" stroke-opacity="0.8" stroke-width="1.5"/>
+    <line x1="744" y1="372" x2="788" y2="452" stroke="#5CE1E6" stroke-opacity="0.8" stroke-width="1.5"/>
+    <line x1="380" y1="472" x2="354" y2="590" stroke="#8B7CFF" stroke-opacity="0.8" stroke-width="1.5"/>
+    <line x1="900" y1="472" x2="926" y2="590" stroke="#8B7CFF" stroke-opacity="0.8" stroke-width="1.5"/>
+    <line x1="492" y1="452" x2="788" y2="452" stroke="#6F7BA0" stroke-opacity="0.6" stroke-width="1.5" stroke-dasharray="6 6"/>
+    <circle cx="514" cy="412" r="3.5" fill="#5CE1E6"/>
+    <circle cx="766" cy="412" r="3.5" fill="#5CE1E6"/>
+    <circle cx="367" cy="531" r="3.5" fill="#8B7CFF"/>
+    <circle cx="913" cy="531" r="3.5" fill="#8B7CFF"/>
+  </g>
+
+  <g id="node-1">
+    <ellipse cx="640" cy="372" rx="220" ry="46" fill="url(#arch-core-halo)"/>
+    <ellipse cx="640" cy="372" rx="104" ry="18" fill="#0E1630" stroke="#8B7CFF" stroke-width="1.5"/>
+    <line x1="640" y1="332" x2="640" y2="372" stroke="#8B7CFF" stroke-width="1.5"/>
+    <rect x="524" y="256" width="232" height="76" rx="6" fill="#0E1630" stroke="#8B7CFF" stroke-width="1"/>
+    <text x="540" y="287" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#EAF0FF">{{NODE_1_TITLE}}</text>
+    <text x="540" y="315" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#AEB9D6">{{NODE_1_DESC}}</text>
+  </g>
+
+  <g id="node-2">
+    <ellipse cx="380" cy="452" rx="112" ry="20" fill="#0E1630" stroke="#5CE1E6" stroke-width="1.5"/>
+    <line x1="380" y1="416" x2="380" y2="452" stroke="#5CE1E6" stroke-width="1.5"/>
+    <rect x="264" y="340" width="232" height="76" rx="6" fill="#0E1630" stroke="#1E2A4A" stroke-width="1"/>
+    <text x="280" y="371" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#EAF0FF">{{NODE_2_TITLE}}</text>
+    <text x="280" y="399" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#AEB9D6">{{NODE_2_DESC}}</text>
+  </g>
+
+  <g id="node-3">
+    <ellipse cx="900" cy="452" rx="112" ry="20" fill="#0E1630" stroke="#5CE1E6" stroke-width="1.5"/>
+    <line x1="900" y1="416" x2="900" y2="452" stroke="#5CE1E6" stroke-width="1.5"/>
+    <rect x="784" y="340" width="232" height="76" rx="6" fill="#0E1630" stroke="#1E2A4A" stroke-width="1"/>
+    <text x="800" y="371" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#EAF0FF">{{NODE_3_TITLE}}</text>
+    <text x="800" y="399" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#AEB9D6">{{NODE_3_DESC}}</text>
+  </g>
+
+  <g id="node-4">
+    <ellipse cx="230" cy="590" rx="124" ry="26" fill="#0E1630" stroke="#6F7BA0" stroke-width="1.5"/>
+    <line x1="230" y1="550" x2="230" y2="590" stroke="#6F7BA0" stroke-width="1.5"/>
+    <rect x="114" y="474" width="232" height="76" rx="6" fill="#0E1630" stroke="#1E2A4A" stroke-width="1"/>
+    <text x="130" y="505" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#EAF0FF">{{NODE_4_TITLE}}</text>
+    <text x="130" y="533" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#AEB9D6">{{NODE_4_DESC}}</text>
+  </g>
+
+  <g id="node-5">
+    <ellipse cx="1050" cy="590" rx="124" ry="26" fill="#0E1630" stroke="#6F7BA0" stroke-width="1.5"/>
+    <line x1="1050" y1="550" x2="1050" y2="590" stroke="#6F7BA0" stroke-width="1.5"/>
+    <rect x="934" y="474" width="232" height="76" rx="6" fill="#0E1630" stroke="#1E2A4A" stroke-width="1"/>
+    <text x="950" y="505" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#EAF0FF">{{NODE_5_TITLE}}</text>
+    <text x="950" y="533" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#AEB9D6">{{NODE_5_DESC}}</text>
+  </g>
+
+  <g id="page-foot">
+    <text x="80" y="676" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F7BA0">{{BRAND_MARK}}</text>
+    <text x="1200" y="676" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F7BA0">{{PAGE_LABEL}}</text>
+  </g>
+</svg>

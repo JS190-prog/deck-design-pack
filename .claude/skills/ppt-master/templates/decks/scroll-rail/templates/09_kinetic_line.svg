@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="scroll-rail-master" data-pptx-master-name="Scroll Rail" data-pptx-layout="09_kinetic_line" data-pptx-layout-name="Kinetic Line">
+  <!-- Scroll Rail — 09 Kinetic line: one sentence, one word in the door frame (= 08 inner frame) -->
+  <rect id="master-bg" width="1280" height="720" fill="#FAFAF7" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-rail" x1="80" y1="628" x2="1200" y2="628" stroke="#D5D8DE" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-rail-start" x1="80" y1="621" x2="80" y2="635" stroke="#8A8F98" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-rail-end" x1="1200" y1="621" x2="1200" y2="635" stroke="#8A8F98" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="layout-word-door" x="80" y="256" width="400" height="128" fill="#FF4F2E" fill-opacity="0.08" stroke="#FF4F2E" stroke-width="2" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="80 152 1120 84">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="80" y="216" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="64" letter-spacing="-1.2" fill="#14161A">{{LINE_LEAD}}</text>
+  </g>
+
+  <g id="support-slot" data-pptx-placeholder="body" data-pptx-placeholder-idx="1" data-pptx-placeholder-bounds="80 420 1120 44">
+    <text id="support-carrier" data-pptx-placeholder-carrier="true" x="80" y="448" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="22" fill="#3C4048">{{SUPPORT}}</text>
+  </g>
+
+  <!-- word door — centered in frame (80,256,400,128); baseline on line A -->
+  <g id="kinetic-word">
+    <text x="280" y="352" text-anchor="middle" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="88" letter-spacing="-1.5" fill="#FF4F2E">{{WORD}}</text>
+  </g>
+
+  <g id="kinetic-tail">
+    <text x="504" y="352" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="64" letter-spacing="-1.2" fill="#14161A">{{LINE_TAIL}}</text>
+  </g>
+
+  <g id="claim-source">
+    <text x="1200" y="690" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#8A8F98">{{SOURCE}}</text>
+  </g>
+
+  <!-- stop marker — page 9 of 10: x = 80 + 1120 × (9−1)/(10−1) = 1076 -->
+  <g id="rail-marker">
+    <line x1="80" y1="628" x2="1076" y2="628" stroke="#14161A" stroke-width="2"/>
+    <circle cx="1076" cy="628" r="12" fill="#FF4F2E" fill-opacity="0.16"/>
+    <circle cx="1076" cy="628" r="6" fill="#FF4F2E"/>
+    <text x="1076" y="658" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" letter-spacing="0.4" fill="#14161A">{{STOP_LABEL}}</text>
+  </g>
+
+  <g id="page-foot">
+    <text x="80" y="690" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#8A8F98">{{BRAND_MARK}}</text>
+  </g>
+</svg>

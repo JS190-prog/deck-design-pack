@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="ledger_title_master" data-pptx-master-name="Board Ledger — Title" data-pptx-layout="ledger_section" data-pptx-layout-name="Section">
+  <!-- Board Ledger — 04 Section: large chapter number, chapter tracker strip -->
+  <rect id="master-bg" width="1280" height="720" fill="#FFFFFF" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-footer-rule" x1="64" y1="664" x2="1216" y2="664" stroke="#E0E0E0" stroke-width="1" data-pptx-layer="master" data-pptx-editable="false"/>
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="64 340 1152 64">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="64" y="388" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="44" letter-spacing="-0.8" fill="#161616">{{CHAPTER_TITLE}}</text>
+  </g>
+  <g id="desc-slot" data-pptx-placeholder="body" data-pptx-placeholder-idx="1" data-pptx-placeholder-bounds="64 412 768 68">
+    <text id="desc-carrier" data-pptx-placeholder-carrier="true" x="64" y="444" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#393939">{{CHAPTER_DESC}}</text>
+  </g>
+  <g id="page-number-slot" data-pptx-placeholder="slide-number" data-pptx-placeholder-idx="3" data-pptx-placeholder-bounds="1136 672 80 24">
+    <text id="page-number-carrier" data-pptx-placeholder-carrier="true" x="1216" y="689" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#161616">{{PAGE_NUM}}</text>
+  </g>
+  <g id="header-meta">
+    <text x="1216" y="76" text-anchor="end" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" letter-spacing="0.3" fill="#6F6F6F">{{CLASSIFICATION}}</text>
+  </g>
+  <g id="section-number">
+    <text x="60" y="302" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="104" letter-spacing="-3" fill="#161616">{{CHAPTER_NUM}}</text>
+  </g>
+  <g id="section-tracker">
+    <rect x="64" y="556" width="216" height="4" fill="#E0E0E0"/>
+    <text x="64" y="588" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">01</text>
+    <text x="92" y="588" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#6F6F6F">{{TRACK_1}}</text>
+    <rect x="298" y="556" width="216" height="4" fill="#1E4FD8"/>
+    <text x="298" y="588" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#161616">02</text>
+    <text x="326" y="588" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#161616">{{TRACK_2}}</text>
+    <rect x="532" y="556" width="216" height="4" fill="#E0E0E0"/>
+    <text x="532" y="588" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">03</text>
+    <text x="560" y="588" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#6F6F6F">{{TRACK_3}}</text>
+    <rect x="766" y="556" width="216" height="4" fill="#E0E0E0"/>
+    <text x="766" y="588" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">04</text>
+    <text x="794" y="588" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#6F6F6F">{{TRACK_4}}</text>
+    <rect x="1000" y="556" width="216" height="4" fill="#E0E0E0"/>
+    <text x="1000" y="588" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">05</text>
+    <text x="1028" y="588" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#6F6F6F">{{TRACK_5}}</text>
+  </g>
+  <g id="page-foot">
+    <text x="64" y="689" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#393939">{{BRAND_MARK}}</text>
+  </g>
+</svg>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="ledger_content_master" data-pptx-master-name="Board Ledger — Content" data-pptx-layout="ledger_kpi" data-pptx-layout-name="KPI Scorecard">
+  <!-- Board Ledger — 10 KPI scorecard: 4 ruled tiles (actual / plan / variance / sparkline), commentary row (sample data) -->
+  <rect id="master-bg" width="1280" height="720" fill="#FFFFFF" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-header-rule" x1="64" y1="64" x2="1216" y2="64" stroke="#C6C6C6" stroke-width="1" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-footer-rule" x1="64" y1="664" x2="1216" y2="664" stroke="#E0E0E0" stroke-width="1" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="layout-kpi-rule-1" x1="64" y1="218" x2="328" y2="218" stroke="#161616" stroke-width="2" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <line id="layout-kpi-rule-2" x1="352" y1="218" x2="616" y2="218" stroke="#161616" stroke-width="2" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <line id="layout-kpi-rule-3" x1="640" y1="218" x2="904" y2="218" stroke="#161616" stroke-width="2" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <line id="layout-kpi-rule-4" x1="928" y1="218" x2="1192" y2="218" stroke="#161616" stroke-width="2" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <line id="layout-commentary-rule" x1="64" y1="556" x2="1216" y2="556" stroke="#C6C6C6" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="64 84 1152 76">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="64" y="110" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="28" letter-spacing="-0.4" fill="#161616">{{TITLE}}</text>
+  </g>
+  <g id="source-slot" data-pptx-placeholder="footer" data-pptx-placeholder-idx="2" data-pptx-placeholder-bounds="64 672 800 24">
+    <text id="source-carrier" data-pptx-placeholder-carrier="true" x="64" y="689" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#6F6F6F">{{SOURCE}}</text>
+  </g>
+  <g id="page-number-slot" data-pptx-placeholder="slide-number" data-pptx-placeholder-idx="3" data-pptx-placeholder-bounds="1136 672 80 24">
+    <text id="page-number-carrier" data-pptx-placeholder-carrier="true" x="1216" y="689" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#161616">{{PAGE_NUM}}</text>
+  </g>
+  <g id="tracker">
+    <text x="64" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#161616">01</text>
+    <text x="88" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#161616">{{TRACK_1}}</text>
+    <text x="208" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">02</text>
+    <text x="232" y="52" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{TRACK_2}}</text>
+    <text x="352" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">03</text>
+    <text x="376" y="52" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{TRACK_3}}</text>
+    <text x="496" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">04</text>
+    <text x="520" y="52" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{TRACK_4}}</text>
+    <text x="640" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">05</text>
+    <text x="664" y="52" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{TRACK_5}}</text>
+    <rect x="64" y="62" width="128" height="3" fill="#1E4FD8"/>
+  </g>
+  <g id="header-meta">
+    <text x="1216" y="52" text-anchor="end" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" letter-spacing="0.3" fill="#6F6F6F">{{CLASSIFICATION}}</text>
+  </g>
+  <g id="exhibit-head">
+    <text x="64" y="188" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#161616" xml:space="preserve">Exhibit {{EXHIBIT_NO}}<tspan fill="#C6C6C6">  ·  </tspan><tspan font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" fill="#393939">{{EXHIBIT_TITLE}}</tspan></text>
+    <text x="1216" y="188" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">기준: {{AS_OF}}</text>
+  </g>
+  <g id="kpi-1">
+    <text x="64" y="250" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{KPI_1}}</text>
+    <text x="64" y="272" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">억원 · 3분기 누적</text>
+    <text x="64" y="330" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="40" letter-spacing="-0.8" fill="#161616">1,284</text>
+    <text x="64" y="370" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">계획</text>
+    <text x="242" y="371" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#393939">1,250</text>
+    <line x1="64" y1="384" x2="328" y2="384" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="64" y="406" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">계획 대비</text>
+    <polygon points="224,404 230,396 236,404" fill="#1F7A3A"/>
+    <text x="242" y="407" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#1F7A3A">+2.7%</text>
+    <line x1="64" y1="420" x2="328" y2="420" stroke="#E0E0E0" stroke-width="1"/>
+    <line x1="64" y1="451.6" x2="328" y2="451.6" stroke="#C6C6C6" stroke-width="1" stroke-dasharray="3 3"/>
+    <polyline points="64,496 101.7,491.1 139.4,484.5 177.1,477.9 214.9,473 252.6,464.8 290.3,454.9 328,446" fill="none" stroke="#6F6F6F" stroke-width="1.5" stroke-linejoin="round"/>
+    <circle cx="328" cy="446" r="3.5" fill="#161616"/>
+    <text x="64" y="526" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#6F6F6F">최근 8분기 · 점선 계획</text>
+  </g>
+  <g id="kpi-2">
+    <text x="352" y="250" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{KPI_2}}</text>
+    <text x="352" y="272" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">% · 3분기 누적</text>
+    <text x="352" y="330" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="40" letter-spacing="-0.8" fill="#161616">11.6</text>
+    <text x="352" y="370" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">계획</text>
+    <text x="530" y="371" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#393939">12.0</text>
+    <line x1="352" y1="384" x2="616" y2="384" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="352" y="406" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">계획 대비</text>
+    <polygon points="512,397 518,405 524,397" fill="#B7791F"/>
+    <text x="530" y="407" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#B7791F">−0.4%p</text>
+    <line x1="352" y1="420" x2="616" y2="420" stroke="#E0E0E0" stroke-width="1"/>
+    <line x1="352" y1="471" x2="616" y2="471" stroke="#C6C6C6" stroke-width="1" stroke-dasharray="3 3"/>
+    <polyline points="352,446 389.7,464.8 427.4,452.2 465.1,477.2 502.9,483.5 540.6,471 578.3,489.8 616,496" fill="none" stroke="#6F6F6F" stroke-width="1.5" stroke-linejoin="round"/>
+    <circle cx="616" cy="496" r="3.5" fill="#161616"/>
+    <text x="352" y="526" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#6F6F6F">최근 8분기 · 점선 계획</text>
+  </g>
+  <g id="kpi-3">
+    <text x="640" y="250" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{KPI_3}}</text>
+    <text x="640" y="272" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">억원 · 분기말 잔액</text>
+    <text x="640" y="330" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="40" letter-spacing="-0.8" fill="#161616">3,420</text>
+    <text x="640" y="370" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">계획</text>
+    <text x="818" y="371" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#393939">3,720</text>
+    <line x1="640" y1="384" x2="904" y2="384" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="640" y="406" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">계획 대비</text>
+    <polygon points="800,397 806,405 812,397" fill="#C62828"/>
+    <text x="818" y="407" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#C62828">−8.1%</text>
+    <line x1="640" y1="420" x2="904" y2="420" stroke="#E0E0E0" stroke-width="1"/>
+    <line x1="640" y1="464.8" x2="904" y2="464.8" stroke="#C6C6C6" stroke-width="1" stroke-dasharray="3 3"/>
+    <polyline points="640,446 677.7,451.2 715.4,456.4 753.1,460.6 790.9,466.8 828.6,476.2 866.3,485.6 904,496" fill="none" stroke="#6F6F6F" stroke-width="1.5" stroke-linejoin="round"/>
+    <circle cx="904" cy="496" r="3.5" fill="#161616"/>
+    <text x="640" y="526" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#6F6F6F">최근 8분기 · 점선 계획</text>
+  </g>
+  <g id="kpi-4">
+    <text x="928" y="250" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{KPI_4}}</text>
+    <text x="928" y="272" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">% · 활성 고객 기준</text>
+    <text x="928" y="330" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="40" letter-spacing="-0.8" fill="#161616">94.2</text>
+    <text x="928" y="370" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">계획</text>
+    <text x="1106" y="371" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#393939">93.0</text>
+    <line x1="928" y1="384" x2="1192" y2="384" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="928" y="406" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">계획 대비</text>
+    <polygon points="1088,404 1094,396 1100,404" fill="#1F7A3A"/>
+    <text x="1106" y="407" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#1F7A3A">+1.2%p</text>
+    <line x1="928" y1="420" x2="1192" y2="420" stroke="#E0E0E0" stroke-width="1"/>
+    <line x1="928" y1="471" x2="1192" y2="471" stroke="#C6C6C6" stroke-width="1" stroke-dasharray="3 3"/>
+    <polyline points="928,496 965.7,487.7 1003.4,481.4 1041.1,473.1 1078.9,468.9 1116.6,458.5 1154.3,452.2 1192,446" fill="none" stroke="#6F6F6F" stroke-width="1.5" stroke-linejoin="round"/>
+    <circle cx="1192" cy="446" r="3.5" fill="#161616"/>
+    <text x="928" y="526" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#6F6F6F">최근 8분기 · 점선 계획</text>
+  </g>
+  <g id="commentary">
+    <text x="64" y="592" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#161616">코멘트</text>
+    <text x="160" y="592" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{COMMENTARY}}</text>
+  </g>
+  <g id="page-foot">
+    <text x="1120" y="689" text-anchor="end" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#393939">{{BRAND_MARK}}</text>
+  </g>
+</svg>

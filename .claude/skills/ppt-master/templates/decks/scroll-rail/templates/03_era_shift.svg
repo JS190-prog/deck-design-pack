@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="scroll-rail-master" data-pptx-master-name="Scroll Rail" data-pptx-layout="03_era_shift" data-pptx-layout-name="Era Shift">
+  <!-- Scroll Rail — 03 Era shift: giant year on anchor line A (hands off to 04 date) -->
+  <rect id="master-bg" width="1280" height="720" fill="#FAFAF7" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-rail" x1="80" y1="628" x2="1200" y2="628" stroke="#D5D8DE" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-rail-start" x1="80" y1="621" x2="80" y2="635" stroke="#8A8F98" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-rail-end" x1="1200" y1="621" x2="1200" y2="635" stroke="#8A8F98" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="80 396 1120 52">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="80" y="432" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="36" letter-spacing="-0.6" fill="#14161A">{{TITLE}}</text>
+  </g>
+
+  <g id="support-slot" data-pptx-placeholder="body" data-pptx-placeholder-idx="1" data-pptx-placeholder-bounds="80 452 1120 40">
+    <text id="support-carrier" data-pptx-placeholder-carrier="true" x="80" y="478" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="22" fill="#3C4048">{{SUPPORT}}</text>
+  </g>
+
+  <!-- handoff anchor A (80, 352) — 04 event date lands here -->
+  <g id="era-year">
+    <text x="80" y="352" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="220" letter-spacing="-6" fill="#FF4F2E">{{YEAR}}</text>
+  </g>
+
+  <g id="claim-source">
+    <text x="1200" y="690" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#8A8F98">{{SOURCE}}</text>
+  </g>
+
+  <!-- stop marker — page 3 of 10: x = 80 + 1120 × (3−1)/(10−1) = 329 -->
+  <g id="rail-marker">
+    <line x1="80" y1="628" x2="329" y2="628" stroke="#14161A" stroke-width="2"/>
+    <circle cx="329" cy="628" r="12" fill="#FF4F2E" fill-opacity="0.16"/>
+    <circle cx="329" cy="628" r="6" fill="#FF4F2E"/>
+    <text x="329" y="658" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" letter-spacing="0.4" fill="#14161A">{{STOP_LABEL}}</text>
+  </g>
+
+  <g id="page-foot">
+    <text x="80" y="690" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#8A8F98">{{BRAND_MARK}}</text>
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="motion-master" data-pptx-master-name="Motion Cue" data-pptx-layout="08_line_draw" data-pptx-layout-name="Line Draw Process">
+  <!-- Motion Cue — 08 Line draw: a yellow track draws across four steps -->
+  <rect id="master-bg" width="1280" height="720" fill="#0D0F14" data-pptx-layer="master" data-pptx-editable="false"/>
+  <path id="master-crop-marks" d="M28 52V28H52 M1228 28H1252V52 M1252 668V692H1228 M52 692H28V668" fill="none" stroke="#6B7280" stroke-width="1.5" data-pptx-layer="master" data-pptx-editable="false"/>
+  <path id="layout-ruler" d="M240 72H1200 M240 63V72 M280 68V72 M320 68V72 M360 68V72 M400 63V72 M440 68V72 M480 68V72 M520 68V72 M560 63V72 M600 68V72 M640 68V72 M680 68V72 M720 63V72 M760 68V72 M800 68V72 M840 68V72 M880 63V72 M920 68V72 M960 68V72 M1000 68V72 M1040 63V72 M1080 68V72 M1120 68V72 M1160 68V72 M1200 63V72" fill="none" stroke="#2A2F3A" stroke-width="1.5" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <line id="layout-track-guide" x1="90" y1="372" x2="1200" y2="372" stroke="#2A2F3A" stroke-width="2" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="80 96 1120 64">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="80" y="146" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="40" letter-spacing="-0.5" fill="#F5F7FA">{{TITLE}}</text>
+  </g>
+  <g id="lead-slot" data-pptx-placeholder="body" data-pptx-placeholder-idx="1" data-pptx-placeholder-bounds="80 168 1120 40">
+    <text id="lead-carrier" data-pptx-placeholder-carrier="true" x="80" y="196" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="22" letter-spacing="-0.1" fill="#A8AEBD">{{LEAD}}</text>
+  </g>
+  <g id="page-number-slot" data-pptx-placeholder="slide-number" data-pptx-placeholder-idx="12" data-pptx-placeholder-bounds="1040 662 160 28">
+    <text id="page-number-carrier" data-pptx-placeholder-carrier="true" x="1200" y="680" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6B7280">{{PAGE_LABEL}}</text>
+  </g>
+  <g id="page-footer" data-pptx-role="footer">
+    <text x="80" y="680" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6B7280">{{BRAND_MARK}}</text>
+  </g>
+  <g id="timecode-header" data-pptx-role="header">
+    <text x="80" y="77" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="1.5" fill="#A8AEBD">{{TIMECODE}}</text>
+  </g>
+  <g id="timeline-track">
+    <line x1="90" y1="372" x2="1186" y2="372" stroke="#FFE14D" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="1192" cy="372" r="8" fill="#FFE14D"/>
+  </g>
+  <g id="step-1">
+    <circle cx="90" cy="372" r="10" fill="#0D0F14" stroke="#F5F7FA" stroke-width="2.5"/>
+    <text x="80" y="428" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#4DD8FF" letter-spacing="1.5">STEP 01</text>
+    <text x="80" y="468" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="24" fill="#F5F7FA" letter-spacing="-0.2">{{STEP_1_TITLE}}</text>
+    <text x="80" y="504" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#A8AEBD">{{STEP_1_DESC}}</text>
+  </g>
+  <g id="step-2">
+    <circle cx="370" cy="372" r="10" fill="#0D0F14" stroke="#F5F7FA" stroke-width="2.5"/>
+    <text x="360" y="428" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#4DD8FF" letter-spacing="1.5">STEP 02</text>
+    <text x="360" y="468" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="24" fill="#F5F7FA" letter-spacing="-0.2">{{STEP_2_TITLE}}</text>
+    <text x="360" y="504" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#A8AEBD">{{STEP_2_DESC}}</text>
+  </g>
+  <g id="step-3">
+    <circle cx="650" cy="372" r="10" fill="#0D0F14" stroke="#F5F7FA" stroke-width="2.5"/>
+    <text x="640" y="428" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#4DD8FF" letter-spacing="1.5">STEP 03</text>
+    <text x="640" y="468" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="24" fill="#F5F7FA" letter-spacing="-0.2">{{STEP_3_TITLE}}</text>
+    <text x="640" y="504" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#A8AEBD">{{STEP_3_DESC}}</text>
+  </g>
+  <g id="step-4">
+    <circle cx="930" cy="372" r="10" fill="#0D0F14" stroke="#F5F7FA" stroke-width="2.5"/>
+    <text x="920" y="428" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#4DD8FF" letter-spacing="1.5">STEP 04</text>
+    <text x="920" y="468" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="24" fill="#F5F7FA" letter-spacing="-0.2">{{STEP_4_TITLE}}</text>
+    <text x="920" y="504" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#A8AEBD">{{STEP_4_DESC}}</text>
+  </g>
+</svg>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="rn-master" data-pptx-master-name="Research Note" data-pptx-layout="rn_scenario" data-pptx-layout-name="Scenario (Bear / Base / Bull)">
+  <!-- Research Note — 08 Scenario: bear / base / bull columns — probability bar, three assumptions, outcome value; base column emphasized in navy (probability bars are sample data) -->
+  <rect id="master-bg" width="1280" height="720" fill="#F5F3EF" data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="master-top-rule" x="48" y="44" width="1184" height="3" fill="#0B2545" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-footer-rule" x1="48" y1="672" x2="1232" y2="672" stroke="#B8B8B8" stroke-width="1" data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="layout-bear-panel" x="48" y="164" width="368" height="440" fill="#FFFFFF" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-base-panel" x="457" y="165" width="366" height="438" fill="#FFFFFF" stroke="#0B2545" stroke-width="2" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-bull-panel" x="864" y="164" width="368" height="440" fill="#FFFFFF" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-bear-head" x="48" y="164" width="368" height="56" fill="#E3E8EF" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-base-head" x="456" y="164" width="368" height="56" fill="#0B2545" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-bull-head" x="864" y="164" width="368" height="56" fill="#E3E8EF" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="report-header">
+    <text x="48" y="33" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#707070" xml:space="preserve"><tspan font-weight="700" fill="#0B2545">{{BRAND_MARK}}</tspan><tspan fill="#B8B8B8">  |  </tspan><tspan>{{REPORT_TYPE}}</tspan></text>
+    <text x="1232" y="33" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#707070" xml:space="preserve"><tspan>{{DATE}}</tspan><tspan fill="#B8B8B8">  ·  </tspan><tspan>{{CLASSIFICATION}}</tspan></text>
+  </g>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="48 64 1184 44">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="48" y="96" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="30" letter-spacing="-0.4" fill="#1A1A1A">{{TITLE}}</text>
+  </g>
+
+  <g id="scenario-lead">
+    <text x="48" y="132" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#3A3A3A">{{LEAD}}</text>
+  </g>
+
+  <g id="scenario-bear">
+    <text x="72" y="200" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="22" fill="#1A1A1A" xml:space="preserve"><tspan>Bear</tspan><tspan font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-weight="400" font-size="15" fill="#3A3A3A">  비관</tspan></text>
+    <text x="72" y="256" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#707070">확률</text>
+    <text x="392" y="262" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="28" fill="#1A1A1A">{{BEAR_PROB}}</text>
+    <rect x="72" y="278" width="320" height="6" fill="#DCDCDC"/>
+    <rect x="72" y="278" width="80" height="6" fill="#0B2545"/>
+    <line x1="72" y1="306" x2="392" y2="306" stroke="#DCDCDC" stroke-width="1"/>
+    <text x="72" y="336" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#707070">핵심 가정</text>
+    <text x="72" y="372" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#3A3A3A"><tspan fill="#0B2545">▪</tspan><tspan> {{BEAR_ASSUMPTION_1}}</tspan></text>
+    <text x="72" y="406" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#3A3A3A"><tspan fill="#0B2545">▪</tspan><tspan> {{BEAR_ASSUMPTION_2}}</tspan></text>
+    <text x="72" y="440" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#3A3A3A"><tspan fill="#0B2545">▪</tspan><tspan> {{BEAR_ASSUMPTION_3}}</tspan></text>
+    <line x1="72" y1="470" x2="392" y2="470" stroke="#DCDCDC" stroke-width="1"/>
+    <text x="72" y="500" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#707070">{{OUTCOME_LABEL}}</text>
+    <text x="72" y="548" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="36" letter-spacing="-0.5" fill="#1A1A1A">{{BEAR_VALUE}}</text>
+    <text x="72" y="580" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#8C1C13">{{BEAR_DELTA}}</text>
+  </g>
+
+  <g id="scenario-base">
+    <text x="480" y="200" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="22" fill="#FFFFFF" xml:space="preserve"><tspan>Base</tspan><tspan font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-weight="400" font-size="15" fill="#E3E8EF">  기본</tspan></text>
+    <text x="480" y="256" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#707070">확률</text>
+    <text x="800" y="262" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="28" fill="#0B2545">{{BASE_PROB}}</text>
+    <rect x="480" y="278" width="320" height="6" fill="#DCDCDC"/>
+    <rect x="480" y="278" width="160" height="6" fill="#0B2545"/>
+    <line x1="480" y1="306" x2="800" y2="306" stroke="#DCDCDC" stroke-width="1"/>
+    <text x="480" y="336" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#707070">핵심 가정</text>
+    <text x="480" y="372" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#3A3A3A"><tspan fill="#0B2545">▪</tspan><tspan> {{BASE_ASSUMPTION_1}}</tspan></text>
+    <text x="480" y="406" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#3A3A3A"><tspan fill="#0B2545">▪</tspan><tspan> {{BASE_ASSUMPTION_2}}</tspan></text>
+    <text x="480" y="440" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#3A3A3A"><tspan fill="#0B2545">▪</tspan><tspan> {{BASE_ASSUMPTION_3}}</tspan></text>
+    <line x1="480" y1="470" x2="800" y2="470" stroke="#DCDCDC" stroke-width="1"/>
+    <text x="480" y="500" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#707070">{{OUTCOME_LABEL}}</text>
+    <text x="480" y="548" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="36" letter-spacing="-0.5" fill="#0B2545">{{BASE_VALUE}}</text>
+    <text x="480" y="580" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#0B2545">{{BASE_DELTA}}</text>
+  </g>
+
+  <g id="scenario-bull">
+    <text x="888" y="200" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="22" fill="#1A1A1A" xml:space="preserve"><tspan>Bull</tspan><tspan font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-weight="400" font-size="15" fill="#3A3A3A">  낙관</tspan></text>
+    <text x="888" y="256" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#707070">확률</text>
+    <text x="1208" y="262" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="28" fill="#1A1A1A">{{BULL_PROB}}</text>
+    <rect x="888" y="278" width="320" height="6" fill="#DCDCDC"/>
+    <rect x="888" y="278" width="80" height="6" fill="#0B2545"/>
+    <line x1="888" y1="306" x2="1208" y2="306" stroke="#DCDCDC" stroke-width="1"/>
+    <text x="888" y="336" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#707070">핵심 가정</text>
+    <text x="888" y="372" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#3A3A3A"><tspan fill="#0B2545">▪</tspan><tspan> {{BULL_ASSUMPTION_1}}</tspan></text>
+    <text x="888" y="406" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#3A3A3A"><tspan fill="#0B2545">▪</tspan><tspan> {{BULL_ASSUMPTION_2}}</tspan></text>
+    <text x="888" y="440" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#3A3A3A"><tspan fill="#0B2545">▪</tspan><tspan> {{BULL_ASSUMPTION_3}}</tspan></text>
+    <line x1="888" y1="470" x2="1208" y2="470" stroke="#DCDCDC" stroke-width="1"/>
+    <text x="888" y="500" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#707070">{{OUTCOME_LABEL}}</text>
+    <text x="888" y="548" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="36" letter-spacing="-0.5" fill="#1A1A1A">{{BULL_VALUE}}</text>
+    <text x="888" y="580" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#3A3A3A">{{BULL_DELTA}}</text>
+  </g>
+
+  <g id="scenario-summary">
+    <text x="48" y="636" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#707070">주: {{SCENARIO_NOTE}}</text>
+    <text x="1232" y="638" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="20" fill="#0B2545" xml:space="preserve"><tspan font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-weight="400" font-size="13" fill="#707070">확률가중 기대값  </tspan><tspan>{{WEIGHTED_VALUE}}</tspan></text>
+  </g>
+
+  <g id="disclaimer-slot" data-pptx-placeholder="footer" data-pptx-placeholder-idx="2" data-pptx-placeholder-bounds="48 680 960 24">
+    <text id="disclaimer-carrier" data-pptx-placeholder-carrier="true" x="48" y="695" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="11" fill="#707070">{{DISCLAIMER}}</text>
+  </g>
+
+  <g id="page-number-slot" data-pptx-placeholder="slide-number" data-pptx-placeholder-idx="3" data-pptx-placeholder-bounds="1112 680 120 24">
+    <text id="page-number-carrier" data-pptx-placeholder-carrier="true" x="1232" y="695" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#1A1A1A">{{PAGE_NUM}}</text>
+  </g>
+</svg>

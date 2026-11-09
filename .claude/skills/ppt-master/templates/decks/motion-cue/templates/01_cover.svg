@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="motion-master" data-pptx-master-name="Motion Cue" data-pptx-layout="01_cover" data-pptx-layout-name="Cover (Kinetic Title)">
+  <!-- Motion Cue — 01 Cover: kinetic title, easing ornament, frame guides -->
+  <rect id="master-bg" width="1280" height="720" fill="#0D0F14" data-pptx-layer="master" data-pptx-editable="false"/>
+  <path id="master-crop-marks" d="M28 52V28H52 M1228 28H1252V52 M1252 668V692H1228 M52 692H28V668" fill="none" stroke="#6B7280" stroke-width="1.5" data-pptx-layer="master" data-pptx-editable="false"/>
+  <path id="layout-safe-brackets" d="M64 66V48H82 M1198 48H1216V66 M1216 626V644H1198 M82 644H64V626" fill="none" stroke="#2A2F3A" stroke-width="1.5" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <path id="layout-easing-grid" d="M958 200V480 M1028 200V480 M1098 200V480 M888 270H1168 M888 340H1168 M888 410H1168" fill="none" stroke="#2A2F3A" stroke-width="1" stroke-dasharray="2 6" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <path id="layout-easing-axes" d="M888 200V480H1168" fill="none" stroke="#2A2F3A" stroke-width="1.5" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <text id="layout-easing-label" x="888" y="510" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#6B7280" letter-spacing="1" data-pptx-layer="layout" data-pptx-editable="false">EASE-OUT · 0.16, 0.84, 0.44, 1</text>
+  <g id="page-number-slot" data-pptx-placeholder="slide-number" data-pptx-placeholder-idx="12" data-pptx-placeholder-bounds="1040 662 160 28">
+    <text id="page-number-carrier" data-pptx-placeholder-carrier="true" x="1200" y="680" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6B7280">{{PAGE_LABEL}}</text>
+  </g>
+  <g id="page-footer" data-pptx-role="footer">
+    <text x="80" y="680" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6B7280">{{BRAND_MARK}}</text>
+  </g>
+  <g id="timecode-header" data-pptx-role="header">
+    <text x="168" y="220" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="1.5" fill="#A8AEBD">{{TIMECODE}}</text>
+  </g>
+  <g id="cover-meta">
+    <text x="168" y="516" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#6B7280" letter-spacing="1.5">PRESENTER</text>
+    <text x="168" y="546" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#F5F7FA">{{AUTHOR}}</text>
+    <line x1="380" y1="504" x2="380" y2="554" stroke="#2A2F3A" stroke-width="1"/>
+    <text x="404" y="516" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#6B7280" letter-spacing="1.5">DATE</text>
+    <text x="404" y="546" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#A8AEBD">{{DATE}}</text>
+  </g>
+  <g id="cover-title">
+    <line x1="80" y1="284" x2="148" y2="284" stroke="#4DD8FF" stroke-width="4" stroke-linecap="round" opacity="1"/>
+    <line x1="100" y1="300" x2="148" y2="300" stroke="#4DD8FF" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+    <line x1="120" y1="316" x2="148" y2="316" stroke="#4DD8FF" stroke-width="4" stroke-linecap="round" opacity="0.3"/>
+    <text x="168" y="324" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="72" fill="#F5F7FA" letter-spacing="-1">{{TITLE}}</text>
+    <text x="168" y="408" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="26" fill="#A8AEBD" letter-spacing="-0.2">{{SUBTITLE}}</text>
+  </g>
+  <g id="cue-track">
+    <rect x="168" y="348" width="120" height="8" fill="#FFE14D"/>
+  </g>
+  <g id="easing-track">
+    <line x1="888" y1="480" x2="932.8" y2="244.8" stroke="#6B7280" stroke-width="1"/>
+    <line x1="1168.0" y1="200.0" x2="1011.2" y2="200.0" stroke="#6B7280" stroke-width="1"/>
+    <path d="M888 480 C932.8 244.8 1011.2 200.0 1168.0 200.0" fill="none" stroke="#4DD8FF" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="932.8" cy="244.8" r="6" fill="#0D0F14" stroke="#F5F7FA" stroke-width="2"/>
+    <circle cx="1011.2" cy="200.0" r="6" fill="#0D0F14" stroke="#F5F7FA" stroke-width="2"/>
+    <circle cx="888" cy="480" r="5" fill="#6B7280"/>
+    <circle cx="1168.0" cy="200.0" r="7" fill="#4DD8FF"/>
+  </g>
+</svg>

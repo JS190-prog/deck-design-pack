@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="bento-aurora-master" data-pptx-master-name="Bento Aurora" data-pptx-layout="05_hero_metric" data-pptx-layout-name="Hero Metric">
+  <!-- Bento Aurora — 05 Hero metric: one giant number in the aurora hero tile + three stacked stat tiles -->
+  <defs>
+    <radialGradient id="aurViolet" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.8"/>
+      <stop offset="45%" stop-color="#7C5CFF" stop-opacity="0.46"/>
+      <stop offset="100%" stop-color="#7C5CFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aurCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.66"/>
+      <stop offset="45%" stop-color="#22D3EE" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aurPink" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.68"/>
+      <stop offset="45%" stop-color="#F472B6" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="aurRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="metricGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#7C5CFF" flood-opacity="0.5"/>
+    </filter>
+    <linearGradient id="aurWash" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#7C5CFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect id="master-bg" width="1280" height="720" fill="#07080F" data-pptx-layer="master" data-pptx-editable="false"/>
+
+  <rect id="layout-hero-tile" x="48" y="144" width="784" height="512" rx="24" fill="#161A29" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-hero-wash" x="48" y="144" width="784" height="512" rx="24" fill="url(#aurWash)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <ellipse id="layout-hero-aurora-violet" cx="560" cy="360" rx="250" ry="130" transform="rotate(-24 560 360)" fill="url(#aurViolet)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <ellipse id="layout-hero-aurora-pink" cx="610" cy="250" rx="170" ry="60" transform="rotate(-24 610 250)" fill="url(#aurPink)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <ellipse id="layout-hero-aurora-cyan" cx="640" cy="480" rx="170" ry="70" transform="rotate(-24 640 480)" fill="url(#aurCyan)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-hero-rim" x="48" y="144" width="784" height="512" rx="24" fill="none" stroke="url(#aurRim)" stroke-width="1.5" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-tile-stat-1" x="848" y="144" width="384" height="160" rx="24" fill="#10121C" stroke="#262B40" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-tile-stat-2" x="848" y="320" width="384" height="160" rx="24" fill="#10121C" stroke="#262B40" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-tile-stat-3" x="848" y="496" width="384" height="160" rx="24" fill="#10121C" stroke="#262B40" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="page-kicker">
+    <rect x="48" y="40" width="176" height="28" rx="14" fill="#161A29" stroke="#262B40" stroke-width="1"/>
+    <circle cx="64" cy="54" r="4" fill="#7C5CFF"/>
+    <text x="78" y="59" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" letter-spacing="1.2" fill="#B3B8D4">{{KICKER}}</text>
+  </g>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="48 80 1184 52">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="48" y="120" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="40" letter-spacing="-0.8" fill="#F4F6FF">{{TITLE}}</text>
+  </g>
+
+  <g id="hero-metric">
+    <text x="88" y="214" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="24" letter-spacing="-0.3" fill="#F4F6FF">{{METRIC_LABEL}}</text>
+    <text x="76" y="452" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="176" letter-spacing="-6" fill="#F4F6FF" filter="url(#metricGlow)">{{METRIC_VALUE}}</text>
+  </g>
+
+  <g id="hero-delta">
+    <rect x="88" y="512" width="152" height="40" rx="20" fill="#F4F6FF" fill-opacity="0.12" stroke="#F4F6FF" stroke-opacity="0.32" stroke-width="1"/>
+    <text x="164" y="539" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#F4F6FF">{{METRIC_DELTA}}</text>
+    <text x="88" y="612" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" letter-spacing="-0.1" fill="#B3B8D4">{{METRIC_NOTE}}</text>
+  </g>
+
+  <g id="stat-1">
+    <circle cx="1196" cy="180" r="5" fill="#7C5CFF"/>
+    <text x="880" y="226" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="48" letter-spacing="-1.2" fill="#F4F6FF">{{STAT_1_VALUE}}</text>
+    <text x="880" y="268" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" letter-spacing="-0.1" fill="#B3B8D4">{{STAT_1_LABEL}}</text>
+  </g>
+
+  <g id="stat-2">
+    <circle cx="1196" cy="356" r="5" fill="#22D3EE"/>
+    <text x="880" y="402" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="48" letter-spacing="-1.2" fill="#F4F6FF">{{STAT_2_VALUE}}</text>
+    <text x="880" y="444" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" letter-spacing="-0.1" fill="#B3B8D4">{{STAT_2_LABEL}}</text>
+  </g>
+
+  <g id="stat-3">
+    <circle cx="1196" cy="532" r="5" fill="#F472B6"/>
+    <text x="880" y="578" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="48" letter-spacing="-1.2" fill="#F4F6FF">{{STAT_3_VALUE}}</text>
+    <text x="880" y="620" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" letter-spacing="-0.1" fill="#B3B8D4">{{STAT_3_LABEL}}</text>
+  </g>
+
+  <g id="page-foot">
+    <text x="48" y="692" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#7A80A3">{{BRAND_MARK}}</text>
+    <text x="1232" y="692" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#7A80A3">{{PAGE_LABEL}}</text>
+  </g>
+</svg>
