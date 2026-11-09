@@ -320,11 +320,25 @@ def main():
         print("11. 개조식 .txt: 대제목·항목·결재 문장을 역할별로 읽음")
 
         # 12. 숫자 안의 점·천 단위 쉼표는 문장부호로 세지 않는다
-        m = dv.metrics(["예산 26.04억원 투입", "매출 1,300억원 달성", "’27.6 완료"])
+        m = dv.metrics(["예산 12.34억원 투입", "매출 1,300억원 달성", "’25.3 완료"])
         assert m["period_per1k"] == 0 and m["comma_per1k"] == 0, m
         m = dv.metrics(["예산 확보, 일정 확정.", "인력 충원 필요"])
         assert m["period_per1k"] > 0 and m["comma_per1k"] > 0, m
         print("12. 소수점·천 단위 쉼표는 문장부호로 세지 않음")
+
+        # 13. 도식 글자(축 날짜, 대문자 장 라벨, 한 장에 3번 이상 같은 막대 글)는 문체에서 빼고 숫자 대조에 남김
+        prs = Presentation()
+        s = prs.slides.add_slide(prs.slide_layouts[1])
+        s.shapes.title.text = "추진 일정"
+        tf = s.placeholders[1].text_frame
+        tf.text = "SCHEDULE"
+        for x in ["’25.3", "’24.10~’25.1", "시범운영", "시범운영", "시범운영", "1단계 본관 장비 교체 후 시험 가동"]:
+            tf.add_paragraph().text = x
+        prs.save(t / "gantt.pptx")
+        g = dv.read_pptx(t / "gantt.pptx")[0]
+        assert g["body"] == ["1단계 본관 장비 교체 후 시험 가동"], g
+        assert "’25.3" in g["extra"] and "SCHEDULE" in g["extra"] and g["extra"].count("시범운영") == 3, g
+        print("13. 도식 글자는 문체 측정에서 빼고 숫자 대조에 남김")
     print("selftest OK")
 
 

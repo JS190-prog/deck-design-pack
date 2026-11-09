@@ -90,6 +90,8 @@ A = "{http://schemas.openxmlformats.org/drawingml/2006/main}"
 P = "{http://schemas.openxmlformats.org/presentationml/2006/main}"
 # 쪽 번호, 축 눈금, 단독 수치 라벨: 문구가 아니라서 문체와 숫자 대조에서 뺀다
 NUMERIC_ONLY = re.compile(r"^[\d.,%\s/+\-~]{1,10}$")
+# 도식 글자(줄인 연도 날짜 ’25.3·’24.10~’25.1, 영문 대문자 장 라벨 SUMMARY): 문구가 아니라 문체에서 빼고 숫자 대조에는 남긴다
+DIAGRAM_LABEL = re.compile(r"^(?:[\d.,%\s/+\-~’‘']{1,14}|[A-Z][A-Z &/.-]{2,})$")
 
 
 def _slide():
@@ -151,7 +153,12 @@ def read_pptx(path):
                     s["title"].append(" ".join(t for t, _ in ps))
                 else:
                     s["body"] += [t for t, _ in ps]
-            rel = f"ppt/slides/_rels/{n.rsplit('/', 1)[1]}.rels"
+            # 한 장에 세 번 이상 똑같은 글(간트 막대, 범례)도 도식 글자다
+            seen = Counter(s["body"])
+            keep = [x for x in s["body"] if seen[x] < 3 and not DIAGRAM_LABEL.match(x)]
+            s["extra"] += [x for x in s["body"] if x not in keep]
+            s["body"] = keep
+            rel =f"ppt/slides/_rels/{n.rsplit('/', 1)[1]}.rels"
             if rel in names:
                 for r in ET.fromstring(z.read(rel)):
                     if not r.get("Type", "").endswith("/notesSlide"):
@@ -320,7 +327,7 @@ def windows(lines, w=WINDOW):
 
 
 # ---------------------------------------------------------------- 지표와 밴드
-# 숫자 안의 점(26.04)과 천 단위 쉼표(1,300)는 문장부호가 아니다
+# 숫자 안의 점(12.34)과 천 단위 쉼표(1,300)는 문장부호가 아니다
 _PERIOD = re.compile(r"(?<!\d)\.|\.(?!\d)")
 _COMMA = re.compile(r"(?<!\d),|,(?!\d{3})")
 
