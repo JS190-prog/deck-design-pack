@@ -46,6 +46,16 @@ Two skills vendored under `.claude/skills/` carry their own `LICENSE` file along
 
 ---
 
+## gn-voice method and presentation profile — `.claude/skills/deck-voice/`
+
+`deck-voice` adapts the measured-style method and the `presentation` profile of
+**[gongnyang/gn-voice](https://github.com/gongnyang/gn-voice)** — its LICENSE Section A, MIT © 2026 gn-voice
+authors. gn-voice's Section B material (the author's corpus, the analysis data derived from it, the nine
+personal genre packs, and the examples) is reserved and is **not** included. Scope, changes, and the MIT text:
+[`.claude/skills/deck-voice/NOTICE.md`](.claude/skills/deck-voice/NOTICE.md).
+
+---
+
 ## Bundled template libraries
 
 `.claude/skills/ppt-master/templates/` ships upstream's deck and brand templates

@@ -555,12 +555,21 @@ The confirmed image path still wins **before any launch** (`codex` / `api` / `au
 **Output**:
 - `<project_path>/design_spec.md` — human-readable design narrative
 - `<project_path>/spec_lock.md` — machine-readable execution contract (skeleton: `templates/spec_lock_reference.md`); Executor re-reads on the milestone cadence (executor-base.md §2.1)
+- When `<project_path>/voice/style-guide.md` exists, `§IX` copy follows the **Voice overlay** below — read it before writing `§IX`
 
 **Spec validation (Mandatory — run immediately after writing both files)**: fix every reported error before the checkpoint — a planning defect found after 20 generated pages costs a whole-deck rewrite:
 
 ```bash
 python3 ${SKILL_DIR}/scripts/validate_spec.py <project_path>
 ```
+
+**Voice overlay (conditional — only when `<project_path>/voice/style-guide.md` exists, built by the [`deck-voice`](../deck-voice/SKILL.md) skill)**: before writing `§IX`, read `<project_path>/voice/style-guide.md` and `.claude/skills/deck-voice/references/presentation.md`, then write every `Title` / `Subtitle` / `Core message` / `Content` line in that voice — structure rules from `presentation.md`, surface rules (endings, line length, words per slide, number/date notation, phrases) from the style guide. After `validate_spec.py` passes, run:
+
+```bash
+python3 .claude/skills/deck-voice/scripts/deck_voice.py gate --voice <project_path>/voice --facts <project_path>/sources <project_path>/design_spec.md
+```
+
+Exit 3 → fix only the `§IX` lines its `rework` list names and re-run, at most 2 rounds. A `[숫자]` (value not in the sources) item MUST be fixed before Step 5; style items still open after 2 rounds are stated in the handoff. No `voice/` folder → skip silently. The overlay adds no confirmation gate and changes no other section.
 
 **✅ Checkpoint — Phase deliverables complete, auto-proceed to next step**:
 ```markdown
@@ -573,6 +582,7 @@ python3 ${SKILL_DIR}/scripts/validate_spec.py <project_path>
 - [x] Design Specification & Content Outline generated
 - [x] Execution lock (spec_lock.md) generated
 - [x] validate_spec.py passed (0 errors) on design_spec.md + spec_lock.md
+- [x] Voice overlay gate run on design_spec.md, no `[숫자]` item open (only when `<project_path>/voice/` exists)
 - [ ] **Next**: Auto-proceed to [Image_Generator / Executor] phase
 ```
 
@@ -976,6 +986,14 @@ python3 ${SKILL_DIR}/scripts/verify_deck.py <project_path>
 > Exit 0 is required before completion is reported. The contact-sheet render is the only part `--no-render` turns off; every other check runs either way.
 >
 > **Iteration speed path**: while re-exporting repeatedly (fixing pages, re-running Step 7.2–7.3), add `--no-render` to skip the render — it costs roughly 7–13s per deck. Drop the flag for the final run before hand-off, so the deck is never delivered without one look at the converted pixels.
+
+**Voice check (conditional — only when `<project_path>/voice/` exists)**: after `verify_deck.py`, gate the exported deck against the voice:
+
+```bash
+python3 .claude/skills/deck-voice/scripts/deck_voice.py gate --voice <project_path>/voice --facts <project_path>/sources <project_path>/exports/<latest>.pptx
+```
+
+A `[숫자]` item (value absent from the sources) MUST be fixed in `svg_output/` and re-exported. Style items are reported at hand-off with the voice `label`; fix them only when the user asks, because page edits re-enter the Step 6 discipline.
 
 **Lightweight exported-PPTX visual sanity check (DEFAULT — one pass, not deep verification)**: Read the `_pptx_render/<stem>-grid.png` the command above prints, once, for obvious text overflow/collision, missing assets, or font substitution. Open only visibly suspect pages at full resolution; do not render and compare every page individually by default. When OfficeCLI is available, its `issues --json` scan MAY run alongside as a non-blocking suspicion signal.
 

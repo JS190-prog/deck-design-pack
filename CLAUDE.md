@@ -84,6 +84,7 @@ of treating a root-level command list as a gate checklist.
 - `.claude/skills/ppt-master/SKILL.md` — main SVG workflow authority.
 - `.claude/skills/ppt-template-fill/SKILL.md` — raw-template direct-PPTX authority.
 - `.claude/skills/native-enhance-pptx/SKILL.md` — finished-PPTX enhancement entry owner.
+- `.claude/skills/deck-voice/SKILL.md` — writing-voice analysis from the user's own decks/writing (gn-voice method) and the slide-copy gate the main pipeline's Step 4/7 Voice overlay runs when `<project>/voice/` exists.
 - `.claude/skills/ppt-master/references/` — role definitions and technical specifications.
 - `.claude/skills/ppt-master/scripts/` — runnable tool scripts.
 - `.claude/skills/ppt-master/scripts/docs/` — topic-focused script docs.
