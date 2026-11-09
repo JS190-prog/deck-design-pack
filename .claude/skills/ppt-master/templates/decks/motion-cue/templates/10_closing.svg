@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="motion-master" data-pptx-master-name="Motion Cue" data-pptx-layout="10_closing" data-pptx-layout-name="Closing (End Card)">
+  <!-- Motion Cue — 10 Closing: centered end card, yellow cue, frame center marks -->
+  <rect id="master-bg" width="1280" height="720" fill="#0D0F14" data-pptx-layer="master" data-pptx-editable="false"/>
+  <path id="master-crop-marks" d="M28 52V28H52 M1228 28H1252V52 M1252 668V692H1228 M52 692H28V668" fill="none" stroke="#6B7280" stroke-width="1.5" data-pptx-layer="master" data-pptx-editable="false"/>
+  <path id="layout-safe-brackets" d="M64 66V48H82 M1198 48H1216V66 M1216 626V644H1198 M82 644H64V626" fill="none" stroke="#2A2F3A" stroke-width="1.5" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <path id="layout-center-marks" d="M640 48V64 M640 628V644 M64 346H80 M1200 346H1216" fill="none" stroke="#2A2F3A" stroke-width="1.5" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <g id="page-number-slot" data-pptx-placeholder="slide-number" data-pptx-placeholder-idx="12" data-pptx-placeholder-bounds="1040 662 160 28">
+    <text id="page-number-carrier" data-pptx-placeholder-carrier="true" x="1200" y="680" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6B7280">{{PAGE_LABEL}}</text>
+  </g>
+  <g id="page-footer" data-pptx-role="footer">
+    <text x="80" y="680" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6B7280">{{BRAND_MARK}}</text>
+  </g>
+  <g id="timecode-header" data-pptx-role="header">
+    <text x="640" y="268" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="1.5" fill="#A8AEBD">{{TIMECODE}}</text>
+  </g>
+  <g id="closing-title">
+    <text x="640" y="360" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="64" fill="#F5F7FA" text-anchor="middle" letter-spacing="-1">{{CLOSING_LINE}}</text>
+  </g>
+  <g id="cue-track">
+    <rect x="580" y="390" width="120" height="8" fill="#FFE14D"/>
+  </g>
+  <g id="contact-note">
+    <text x="640" y="456" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="22" fill="#A8AEBD" text-anchor="middle">{{CONTACT_LINE}}</text>
+  </g>
+</svg>

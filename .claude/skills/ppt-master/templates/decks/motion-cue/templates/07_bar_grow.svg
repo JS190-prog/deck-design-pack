@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="motion-master" data-pptx-master-name="Motion Cue" data-pptx-layout="07_bar_grow" data-pptx-layout-name="Bar Grow Chart">
+  <!-- Motion Cue — 07 Bar grow: six bars rise from the baseline, one yellow peak, takeaway after -->
+  <rect id="master-bg" width="1280" height="720" fill="#0D0F14" data-pptx-layer="master" data-pptx-editable="false"/>
+  <path id="master-crop-marks" d="M28 52V28H52 M1228 28H1252V52 M1252 668V692H1228 M52 692H28V668" fill="none" stroke="#6B7280" stroke-width="1.5" data-pptx-layer="master" data-pptx-editable="false"/>
+  <path id="layout-ruler" d="M240 72H1200 M240 63V72 M280 68V72 M320 68V72 M360 68V72 M400 63V72 M440 68V72 M480 68V72 M520 68V72 M560 63V72 M600 68V72 M640 68V72 M680 68V72 M720 63V72 M760 68V72 M800 68V72 M840 68V72 M880 63V72 M920 68V72 M960 68V72 M1000 68V72 M1040 63V72 M1080 68V72 M1120 68V72 M1160 68V72 M1200 63V72" fill="none" stroke="#2A2F3A" stroke-width="1.5" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <line id="layout-takeaway-divider" x1="840" y1="224" x2="840" y2="608" stroke="#2A2F3A" stroke-width="1.5" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="80 96 1120 64">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="80" y="146" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="40" letter-spacing="-0.5" fill="#F5F7FA">{{TITLE}}</text>
+  </g>
+  <g id="page-number-slot" data-pptx-placeholder="slide-number" data-pptx-placeholder-idx="12" data-pptx-placeholder-bounds="1040 662 160 28">
+    <text id="page-number-carrier" data-pptx-placeholder-carrier="true" x="1200" y="680" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6B7280">{{PAGE_LABEL}}</text>
+  </g>
+  <g id="page-footer" data-pptx-role="footer">
+    <text x="80" y="680" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6B7280">{{BRAND_MARK}}</text>
+  </g>
+  <g id="timecode-header" data-pptx-role="header">
+    <text x="80" y="77" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="1.5" fill="#A8AEBD">{{TIMECODE}}</text>
+  </g>
+  <!-- chart-plot-area: 136,232,800,552 -->
+  <g id="chart-axis">
+    <path d="M136 232H800 M136 312H800 M136 392H800 M136 472H800" fill="none" stroke="#2A2F3A" stroke-width="1"/>
+    <line x1="136" y1="552" x2="800" y2="552" stroke="#6B7280" stroke-width="1.5"/>
+    <text x="120" y="237" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#6B7280" text-anchor="end">100</text>
+    <text x="120" y="317" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#6B7280" text-anchor="end">75</text>
+    <text x="120" y="397" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#6B7280" text-anchor="end">50</text>
+    <text x="120" y="477" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#6B7280" text-anchor="end">25</text>
+    <text x="120" y="557" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#6B7280" text-anchor="end">0</text>
+    <text x="191" y="586" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#A8AEBD" text-anchor="middle">01</text>
+    <text x="302" y="586" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#A8AEBD" text-anchor="middle">02</text>
+    <text x="413" y="586" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#A8AEBD" text-anchor="middle">03</text>
+    <text x="523" y="586" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#A8AEBD" text-anchor="middle">04</text>
+    <text x="634" y="586" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#A8AEBD" text-anchor="middle">05</text>
+    <text x="745" y="586" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#A8AEBD" text-anchor="middle">06</text>
+  </g>
+  <g id="chart-bars">
+    <rect x="159" y="418" width="64" height="134" rx="2" fill="#6B7280"/>
+    <rect x="270" y="376" width="64" height="176" rx="2" fill="#6B7280"/>
+    <rect x="381" y="350" width="64" height="202" rx="2" fill="#6B7280"/>
+    <rect x="491" y="270" width="64" height="282" rx="2" fill="#FFE14D"/>
+    <rect x="602" y="325" width="64" height="227" rx="2" fill="#6B7280"/>
+    <rect x="713" y="299" width="64" height="253" rx="2" fill="#6B7280"/>
+  </g>
+  <g id="chart-values">
+    <text x="191" y="404" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#A8AEBD" text-anchor="middle">42</text>
+    <text x="302" y="362" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#A8AEBD" text-anchor="middle">55</text>
+    <text x="413" y="336" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#A8AEBD" text-anchor="middle">63</text>
+    <text x="523" y="256" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#F5F7FA" text-anchor="middle" font-weight="700">88</text>
+    <text x="634" y="311" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#A8AEBD" text-anchor="middle">71</text>
+    <text x="745" y="285" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#A8AEBD" text-anchor="middle">79</text>
+  </g>
+  <g id="takeaway">
+    <rect x="876" y="268" width="4" height="72" fill="#4DD8FF"/>
+    <text x="896" y="296" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="26" fill="#F5F7FA" letter-spacing="-0.2">{{TAKEAWAY}}</text>
+    <text x="896" y="336" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#A8AEBD">{{TAKEAWAY_NOTE}}</text>
+  </g>
+  <g id="source">
+    <text x="80" y="628" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6B7280">{{SOURCE}}</text>
+  </g>
+</svg>

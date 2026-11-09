@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="depth-master" data-pptx-master-name="Depth Field" data-pptx-layout="09_quote" data-pptx-layout-name="Quote (Horizon Glow)">
+  <!-- Depth Field — 09 Quote: centered statement above a low perspective floor; one cyan horizon glow -->
+  <defs>
+    <linearGradient id="quote-floor-stroke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E2A4A" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#1E2A4A" stop-opacity="0.9"/>
+    </linearGradient>
+    <radialGradient id="quote-horizon-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#5CE1E6" stop-opacity="0.34"/>
+      <stop offset="45%" stop-color="#8B7CFF" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#8B7CFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect id="master-bg" width="1280" height="720" fill="#060B1A" data-pptx-layer="master" data-pptx-editable="false"/>
+  <ellipse id="layout-quote-glow" cx="640" cy="508" rx="600" ry="72" fill="url(#quote-horizon-glow)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <path id="layout-quote-floor" d="M525.5 514.0L0.0 578.2M535.0 514.0L0.0 585.3M544.5 514.0L0.0 593.9M554.1 514.0L0.0 604.3M563.6 514.0L0.0 617.3M573.2 514.0L0.0 634.1M582.7 514.0L0.0 656.4M592.3 514.0L0.0 687.7M601.8 514.0L40.0 720.0M611.4 514.0L190.0 720.0M620.9 514.0L340.0 720.0M630.5 514.0L490.0 720.0M640.0 514.0L640.0 720.0M649.5 514.0L790.0 720.0M659.1 514.0L940.0 720.0M668.6 514.0L1090.0 720.0M678.2 514.0L1240.0 720.0M687.7 514.0L1280.0 687.7M697.3 514.0L1280.0 656.4M706.8 514.0L1280.0 634.1M716.4 514.0L1280.0 617.3M725.9 514.0L1280.0 604.3M735.5 514.0L1280.0 593.9M745.0 514.0L1280.0 585.3M754.5 514.0L1280.0 578.2M0 635.4H1280M0 597.8H1280M0 576.5H1280M0 562.9H1280M0 553.3H1280M0 546.3H1280" fill="none" stroke="url(#quote-floor-stroke)" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <line id="layout-quote-horizon" x1="240" y1="514" x2="1040" y2="514" stroke="#5CE1E6" stroke-opacity="0.45" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="160 290 960 112">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="640" y="334" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="36" letter-spacing="-0.5" fill="#EAF0FF">{{QUOTE}}</text>
+  </g>
+
+  <g id="quote-mark">
+    <path d="M603 252C603 230 612 218 626 212L629 218C620 224 616 230 617 237A15 15 0 1 1 603 252ZM649 252C649 230 658 218 672 212L675 218C666 224 662 230 663 237A15 15 0 1 1 649 252Z" fill="#5CE1E6"/>
+  </g>
+
+  <g id="quote-attribution">
+    <rect x="620" y="424" width="40" height="2" fill="#5CE1E6"/>
+    <text x="640" y="458" text-anchor="middle" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#EAF0FF">{{QUOTE_AUTHOR}}</text>
+    <text x="640" y="484" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#6F7BA0">{{QUOTE_ROLE}}</text>
+  </g>
+
+  <g id="page-foot">
+    <text x="80" y="676" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F7BA0">{{BRAND_MARK}}</text>
+    <text x="1200" y="676" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F7BA0">{{PAGE_LABEL}}</text>
+  </g>
+</svg>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="rn-master" data-pptx-master-name="Research Note" data-pptx-layout="rn_disclosure" data-pptx-layout-name="Disclosure (Ending)">
+  <!-- Research Note — 10 Disclosure / ending: methodology notes + definitions, disclaimer block, contact line -->
+  <rect id="master-bg" width="1280" height="720" fill="#F5F3EF" data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="master-top-rule" x="48" y="44" width="1184" height="3" fill="#0B2545" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-footer-rule" x1="48" y1="672" x2="1232" y2="672" stroke="#B8B8B8" stroke-width="1" data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="layout-method-rule" x="48" y="128" width="568" height="2" fill="#0B2545" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-definition-rule" x="664" y="128" width="568" height="2" fill="#0B2545" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-disclaimer-panel" x="48" y="428" width="1184" height="164" fill="#FFFFFF" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-disclaimer-bar" x="48" y="428" width="4" height="164" fill="#0B2545" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="report-header">
+    <text x="48" y="33" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#707070" xml:space="preserve"><tspan font-weight="700" fill="#0B2545">{{BRAND_MARK}}</tspan><tspan fill="#B8B8B8">  |  </tspan><tspan>{{REPORT_TYPE}}</tspan></text>
+    <text x="1232" y="33" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#707070" xml:space="preserve"><tspan>{{DATE}}</tspan><tspan fill="#B8B8B8">  ·  </tspan><tspan>{{CLASSIFICATION}}</tspan></text>
+  </g>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="48 64 1184 44">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="48" y="96" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="30" letter-spacing="-0.4" fill="#1A1A1A">{{TITLE}}</text>
+  </g>
+
+  <g id="methodology">
+    <text x="48" y="162" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="18" fill="#1A1A1A">방법론</text>
+    <text x="616" y="162" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#707070">Methodology</text>
+    <line x1="48" y1="178" x2="616" y2="178" stroke="#B8B8B8" stroke-width="1"/>
+    <g font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="15" fill="#0B2545">
+      <text x="48" y="212">1</text>
+      <text x="48" y="264">2</text>
+      <text x="48" y="316">3</text>
+      <text x="48" y="368">4</text>
+    </g>
+    <g font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="16" fill="#3A3A3A">
+      <text x="72" y="212">{{METHOD_1}}</text>
+      <text x="72" y="264">{{METHOD_2}}</text>
+      <text x="72" y="316">{{METHOD_3}}</text>
+      <text x="72" y="368">{{METHOD_4}}</text>
+    </g>
+  </g>
+
+  <g id="definitions">
+    <text x="664" y="162" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="18" fill="#1A1A1A">정의</text>
+    <text x="1232" y="162" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#707070">Definitions</text>
+    <line x1="664" y1="178" x2="1232" y2="178" stroke="#B8B8B8" stroke-width="1"/>
+    <g font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="16" fill="#0B2545">
+      <text x="664" y="212">{{DEF_1_TERM}}</text>
+      <text x="664" y="264">{{DEF_2_TERM}}</text>
+      <text x="664" y="316">{{DEF_3_TERM}}</text>
+      <text x="664" y="368">{{DEF_4_TERM}}</text>
+    </g>
+    <g font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="16" fill="#3A3A3A">
+      <text x="820" y="212">{{DEF_1_TEXT}}</text>
+      <text x="820" y="264">{{DEF_2_TEXT}}</text>
+      <text x="820" y="316">{{DEF_3_TEXT}}</text>
+      <text x="820" y="368">{{DEF_4_TEXT}}</text>
+    </g>
+    <g stroke="#DCDCDC" stroke-width="1">
+      <line x1="664" y1="238" x2="1232" y2="238"/>
+      <line x1="664" y1="290" x2="1232" y2="290"/>
+      <line x1="664" y1="342" x2="1232" y2="342"/>
+    </g>
+    <line x1="664" y1="394" x2="1232" y2="394" stroke="#B8B8B8" stroke-width="1"/>
+  </g>
+
+  <g id="disclaimer-block">
+    <text x="76" y="460" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="15" fill="#0B2545">고지 사항</text>
+    <text x="1208" y="460" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#707070">Disclaimer</text>
+    <text x="76" y="494" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#3A3A3A">{{DISCLAIMER_TEXT}}</text>
+  </g>
+
+  <g id="contact-line">
+    <text x="48" y="632" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#3A3A3A" xml:space="preserve"><tspan font-weight="700" font-size="16" fill="#0B2545">{{BRAND_MARK}}</tspan><tspan fill="#B8B8B8">  |  </tspan><tspan>{{CONTACT_LINE}}</tspan></text>
+  </g>
+
+  <g id="disclaimer-slot" data-pptx-placeholder="footer" data-pptx-placeholder-idx="2" data-pptx-placeholder-bounds="48 680 960 24">
+    <text id="disclaimer-carrier" data-pptx-placeholder-carrier="true" x="48" y="695" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="11" fill="#707070">{{DISCLAIMER}}</text>
+  </g>
+
+  <g id="page-number-slot" data-pptx-placeholder="slide-number" data-pptx-placeholder-idx="3" data-pptx-placeholder-bounds="1112 680 120 24">
+    <text id="page-number-carrier" data-pptx-placeholder-carrier="true" x="1232" y="695" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#1A1A1A">{{PAGE_NUM}}</text>
+  </g>
+</svg>

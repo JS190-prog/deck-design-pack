@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="bento-aurora-master" data-pptx-master-name="Bento Aurora" data-pptx-layout="04_bento_overview" data-pptx-layout-name="Bento Overview">
+  <!-- Bento Aurora — 04 Signature bento: one tall aurora hero + metric / glyph / quote / list tiles in a pinwheel -->
+  <defs>
+    <radialGradient id="aurViolet" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.8"/>
+      <stop offset="45%" stop-color="#7C5CFF" stop-opacity="0.46"/>
+      <stop offset="100%" stop-color="#7C5CFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aurCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.66"/>
+      <stop offset="45%" stop-color="#22D3EE" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aurPink" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.68"/>
+      <stop offset="45%" stop-color="#F472B6" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="aurRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="aurWash" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#7C5CFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect id="master-bg" width="1280" height="720" fill="#07080F" data-pptx-layer="master" data-pptx-editable="false"/>
+
+  <rect id="layout-hero-tile" x="48" y="144" width="484" height="512" rx="24" fill="#161A29" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-hero-wash" x="48" y="144" width="484" height="512" rx="24" fill="url(#aurWash)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <ellipse id="layout-hero-aurora-violet" cx="300" cy="330" rx="210" ry="120" transform="rotate(-30 300 330)" fill="url(#aurViolet)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <ellipse id="layout-hero-aurora-pink" cx="380" cy="260" rx="140" ry="64" transform="rotate(-30 380 260)" fill="url(#aurPink)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <ellipse id="layout-hero-aurora-cyan" cx="210" cy="400" rx="150" ry="70" transform="rotate(-30 210 400)" fill="url(#aurCyan)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-hero-rim" x="48" y="144" width="484" height="512" rx="24" fill="none" stroke="url(#aurRim)" stroke-width="1.5" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-tile-metric" x="548" y="144" width="284" height="248" rx="24" fill="#10121C" stroke="#262B40" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-tile-feature" x="848" y="144" width="384" height="248" rx="24" fill="#10121C" stroke="#262B40" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-tile-quote" x="548" y="408" width="384" height="248" rx="24" fill="#10121C" stroke="#262B40" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-tile-list" x="948" y="408" width="284" height="248" rx="24" fill="#10121C" stroke="#262B40" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="page-kicker">
+    <rect x="48" y="40" width="176" height="28" rx="14" fill="#161A29" stroke="#262B40" stroke-width="1"/>
+    <circle cx="64" cy="54" r="4" fill="#7C5CFF"/>
+    <text x="78" y="59" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" letter-spacing="1.2" fill="#B3B8D4">{{KICKER}}</text>
+  </g>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="48 80 1184 52">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="48" y="120" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="40" letter-spacing="-0.8" fill="#F4F6FF">{{TITLE}}</text>
+  </g>
+
+  <g id="hero-tile-content">
+    <rect x="80" y="176" width="132" height="28" rx="14" fill="#F4F6FF" fill-opacity="0.1" stroke="#F4F6FF" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="146" y="195" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" letter-spacing="1.2" fill="#F4F6FF">{{HERO_TAG}}</text>
+    <text x="80" y="564" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="36" letter-spacing="-0.8" fill="#F4F6FF">{{HERO_TITLE}}</text>
+    <text x="80" y="608" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" letter-spacing="-0.1" fill="#B3B8D4">{{HERO_BODY}}</text>
+  </g>
+
+  <g id="metric-tile-content">
+    <text x="580" y="200" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" letter-spacing="-0.1" fill="#B3B8D4">{{METRIC_LABEL}}</text>
+    <polyline points="740,236 762,226 780,230 800,206" fill="none" stroke="#22D3EE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="576" y="348" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="72" letter-spacing="-2" fill="#F4F6FF">{{METRIC_VALUE}}</text>
+  </g>
+
+  <g id="feature-tile-content">
+    <circle cx="1164" cy="212" r="36" fill="none" stroke="#262B40" stroke-width="2"/>
+    <circle cx="1164" cy="212" r="22" fill="none" stroke="#7C5CFF" stroke-width="2"/>
+    <circle cx="1164" cy="212" r="8" fill="#7C5CFF"/>
+    <text x="880" y="316" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="24" letter-spacing="-0.3" fill="#F4F6FF">{{FEATURE_TITLE}}</text>
+    <text x="880" y="354" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" letter-spacing="-0.1" fill="#B3B8D4">{{FEATURE_BODY}}</text>
+  </g>
+
+  <g id="quote-tile-content">
+    <circle cx="592" cy="484" r="10" fill="#F472B6"/>
+    <path d="M582 484 C582 466 591 455 606 450" fill="none" stroke="#F472B6" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="624" cy="484" r="10" fill="#F472B6"/>
+    <path d="M614 484 C614 466 623 455 638 450" fill="none" stroke="#F472B6" stroke-width="6" stroke-linecap="round"/>
+    <text x="580" y="560" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="22" letter-spacing="-0.3" fill="#F4F6FF">{{QUOTE}}</text>
+    <text x="580" y="616" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="0.4" fill="#7A80A3">{{QUOTE_AUTHOR}}</text>
+  </g>
+
+  <g id="list-tile-content">
+    <text x="980" y="460" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" letter-spacing="-0.2" fill="#F4F6FF">{{LIST_TITLE}}</text>
+    <circle cx="984" cy="510" r="3" fill="#B3B8D4"/>
+    <text x="998" y="516" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" letter-spacing="-0.1" fill="#B3B8D4">{{LIST_ITEM_1}}</text>
+    <circle cx="984" cy="552" r="3" fill="#B3B8D4"/>
+    <text x="998" y="558" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" letter-spacing="-0.1" fill="#B3B8D4">{{LIST_ITEM_2}}</text>
+    <circle cx="984" cy="594" r="3" fill="#B3B8D4"/>
+    <text x="998" y="600" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" letter-spacing="-0.1" fill="#B3B8D4">{{LIST_ITEM_3}}</text>
+  </g>
+
+  <g id="page-foot">
+    <text x="48" y="692" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#7A80A3">{{BRAND_MARK}}</text>
+    <text x="1232" y="692" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#7A80A3">{{PAGE_LABEL}}</text>
+  </g>
+</svg>

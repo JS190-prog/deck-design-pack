@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="motion-master" data-pptx-master-name="Motion Cue" data-pptx-layout="02_agenda" data-pptx-layout-name="Agenda (Timecoded)">
+  <!-- Motion Cue — 02 Agenda: timecoded rows on a rail, yellow playhead on the current row -->
+  <rect id="master-bg" width="1280" height="720" fill="#0D0F14" data-pptx-layer="master" data-pptx-editable="false"/>
+  <path id="master-crop-marks" d="M28 52V28H52 M1228 28H1252V52 M1252 668V692H1228 M52 692H28V668" fill="none" stroke="#6B7280" stroke-width="1.5" data-pptx-layer="master" data-pptx-editable="false"/>
+  <path id="layout-ruler" d="M240 72H1200 M240 63V72 M280 68V72 M320 68V72 M360 68V72 M400 63V72 M440 68V72 M480 68V72 M520 68V72 M560 63V72 M600 68V72 M640 68V72 M680 68V72 M720 63V72 M760 68V72 M800 68V72 M840 68V72 M880 63V72 M920 68V72 M960 68V72 M1000 68V72 M1040 63V72 M1080 68V72 M1120 68V72 M1160 68V72 M1200 63V72" fill="none" stroke="#2A2F3A" stroke-width="1.5" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <line id="layout-agenda-rail" x1="232" y1="208" x2="232" y2="628" stroke="#2A2F3A" stroke-width="1.5" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="80 96 1120 64">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="80" y="146" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="40" letter-spacing="-0.5" fill="#F5F7FA">{{TITLE}}</text>
+  </g>
+  <g id="page-number-slot" data-pptx-placeholder="slide-number" data-pptx-placeholder-idx="12" data-pptx-placeholder-bounds="1040 662 160 28">
+    <text id="page-number-carrier" data-pptx-placeholder-carrier="true" x="1200" y="680" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6B7280">{{PAGE_LABEL}}</text>
+  </g>
+  <g id="page-footer" data-pptx-role="footer">
+    <text x="80" y="680" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6B7280">{{BRAND_MARK}}</text>
+  </g>
+  <g id="timecode-header" data-pptx-role="header">
+    <text x="80" y="77" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="1.5" fill="#A8AEBD">{{TIMECODE}}</text>
+  </g>
+  <g id="item-1">
+    <text x="104" y="254" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#A8AEBD" letter-spacing="0.5">{{TOC_ITEM_1_TC}}</text>
+    <circle cx="232" cy="248" r="4" fill="#6B7280"/>
+    <text x="260" y="246" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="26" fill="#F5F7FA" letter-spacing="-0.2">{{TOC_ITEM_1_TITLE}}</text>
+    <text x="260" y="276" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#A8AEBD">{{TOC_ITEM_1_DESC}}</text>
+    <line x1="80" y1="292" x2="1200" y2="292" stroke="#2A2F3A" stroke-width="1"/>
+  </g>
+  <g id="item-2">
+    <text x="104" y="338" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#A8AEBD" letter-spacing="0.5">{{TOC_ITEM_2_TC}}</text>
+    <circle cx="232" cy="332" r="4" fill="#6B7280"/>
+    <text x="260" y="330" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="26" fill="#F5F7FA" letter-spacing="-0.2">{{TOC_ITEM_2_TITLE}}</text>
+    <text x="260" y="360" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#A8AEBD">{{TOC_ITEM_2_DESC}}</text>
+    <line x1="80" y1="376" x2="1200" y2="376" stroke="#2A2F3A" stroke-width="1"/>
+  </g>
+  <g id="item-3">
+    <text x="104" y="422" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#A8AEBD" letter-spacing="0.5">{{TOC_ITEM_3_TC}}</text>
+    <circle cx="232" cy="416" r="4" fill="#6B7280"/>
+    <text x="260" y="414" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="26" fill="#F5F7FA" letter-spacing="-0.2">{{TOC_ITEM_3_TITLE}}</text>
+    <text x="260" y="444" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#A8AEBD">{{TOC_ITEM_3_DESC}}</text>
+    <line x1="80" y1="460" x2="1200" y2="460" stroke="#2A2F3A" stroke-width="1"/>
+  </g>
+  <g id="item-4">
+    <text x="104" y="506" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#A8AEBD" letter-spacing="0.5">{{TOC_ITEM_4_TC}}</text>
+    <circle cx="232" cy="500" r="4" fill="#6B7280"/>
+    <text x="260" y="498" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="26" fill="#F5F7FA" letter-spacing="-0.2">{{TOC_ITEM_4_TITLE}}</text>
+    <text x="260" y="528" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#A8AEBD">{{TOC_ITEM_4_DESC}}</text>
+    <line x1="80" y1="544" x2="1200" y2="544" stroke="#2A2F3A" stroke-width="1"/>
+  </g>
+  <g id="item-5">
+    <text x="104" y="590" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#A8AEBD" letter-spacing="0.5">{{TOC_ITEM_5_TC}}</text>
+    <circle cx="232" cy="584" r="4" fill="#6B7280"/>
+    <text x="260" y="582" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="26" fill="#F5F7FA" letter-spacing="-0.2">{{TOC_ITEM_5_TITLE}}</text>
+    <text x="260" y="612" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#A8AEBD">{{TOC_ITEM_5_DESC}}</text>
+    <line x1="80" y1="628" x2="1200" y2="628" stroke="#2A2F3A" stroke-width="1"/>
+  </g>
+  <g id="callout-playhead">
+    <circle cx="232" cy="248" r="9" fill="#FFE14D"/>
+  </g>
+</svg>

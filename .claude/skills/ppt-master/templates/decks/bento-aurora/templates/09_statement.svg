@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="bento-aurora-master" data-pptx-master-name="Bento Aurora" data-pptx-layout="09_statement" data-pptx-layout-name="Statement (Aurora)">
+  <!-- Bento Aurora — 09 Statement: full-bleed aurora field inside one full-span hairline tile; one emphasized phrase -->
+  <defs>
+    <radialGradient id="fieldViolet" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#7C5CFF" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#7C5CFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fieldCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.46"/>
+      <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fieldPink" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#F472B6" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="emphasisInk" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="55%" stop-color="#7C5CFF"/>
+      <stop offset="100%" stop-color="#F472B6"/>
+    </linearGradient>
+  </defs>
+
+  <rect id="master-bg" width="1280" height="720" fill="#07080F" data-pptx-layer="master" data-pptx-editable="false"/>
+
+  <ellipse id="layout-field-violet" cx="940" cy="300" rx="660" ry="470" fill="url(#fieldViolet)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <ellipse id="layout-field-pink" cx="1180" cy="650" rx="430" ry="270" fill="url(#fieldPink)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <ellipse id="layout-field-cyan" cx="380" cy="770" rx="540" ry="250" fill="url(#fieldCyan)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-frame-tile" x="48" y="48" width="1184" height="608" rx="24" fill="none" stroke="#F4F6FF" stroke-opacity="0.1" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="statement-kicker">
+    <rect x="96" y="208" width="176" height="32" rx="16" fill="#F4F6FF" fill-opacity="0.08" stroke="#F4F6FF" stroke-opacity="0.26" stroke-width="1"/>
+    <circle cx="114" cy="224" r="4" fill="#22D3EE"/>
+    <text x="128" y="229" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" letter-spacing="1.2" fill="#F4F6FF">{{KICKER}}</text>
+  </g>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="96 268 1088 84">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="96" y="334" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="66" letter-spacing="-1.4" fill="#F4F6FF">{{STATEMENT}}</text>
+  </g>
+
+  <g id="statement-emphasis">
+    <text x="96" y="420" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="66" letter-spacing="-1.4" fill="url(#emphasisInk)">{{STATEMENT_EMPHASIS}}</text>
+  </g>
+
+  <g id="statement-note">
+    <rect x="96" y="470" width="48" height="3" rx="1.5" fill="#F4F6FF" fill-opacity="0.5"/>
+    <text x="96" y="518" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="22" letter-spacing="-0.2" fill="#B3B8D4">{{STATEMENT_NOTE}}</text>
+  </g>
+
+  <g id="page-foot">
+    <text x="48" y="692" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#7A80A3">{{BRAND_MARK}}</text>
+    <text x="1232" y="692" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#7A80A3">{{PAGE_LABEL}}</text>
+  </g>
+</svg>

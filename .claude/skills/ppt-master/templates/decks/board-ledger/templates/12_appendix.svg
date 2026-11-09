@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="ledger_content_master" data-pptx-master-name="Board Ledger — Content" data-pptx-layout="ledger_appendix" data-pptx-layout-name="Appendix — Two Column">
+  <!-- Board Ledger — 12 Appendix: dense two-column notes on one column rule (sample notes) -->
+  <rect id="master-bg" width="1280" height="720" fill="#FFFFFF" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-header-rule" x1="64" y1="64" x2="1216" y2="64" stroke="#C6C6C6" stroke-width="1" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-footer-rule" x1="64" y1="664" x2="1216" y2="664" stroke="#E0E0E0" stroke-width="1" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="layout-column-rule" x1="640" y1="180" x2="640" y2="640" stroke="#E0E0E0" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="64 84 1152 76">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="64" y="110" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="28" letter-spacing="-0.4" fill="#161616">{{TITLE}}</text>
+  </g>
+  <g id="source-slot" data-pptx-placeholder="footer" data-pptx-placeholder-idx="2" data-pptx-placeholder-bounds="64 672 800 24">
+    <text id="source-carrier" data-pptx-placeholder-carrier="true" x="64" y="689" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#6F6F6F">{{SOURCE}}</text>
+  </g>
+  <g id="page-number-slot" data-pptx-placeholder="slide-number" data-pptx-placeholder-idx="3" data-pptx-placeholder-bounds="1136 672 80 24">
+    <text id="page-number-carrier" data-pptx-placeholder-carrier="true" x="1216" y="689" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#161616">{{PAGE_NUM}}</text>
+  </g>
+  <g id="tracker">
+    <text x="64" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">01</text>
+    <text x="88" y="52" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{TRACK_1}}</text>
+    <text x="208" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">02</text>
+    <text x="232" y="52" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{TRACK_2}}</text>
+    <text x="352" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">03</text>
+    <text x="376" y="52" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{TRACK_3}}</text>
+    <text x="496" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">04</text>
+    <text x="520" y="52" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{TRACK_4}}</text>
+    <text x="640" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">05</text>
+    <text x="664" y="52" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{TRACK_5}}</text>
+  </g>
+  <g id="header-meta">
+    <text x="1216" y="52" text-anchor="end" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" letter-spacing="0.3" fill="#6F6F6F">{{CLASSIFICATION}}</text>
+  </g>
+  <g id="note-method">
+    <text x="64" y="200" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#161616" xml:space="preserve">A   분석 방법론</text>
+    <line x1="64" y1="212" x2="608" y2="212" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="64" y="240" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#393939">1. 매출·이익은 연결 기준이며 내부거래를 제거한 수치다.</text>
+    <text x="64" y="266" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#393939">2. 2026년은 3분기 누적 실적에 4분기 전망치를 더했다.</text>
+    <text x="64" y="292" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#393939">3. 성장률은 연평균 복합성장률(CAGR)로 계산했다.</text>
+    <text x="64" y="318" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#393939">4. 대안 평가는 5개 기준·4점 척도의 가중 평균이다.</text>
+    <text x="64" y="344" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#393939">5. 가중치는 경영위원회 사전 검토(10월)에서 확정했다.</text>
+    <text x="64" y="370" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#393939">6. 민감도는 환율 ±5%, 원자재 단가 ±10%로 시험했다.</text>
+  </g>
+  <g id="note-terms">
+    <text x="64" y="428" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#161616" xml:space="preserve">B   용어 정의</text>
+    <line x1="64" y1="440" x2="608" y2="440" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="64" y="468" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#393939"><tspan font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" fill="#161616">영업이익률</tspan> — 영업이익 ÷ 매출액, 일회성 손익 제외</text>
+    <text x="64" y="494" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#393939"><tspan font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" fill="#161616">수주잔고</tspan> — 계약 후 미인식 매출의 분기말 잔액</text>
+    <text x="64" y="520" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#393939"><tspan font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" fill="#161616">고객 유지율</tspan> — 전년 말 고객 중 당기 말 거래 유지 비율</text>
+    <text x="64" y="546" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#393939"><tspan font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" fill="#161616">핵심 경로</tspan> — 지연 시 전체 일정이 밀리는 과제 연쇄</text>
+    <text x="64" y="572" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#393939"><tspan font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" fill="#161616">기준일</tspan> — 본 자료 수치의 마감일(2026. 10. 31)</text>
+  </g>
+  <g id="note-sources">
+    <text x="672" y="200" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#161616" xml:space="preserve">C   자료 출처</text>
+    <line x1="672" y1="212" x2="1216" y2="212" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="672" y="240" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#393939">1. 재무 실적: 관리회계 시스템, 2026년 10월 마감</text>
+    <text x="672" y="266" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#393939">2. 시장 규모: 공개 산업 통계 및 협회 연간 보고서</text>
+    <text x="672" y="292" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#393939">3. 경쟁사 수치: 각 사 사업보고서 공시 기준</text>
+    <text x="672" y="318" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#393939">4. 고객 지표: CRM 데이터, 활성 고객 기준</text>
+    <text x="672" y="344" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#393939">5. 투자 소요: 외부 견적 3건의 중간값</text>
+    <text x="672" y="370" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#393939">6. 일정: 프로젝트관리실 기준 계획(2026. 10)</text>
+  </g>
+  <g id="note-caveats">
+    <text x="672" y="428" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#161616" xml:space="preserve">D   유의 사항</text>
+    <line x1="672" y1="440" x2="1216" y2="440" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="672" y="468" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#393939">· 전망치는 현재 계획 기준이며 확정 수치가 아니다.</text>
+    <text x="672" y="494" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#393939">· 단위 미만 반올림으로 합계가 다를 수 있다.</text>
+    <text x="672" y="520" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#393939">· 대안별 효과는 동일한 기준 시나리오를 적용했다.</text>
+    <text x="672" y="546" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="15" fill="#393939">· 본 자료는 이사회 심의용으로 외부 공개를 금한다.</text>
+  </g>
+  <g id="page-foot">
+    <text x="1120" y="689" text-anchor="end" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#393939">{{BRAND_MARK}}</text>
+  </g>
+</svg>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="bento-aurora-master" data-pptx-master-name="Bento Aurora" data-pptx-layout="07_chart" data-pptx-layout-name="Chart + Insight">
+  <!-- Bento Aurora — 07 Chart: area-line chart tile + aurora insight hero + two stat tiles — sample data; regenerated with real data at deck generation -->
+  <defs>
+    <radialGradient id="aurViolet" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.8"/>
+      <stop offset="45%" stop-color="#7C5CFF" stop-opacity="0.46"/>
+      <stop offset="100%" stop-color="#7C5CFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aurCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.66"/>
+      <stop offset="45%" stop-color="#22D3EE" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aurPink" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.68"/>
+      <stop offset="45%" stop-color="#F472B6" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="aurRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="areaFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#7C5CFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lineFlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C5CFF"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <filter id="peakGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#22D3EE" flood-opacity="0.55"/>
+    </filter>
+    <linearGradient id="aurWash" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#7C5CFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect id="master-bg" width="1280" height="720" fill="#07080F" data-pptx-layer="master" data-pptx-editable="false"/>
+
+  <rect id="layout-tile-chart" x="48" y="144" width="784" height="512" rx="24" fill="#10121C" stroke="#262B40" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-hero-tile" x="848" y="144" width="384" height="248" rx="24" fill="#161A29" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-hero-wash" x="848" y="144" width="384" height="248" rx="24" fill="url(#aurWash)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <ellipse id="layout-hero-aurora-violet" cx="1090" cy="236" rx="130" ry="60" transform="rotate(-20 1090 236)" fill="url(#aurViolet)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <ellipse id="layout-hero-aurora-pink" cx="1150" cy="200" rx="70" ry="34" transform="rotate(-20 1150 200)" fill="url(#aurPink)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <ellipse id="layout-hero-aurora-cyan" cx="1040" cy="280" rx="100" ry="36" transform="rotate(-20 1040 280)" fill="url(#aurCyan)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-hero-rim" x="848" y="144" width="384" height="248" rx="24" fill="none" stroke="url(#aurRim)" stroke-width="1.5" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-tile-stat-1" x="848" y="408" width="384" height="116" rx="24" fill="#10121C" stroke="#262B40" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-tile-stat-2" x="848" y="540" width="384" height="116" rx="24" fill="#10121C" stroke="#262B40" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="page-kicker">
+    <rect x="48" y="40" width="176" height="28" rx="14" fill="#161A29" stroke="#262B40" stroke-width="1"/>
+    <circle cx="64" cy="54" r="4" fill="#7C5CFF"/>
+    <text x="78" y="59" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" letter-spacing="1.2" fill="#B3B8D4">{{KICKER}}</text>
+  </g>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="48 80 1184 52">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="48" y="120" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="40" letter-spacing="-0.8" fill="#F4F6FF">{{TITLE}}</text>
+  </g>
+
+  <g id="chart-head">
+    <text x="80" y="196" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="22" letter-spacing="-0.3" fill="#F4F6FF">{{CHART_TITLE}}</text>
+    <rect x="80" y="223" width="24" height="4" rx="2" fill="#7C5CFF"/>
+    <text x="112" y="230" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#B3B8D4">{{LEGEND_SERIES_A}}</text>
+    <line x1="248" y1="225" x2="272" y2="225" stroke="#7A80A3" stroke-width="2" stroke-dasharray="4 4"/>
+    <text x="280" y="230" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#B3B8D4">{{LEGEND_SERIES_B}}</text>
+  </g>
+
+  <!-- chart-plot-area: 128,264,792,576 -->
+  <g id="chart-body">
+    <g id="chart-grid" stroke="#262B40" stroke-width="1">
+      <line x1="128" y1="264" x2="792" y2="264"/>
+      <line x1="128" y1="342" x2="792" y2="342"/>
+      <line x1="128" y1="420" x2="792" y2="420"/>
+      <line x1="128" y1="498" x2="792" y2="498"/>
+      <line x1="128" y1="576" x2="792" y2="576"/>
+    </g>
+    <g id="chart-y-axis" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#7A80A3">
+      <text x="112" y="269">100</text>
+      <text x="112" y="347">75</text>
+      <text x="112" y="425">50</text>
+      <text x="112" y="503">25</text>
+      <text x="112" y="581">0</text>
+    </g>
+    <path id="chart-area-a" d="M128 488.6 L238.7 469.9 L349.3 479.3 L460 432.5 L570.7 413.8 L681.3 363.8 L792 313.9 L792 576 L128 576 Z" fill="url(#areaFill)"/>
+    <path id="chart-series-b" d="M128 507.4 L238.7 494.9 L349.3 482.4 L460 473 L570.7 460.6 L681.3 448.1 L792 435.6" fill="none" stroke="#7A80A3" stroke-width="2" stroke-dasharray="6 6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="chart-series-a" d="M128 488.6 L238.7 469.9 L349.3 479.3 L460 432.5 L570.7 413.8 L681.3 363.8 L792 313.9" fill="none" stroke="url(#lineFlow)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="chart-peak" cx="792" cy="313.9" r="7" fill="#F4F6FF" stroke="#22D3EE" stroke-width="3" filter="url(#peakGlow)"/>
+    <text x="776" y="296" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="16" fill="#F4F6FF">84</text>
+    <g id="chart-x-axis" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#7A80A3">
+      <text x="128" y="608">1월</text>
+      <text x="238.7" y="608">2월</text>
+      <text x="349.3" y="608">3월</text>
+      <text x="460" y="608">4월</text>
+      <text x="570.7" y="608">5월</text>
+      <text x="681.3" y="608">6월</text>
+      <text x="792" y="608">7월</text>
+    </g>
+  </g>
+
+  <g id="insight-tile">
+    <text x="880" y="190" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" letter-spacing="1.6" fill="#F4F6FF">KEY INSIGHT</text>
+    <text x="880" y="316" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="28" letter-spacing="-0.5" fill="#F4F6FF">{{INSIGHT_TITLE}}</text>
+    <text x="880" y="354" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" letter-spacing="-0.1" fill="#F4F6FF" fill-opacity="0.82">{{INSIGHT_BODY}}</text>
+  </g>
+
+  <g id="stat-1">
+    <circle cx="1196" cy="444" r="5" fill="#7C5CFF"/>
+    <text x="880" y="470" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="40" letter-spacing="-1" fill="#F4F6FF">{{STAT_1_VALUE}}</text>
+    <text x="880" y="502" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" letter-spacing="-0.1" fill="#B3B8D4">{{STAT_1_LABEL}}</text>
+  </g>
+
+  <g id="stat-2">
+    <circle cx="1196" cy="576" r="5" fill="#22D3EE"/>
+    <text x="880" y="602" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="40" letter-spacing="-1" fill="#F4F6FF">{{STAT_2_VALUE}}</text>
+    <text x="880" y="634" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" letter-spacing="-0.1" fill="#B3B8D4">{{STAT_2_LABEL}}</text>
+  </g>
+
+  <g id="page-foot">
+    <text x="48" y="692" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#7A80A3">{{BRAND_MARK}}</text>
+    <text x="1232" y="692" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#7A80A3">{{PAGE_LABEL}}</text>
+  </g>
+</svg>

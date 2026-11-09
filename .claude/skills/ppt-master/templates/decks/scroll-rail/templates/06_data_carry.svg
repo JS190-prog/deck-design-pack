@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="scroll-rail-master" data-pptx-master-name="Scroll Rail" data-pptx-layout="chart_stage" data-pptx-layout-name="Chart Stage">
+  <!-- Scroll Rail — 06 Data carry: 05 number becomes the first bar (sample data; regenerate at deck generation) -->
+  <rect id="master-bg" width="1280" height="720" fill="#FAFAF7" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-rail" x1="80" y1="628" x2="1200" y2="628" stroke="#D5D8DE" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-rail-start" x1="80" y1="621" x2="80" y2="635" stroke="#8A8F98" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-rail-end" x1="1200" y1="621" x2="1200" y2="635" stroke="#8A8F98" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="layout-plot-baseline" x1="80" y1="568" x2="1200" y2="568" stroke="#14161A" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="80 96 1120 64">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="80" y="144" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="40" letter-spacing="-0.8" fill="#14161A">{{TITLE}}</text>
+  </g>
+
+  <g id="support-slot" data-pptx-placeholder="body" data-pptx-placeholder-idx="1" data-pptx-placeholder-bounds="80 164 1120 44">
+    <text id="support-carrier" data-pptx-placeholder-carrier="true" x="80" y="192" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="22" fill="#3C4048">{{SUPPORT}}</text>
+  </g>
+
+  <!-- chart-plot-area: 80,368,1200,568 -->
+  <!-- handoff anchor A (80, 352) — the carried number labels the first (max) bar -->
+  <g id="chart-carry">
+    <rect x="80" y="368" width="128" height="200" fill="#FF4F2E"/>
+    <text x="80" y="352" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="48" letter-spacing="-1" fill="#FF4F2E">{{NUMBER}}</text>
+    <text x="80" y="596" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#14161A">{{CAT_1}}</text>
+  </g>
+
+  <g id="chart-context">
+    <rect x="328" y="480" width="128" height="88" fill="#D5D8DE"/>
+    <rect x="576" y="499" width="128" height="69" fill="#D5D8DE"/>
+    <rect x="824" y="512" width="128" height="56" fill="#D5D8DE"/>
+    <rect x="1072" y="518" width="128" height="50" fill="#D5D8DE"/>
+    <text x="328" y="468" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="22" fill="#3C4048">1.4배</text>
+    <text x="576" y="487" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="22" fill="#3C4048">1.1배</text>
+    <text x="824" y="500" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="22" fill="#3C4048">0.9배</text>
+    <text x="1072" y="506" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="22" fill="#3C4048">0.8배</text>
+    <text x="328" y="596" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#3C4048">{{CAT_2}}</text>
+    <text x="576" y="596" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#3C4048">{{CAT_3}}</text>
+    <text x="824" y="596" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#3C4048">{{CAT_4}}</text>
+    <text x="1072" y="596" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#3C4048">{{CAT_5}}</text>
+  </g>
+
+  <g id="claim-source">
+    <text x="1200" y="690" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#8A8F98">{{SOURCE}}</text>
+  </g>
+
+  <!-- stop marker — page 6 of 10: x = 80 + 1120 × (6−1)/(10−1) = 702 -->
+  <g id="rail-marker">
+    <line x1="80" y1="628" x2="702" y2="628" stroke="#14161A" stroke-width="2"/>
+    <circle cx="702" cy="628" r="12" fill="#FF4F2E" fill-opacity="0.16"/>
+    <circle cx="702" cy="628" r="6" fill="#FF4F2E"/>
+    <text x="702" y="658" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" letter-spacing="0.4" fill="#14161A">{{STOP_LABEL}}</text>
+  </g>
+
+  <g id="page-foot">
+    <text x="80" y="690" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#8A8F98">{{BRAND_MARK}}</text>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="ledger_title_master" data-pptx-master-name="Board Ledger — Title" data-pptx-layout="ledger_cover" data-pptx-layout-name="Cover">
+  <!-- Board Ledger — 01 Cover: white field, one thin accent rule, classification stamp -->
+  <rect id="master-bg" width="1280" height="720" fill="#FFFFFF" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-footer-rule" x1="64" y1="664" x2="1216" y2="664" stroke="#E0E0E0" stroke-width="1" data-pptx-layer="master" data-pptx-editable="false"/>
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="64 294 1024 72">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="64" y="348" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="48" letter-spacing="-1.0" fill="#161616">{{TITLE}}</text>
+  </g>
+  <g id="subtitle-slot" data-pptx-placeholder="subtitle" data-pptx-placeholder-idx="1" data-pptx-placeholder-bounds="64 372 1024 44">
+    <text id="subtitle-carrier" data-pptx-placeholder-carrier="true" x="64" y="402" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="22" letter-spacing="-0.2" fill="#393939">{{SUBTITLE}}</text>
+  </g>
+  <g id="cover-brand">
+    <text x="64" y="76" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="16" letter-spacing="-0.2" fill="#161616">{{BRAND_MARK}}</text>
+  </g>
+  <g id="cover-classification">
+    <rect x="1056" y="54" width="160" height="30" fill="none" stroke="#161616" stroke-width="1"/>
+    <text x="1136" y="74" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" letter-spacing="0.4" fill="#161616">{{CLASSIFICATION}}</text>
+  </g>
+  <g id="cover-kicker">
+    <rect x="64" y="238" width="48" height="3" fill="#1E4FD8"/>
+    <text x="64" y="278" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="16" letter-spacing="0.2" fill="#393939">{{MEETING_LABEL}}</text>
+  </g>
+  <g id="cover-meta">
+    <line x1="64" y1="548" x2="712" y2="548" stroke="#C6C6C6" stroke-width="1"/>
+    <text x="64" y="582" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">보고일자</text>
+    <text x="64" y="610" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{DATE}}</text>
+    <text x="280" y="582" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">보고자</text>
+    <text x="280" y="610" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{AUTHOR}}</text>
+    <text x="496" y="582" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">소관 부서</text>
+    <text x="496" y="610" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{ORGANIZATION}}</text>
+  </g>
+  <g id="cover-foot">
+    <text x="64" y="689" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#6F6F6F">{{DISCLAIMER}}</text>
+  </g>
+</svg>

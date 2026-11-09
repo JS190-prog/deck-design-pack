@@ -2,8 +2,9 @@
 
 This repository bundles software and fonts written by other people. Their licences are
 reproduced or pointed to below, and their copyright notices are preserved as those licences
-require. The pack's own material — the seven deck templates, the seven brand presets, the
-contact sheets, and `install.py` — is [MIT © 2026 humanist96](LICENSE).
+require. The pack's own material — the fourteen deck templates, the seven brand presets, the
+contact sheets, the three.js renders in `depth-field/images/`, and `install.py` — is
+[MIT © 2026 humanist96](LICENSE).
 
 ---
 
@@ -53,6 +54,28 @@ Two skills vendored under `.claude/skills/` carry their own `LICENSE` file along
 authors. gn-voice's Section B material (the author's corpus, the analysis data derived from it, the nine
 personal genre packs, and the examples) is reserved and is **not** included. Scope, changes, and the MIT text:
 [`.claude/skills/deck-voice/NOTICE.md`](.claude/skills/deck-voice/NOTICE.md).
+
+---
+
+## Motion and scroll-deck principles — `decks/motion-cue/`, `decks/scroll-rail/`
+
+`motion-cue` reflects the motion principles and technique vocabulary of
+**[gongnyang/awesome-ai-motion](https://github.com/gongnyang/awesome-ai-motion)** (one focus per scene, one main
+action with one or two supporting actions, hold the completed state), mapped onto PowerPoint's native
+entrance effects. `scroll-rail` reflects the stop / handoff / concept-grammar principles of
+**[gongnyang/awesome-html-scrolline-deck](https://github.com/gongnyang/awesome-html-scrolline-deck)**, mapped onto a
+persistent progress rail and the `push` page transition. Both repositories are MIT © 2026 gongnyang. No code,
+CSS, clips, or other files from either repository are included — the SVG pages and specs are original work.
+
+---
+
+## three.js — `decks/depth-field/templates/three/scene.html`
+
+The scene source that produced the four bitmaps in `decks/depth-field/images/` imports
+**[three.js](https://github.com/mrdoob/three.js)** `0.160.0` (and its UnrealBloom example add-on) from the jsDelivr
+CDN by exact version. three.js is MIT © 2010-2026 three.js authors; it is **not** vendored in this repository.
+The rendered images are original work of this pack. Placing a 3D scene behind slides follows the idiom of
+reveal.js + three.js decks such as `dimroc/reveal.js-threejs` (MIT); no code from those decks is included.
 
 ---
 

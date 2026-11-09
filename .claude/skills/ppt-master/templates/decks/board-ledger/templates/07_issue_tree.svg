@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="ledger_content_master" data-pptx-master-name="Board Ledger — Content" data-pptx-layout="ledger_exhibit_full" data-pptx-layout-name="Exhibit — Full Width">
+  <!-- Board Ledger — 07 Issue tree: MECE root - 3 drivers - 6 leaves, elbow connectors, key-driver callout (sample values) -->
+  <rect id="master-bg" width="1280" height="720" fill="#FFFFFF" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-header-rule" x1="64" y1="64" x2="1216" y2="64" stroke="#C6C6C6" stroke-width="1" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-footer-rule" x1="64" y1="664" x2="1216" y2="664" stroke="#E0E0E0" stroke-width="1" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="layout-exhibit-rule" x1="64" y1="202" x2="1216" y2="202" stroke="#161616" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="64 84 1152 76">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="64" y="110" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="28" letter-spacing="-0.4" fill="#161616">{{TITLE}}</text>
+  </g>
+  <g id="source-slot" data-pptx-placeholder="footer" data-pptx-placeholder-idx="2" data-pptx-placeholder-bounds="64 672 800 24">
+    <text id="source-carrier" data-pptx-placeholder-carrier="true" x="64" y="689" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#6F6F6F">{{SOURCE}}</text>
+  </g>
+  <g id="page-number-slot" data-pptx-placeholder="slide-number" data-pptx-placeholder-idx="3" data-pptx-placeholder-bounds="1136 672 80 24">
+    <text id="page-number-carrier" data-pptx-placeholder-carrier="true" x="1216" y="689" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#161616">{{PAGE_NUM}}</text>
+  </g>
+  <g id="tracker">
+    <text x="64" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">01</text>
+    <text x="88" y="52" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{TRACK_1}}</text>
+    <text x="208" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#161616">02</text>
+    <text x="232" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#161616">{{TRACK_2}}</text>
+    <text x="352" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">03</text>
+    <text x="376" y="52" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{TRACK_3}}</text>
+    <text x="496" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">04</text>
+    <text x="520" y="52" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{TRACK_4}}</text>
+    <text x="640" y="52" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">05</text>
+    <text x="664" y="52" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">{{TRACK_5}}</text>
+    <rect x="208" y="62" width="128" height="3" fill="#1E4FD8"/>
+  </g>
+  <g id="header-meta">
+    <text x="1216" y="52" text-anchor="end" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" letter-spacing="0.3" fill="#6F6F6F">{{CLASSIFICATION}}</text>
+  </g>
+  <g id="exhibit-head">
+    <text x="64" y="188" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#161616" xml:space="preserve">Exhibit {{EXHIBIT_NO}}<tspan fill="#C6C6C6">  ·  </tspan><tspan font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" fill="#393939">{{EXHIBIT_TITLE}}</tspan></text>
+    <text x="1216" y="188" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">단위: {{UNIT}}</text>
+  </g>
+  <g id="tree-levels">
+    <text x="64" y="226" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">결과</text>
+    <text x="352" y="226" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">1차 동인</text>
+    <text x="640" y="226" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F6F6F">2차 동인</text>
+  </g>
+  <g id="tree-connectors">
+    <path d="M280 432 H316 M316 296 V568 M316 296 H352 M316 432 H352 M316 568 H352 M568 296 H604 M604 266 V326 M604 266 H640 M604 326 H640 M568 432 H604 M604 402 V462 M604 402 H640 M604 462 H640 M568 568 H604 M604 538 V598 M604 538 H640 M604 598 H640" fill="none" stroke="#6F6F6F" stroke-width="1"/>
+  </g>
+  <g id="tree-root">
+    <rect x="64" y="372" width="216" height="120" fill="#FFFFFF" stroke="#161616" stroke-width="1.5"/>
+    <text x="84" y="418" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{ROOT}}</text>
+    <text x="84" y="462" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="32" letter-spacing="-0.6" fill="#161616">−128</text>
+  </g>
+  <g id="tree-drivers">
+    <rect x="352" y="260" width="216" height="72" fill="#F4F4F4"/>
+    <text x="372" y="290" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{DRIVER_1}}</text>
+    <text x="372" y="318" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#393939">−22</text>
+    <rect x="352" y="396" width="216" height="72" fill="#F4F4F4"/>
+    <text x="372" y="426" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{DRIVER_2}}</text>
+    <text x="372" y="454" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#393939">+18</text>
+    <rect x="352" y="532" width="216" height="72" fill="#F4F4F4"/>
+    <text x="372" y="562" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{DRIVER_3}}</text>
+    <text x="372" y="590" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#393939">−124</text>
+  </g>
+  <g id="tree-leaves">
+    <rect x="640" y="240" width="288" height="52" fill="#FFFFFF" stroke="#C6C6C6" stroke-width="1"/>
+    <text x="656" y="272" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{LEAF_1}}</text>
+    <text x="912" y="272" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">−30</text>
+    <rect x="640" y="300" width="288" height="52" fill="#FFFFFF" stroke="#C6C6C6" stroke-width="1"/>
+    <text x="656" y="332" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{LEAF_2}}</text>
+    <text x="912" y="332" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">+8</text>
+    <rect x="640" y="376" width="288" height="52" fill="#FFFFFF" stroke="#C6C6C6" stroke-width="1"/>
+    <text x="656" y="408" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{LEAF_3}}</text>
+    <text x="912" y="408" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">+26</text>
+    <rect x="640" y="436" width="288" height="52" fill="#FFFFFF" stroke="#C6C6C6" stroke-width="1"/>
+    <text x="656" y="468" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{LEAF_4}}</text>
+    <text x="912" y="468" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">−8</text>
+    <rect x="640" y="572" width="288" height="52" fill="#FFFFFF" stroke="#C6C6C6" stroke-width="1"/>
+    <text x="656" y="604" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{LEAF_6}}</text>
+    <text x="912" y="604" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">−45</text>
+  </g>
+  <g id="tree-key-driver">
+    <rect x="640" y="512" width="288" height="52" fill="#E8EEFC" stroke="#1E4FD8" stroke-width="1.5"/>
+    <text x="656" y="544" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{LEAF_5}}</text>
+    <text x="912" y="544" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="18" fill="#161616">−79</text>
+    <line x1="928" y1="538" x2="968" y2="538" stroke="#1E4FD8" stroke-width="1"/>
+    <rect x="968" y="494" width="2" height="88" fill="#1E4FD8"/>
+    <text x="986" y="514" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#1E4FD8">핵심 동인</text>
+    <text x="986" y="542" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#161616">{{KEY_DRIVER}}</text>
+  </g>
+  <g id="page-foot">
+    <text x="1120" y="689" text-anchor="end" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#393939">{{BRAND_MARK}}</text>
+  </g>
+</svg>

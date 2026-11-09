@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="depth-master" data-pptx-master-name="Depth Field" data-pptx-layout="07_chart" data-pptx-layout-name="Chart (Area Panel)">
+  <!-- Depth Field — 07 Chart: cyan area series + violet dashed comparison in a flat panel — sample data; regenerated with real data at deck generation -->
+  <defs>
+    <linearGradient id="chart-area-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5CE1E6" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#5CE1E6" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="chart-peak-glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#5CE1E6" flood-opacity="0.55" result="tint"/>
+      <feComposite in="tint" in2="blur" operator="in" result="glow"/>
+      <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect id="master-bg" width="1280" height="720" fill="#060B1A" data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="layout-chart-panel" x="80" y="208" width="1120" height="404" rx="6" fill="#0E1630" stroke="#1E2A4A" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="80 112 720 56">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="80" y="152" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="40" letter-spacing="-0.6" fill="#EAF0FF">{{TITLE}}</text>
+  </g>
+
+  <g id="page-header">
+    <text x="80" y="96" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="1.5" fill="#5CE1E6">{{DEPTH_TAG}}<tspan fill="#6F7BA0"> · {{KICKER}}</tspan></text>
+  </g>
+
+  <g id="chart-legend">
+    <line x1="860" y1="142" x2="884" y2="142" stroke="#5CE1E6" stroke-width="2.5"/>
+    <text x="894" y="147" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#AEB9D6">{{LEGEND_SERIES_A}}</text>
+    <line x1="1036" y1="142" x2="1060" y2="142" stroke="#8B7CFF" stroke-width="2" stroke-dasharray="6 5"/>
+    <text x="1070" y="147" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#AEB9D6">{{LEGEND_SERIES_B}}</text>
+  </g>
+
+  <!-- chart-plot-area: 170,268,1160,548 -->
+  <g id="chart-body">
+    <g id="chart-grid" stroke="#1E2A4A" stroke-width="1">
+      <line x1="170" y1="268" x2="1160" y2="268"/>
+      <line x1="170" y1="338" x2="1160" y2="338"/>
+      <line x1="170" y1="408" x2="1160" y2="408"/>
+      <line x1="170" y1="478" x2="1160" y2="478"/>
+      <line x1="170" y1="548" x2="1160" y2="548"/>
+    </g>
+    <g id="chart-y-axis" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#6F7BA0">
+      <text x="148" y="273">100</text>
+      <text x="148" y="343">75</text>
+      <text x="148" y="413">50</text>
+      <text x="148" y="483">25</text>
+      <text x="148" y="553">0</text>
+    </g>
+    <g id="chart-series-a-area">
+      <path d="M170 486.4L311.4 469.6L452.9 461.2L594.3 436L735.7 416.4L877.1 385.6L1018.6 363.2L1160 321.2L1160 548L170 548Z" fill="url(#chart-area-fill)"/>
+    </g>
+    <g id="chart-series-b">
+      <path d="M170 492L311.4 480.8L452.9 472.4L594.3 464L735.7 452.8L877.1 444.4L1018.6 433.2L1160 422" fill="none" stroke="#8B7CFF" stroke-width="2" stroke-dasharray="6 5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="chart-series-a">
+      <path d="M170 486.4L311.4 469.6L452.9 461.2L594.3 436L735.7 416.4L877.1 385.6L1018.6 363.2L1160 321.2" fill="none" stroke="#5CE1E6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="170" cy="486.4" r="4" fill="#0E1630" stroke="#5CE1E6" stroke-width="2"/>
+      <circle cx="311.4" cy="469.6" r="4" fill="#0E1630" stroke="#5CE1E6" stroke-width="2"/>
+      <circle cx="452.9" cy="461.2" r="4" fill="#0E1630" stroke="#5CE1E6" stroke-width="2"/>
+      <circle cx="594.3" cy="436" r="4" fill="#0E1630" stroke="#5CE1E6" stroke-width="2"/>
+      <circle cx="735.7" cy="416.4" r="4" fill="#0E1630" stroke="#5CE1E6" stroke-width="2"/>
+      <circle cx="877.1" cy="385.6" r="4" fill="#0E1630" stroke="#5CE1E6" stroke-width="2"/>
+      <circle cx="1018.6" cy="363.2" r="4" fill="#0E1630" stroke="#5CE1E6" stroke-width="2"/>
+      <line x1="1160" y1="330" x2="1160" y2="548" stroke="#5CE1E6" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="4 4"/>
+      <circle cx="1160" cy="321.2" r="6" fill="#5CE1E6" filter="url(#chart-peak-glow)"/>
+    </g>
+    <g id="chart-callout">
+      <text x="1140" y="300" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#EAF0FF">{{CALLOUT}}</text>
+    </g>
+    <g id="chart-x-axis" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#6F7BA0">
+      <text x="170" y="584">Q1 '24</text>
+      <text x="311.4" y="584">Q2 '24</text>
+      <text x="452.9" y="584">Q3 '24</text>
+      <text x="594.3" y="584">Q4 '24</text>
+      <text x="735.7" y="584">Q1 '25</text>
+      <text x="877.1" y="584">Q2 '25</text>
+      <text x="1018.6" y="584">Q3 '25</text>
+      <text x="1160" y="584">Q4 '25</text>
+    </g>
+  </g>
+
+  <g id="page-foot">
+    <text x="80" y="640" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F7BA0">{{SOURCE}}</text>
+    <text x="80" y="676" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F7BA0">{{BRAND_MARK}}</text>
+    <text x="1200" y="676" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F7BA0">{{PAGE_LABEL}}</text>
+  </g>
+</svg>

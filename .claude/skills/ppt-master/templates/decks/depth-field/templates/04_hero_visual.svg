@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="depth-master" data-pptx-master-name="Depth Field" data-pptx-layout="04_hero_visual" data-pptx-layout-name="Hero Visual (Render Right)">
+  <!-- Depth Field — 04 Hero visual: layered-plane render (df_hero.jpg) on the right 60%, headline + caption left -->
+  <defs>
+    <linearGradient id="hero-fade-left-fill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#060B1A" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#060B1A" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="hero-fade-bottom-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#060B1A" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#060B1A" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+
+  <rect id="master-bg" width="1280" height="720" fill="#060B1A" data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="layout-hero-fallback" x="512" y="0" width="768" height="720" fill="#0E1630" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <image id="layout-hero-render" href="../images/df_hero.jpg" x="512" y="0" width="768" height="720" preserveAspectRatio="xMidYMid slice" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-hero-fade-left" x="512" y="0" width="280" height="720" fill="url(#hero-fade-left-fill)" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-hero-fade-bottom" x="512" y="600" width="768" height="120" fill="url(#hero-fade-bottom-fill)" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="80 214 432 116">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="80" y="264" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-weight="700" font-size="44" letter-spacing="-0.7" fill="#EAF0FF">{{TITLE}}</text>
+  </g>
+
+  <g id="body-slot" data-pptx-placeholder="body" data-pptx-placeholder-idx="1" data-pptx-placeholder-bounds="80 352 420 124">
+    <text id="body-carrier" data-pptx-placeholder-carrier="true" x="80" y="380" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#AEB9D6">{{BODY}}</text>
+  </g>
+
+  <g id="page-header">
+    <text x="80" y="176" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="1.5" fill="#5CE1E6">{{DEPTH_TAG}}<tspan fill="#6F7BA0"> · {{KICKER}}</tspan></text>
+  </g>
+
+  <g id="hero-stats">
+    <line x1="80" y1="500" x2="472" y2="500" stroke="#1E2A4A" stroke-width="1"/>
+    <text x="80" y="546" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="30" letter-spacing="-0.4" fill="#EAF0FF">{{STAT_1_VALUE}}</text>
+    <text x="80" y="572" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#6F7BA0">{{STAT_1_LABEL}}</text>
+    <text x="280" y="546" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="30" letter-spacing="-0.4" fill="#EAF0FF">{{STAT_2_VALUE}}</text>
+    <text x="280" y="572" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#6F7BA0">{{STAT_2_LABEL}}</text>
+  </g>
+
+  <g id="hero-caption">
+    <rect x="1192" y="626" width="8" height="8" fill="#5CE1E6"/>
+    <text x="1180" y="634" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#AEB9D6">{{CAPTION}}</text>
+  </g>
+
+  <g id="page-foot">
+    <text x="80" y="676" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F7BA0">{{BRAND_MARK}}</text>
+    <text x="1200" y="676" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#6F7BA0">{{PAGE_LABEL}}</text>
+  </g>
+</svg>

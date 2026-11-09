@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="pop-master" data-pptx-master-name="Pop Brutal" data-pptx-layout="07_chart" data-pptx-layout-name="Chart (Bars)">
+  <!-- Pop Brutal — 07 Chart: chunky outlined bars, sample data; regenerated with real data at deck generation -->
+  <rect id="master-bg" width="1280" height="720" fill="#FFF6E0" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="layout-chart-baseline" x1="96" y1="568" x2="1216" y2="568" stroke="#111111" stroke-width="3" stroke-linecap="square" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="64 60 920 84">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="64" y="124" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="52" letter-spacing="-1" fill="#111111">{{TITLE}}</text>
+  </g>
+
+  <g id="page-lead">
+    <text x="64" y="174" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="22" fill="#111111">{{LEAD}}</text>
+  </g>
+
+  <!-- chart-plot-area: 112,232,1216,568 -->
+  <g id="chart-bars">
+    <rect x="152" y="433.2" width="120" height="134.8" fill="#111111"/>
+    <rect x="144" y="425.2" width="120" height="142.8" fill="#FFD23F" stroke="#111111" stroke-width="3"/>
+    <rect x="336" y="389" width="120" height="179" fill="#111111"/>
+    <rect x="328" y="381" width="120" height="187" fill="#FFD23F" stroke="#111111" stroke-width="3"/>
+    <rect x="520" y="361.8" width="120" height="206.2" fill="#111111"/>
+    <rect x="512" y="353.8" width="120" height="214.2" fill="#FFD23F" stroke="#111111" stroke-width="3"/>
+    <rect x="704" y="276.8" width="120" height="291.2" fill="#111111"/>
+    <rect x="696" y="268.8" width="120" height="299.2" fill="#FF5C8A" stroke="#111111" stroke-width="3"/>
+    <rect x="888" y="334.6" width="120" height="233.4" fill="#111111"/>
+    <rect x="880" y="326.6" width="120" height="241.4" fill="#FFD23F" stroke="#111111" stroke-width="3"/>
+    <rect x="1072" y="307.4" width="120" height="260.6" fill="#111111"/>
+    <rect x="1064" y="299.4" width="120" height="268.6" fill="#FFD23F" stroke="#111111" stroke-width="3"/>
+  </g>
+
+  <g id="chart-values">
+    <text x="204" y="409.2" text-anchor="middle" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="24" fill="#111111">42</text>
+    <text x="388" y="365" text-anchor="middle" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="24" fill="#111111">55</text>
+    <text x="572" y="337.8" text-anchor="middle" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="24" fill="#111111">63</text>
+    <text x="756" y="252.8" text-anchor="middle" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="24" fill="#111111">88</text>
+    <text x="940" y="310.6" text-anchor="middle" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="24" fill="#111111">71</text>
+    <text x="1124" y="283.4" text-anchor="middle" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="24" fill="#111111">79</text>
+  </g>
+
+  <g id="chart-x-axis">
+    <text x="204" y="604" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#111111">1월</text>
+    <text x="388" y="604" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#111111">2월</text>
+    <text x="572" y="604" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#111111">3월</text>
+    <text x="756" y="604" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#111111">4월</text>
+    <text x="940" y="604" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#111111">5월</text>
+    <text x="1124" y="604" text-anchor="middle" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#111111">6월</text>
+  </g>
+
+  <g id="chart-sticker" transform="rotate(-6 900 222)">
+    <rect x="816" y="206" width="184" height="48" rx="16" fill="#111111"/>
+    <rect x="808" y="198" width="184" height="48" rx="16" fill="#3D5AFE" stroke="#111111" stroke-width="3"/>
+    <text x="900" y="228.5" text-anchor="middle" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" letter-spacing="0.5" fill="#FFFFFF">{{STICKER}}</text>
+  </g>
+
+  <g id="page-foot">
+    <text x="64" y="684" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="0.5" fill="#111111">{{BRAND_MARK}}</text>
+    <text x="1216" y="684" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="0.5" fill="#111111">{{PAGE_LABEL}}</text>
+  </g>
+</svg>

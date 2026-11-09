@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="pop-master" data-pptx-master-name="Pop Brutal" data-pptx-layout="04_problem_solution" data-pptx-layout-name="Problem to Solution">
+  <!-- Pop Brutal — 04 Problem -> Solution: two outlined blocks + chunky arrow -->
+  <rect id="master-bg" width="1280" height="720" fill="#FFF6E0" data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="layout-problem-shadow" x="72" y="232" width="480" height="344" rx="16" fill="#111111" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-problem-block" x="64" y="224" width="480" height="344" rx="16" fill="#FFFFFF" stroke="#111111" stroke-width="3" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <rect id="layout-solution-shadow" x="744" y="232" width="480" height="344" rx="16" fill="#111111" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <rect id="layout-solution-block" x="736" y="224" width="480" height="344" rx="16" fill="#FFD23F" stroke="#111111" stroke-width="3" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <polygon id="layout-arrow-shadow" points="584,380 656,380 656,352 720,404 656,456 656,428 584,428" fill="#111111" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <polygon id="layout-arrow" points="576,372 648,372 648,344 712,396 648,448 648,420 576,420" fill="#FF5C8A" stroke="#111111" stroke-width="3" stroke-linejoin="round" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="64 60 920 84">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="64" y="124" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="52" letter-spacing="-1" fill="#111111">{{TITLE}}</text>
+  </g>
+
+  <g id="page-lead">
+    <text x="64" y="174" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="22" fill="#111111">{{LEAD}}</text>
+  </g>
+
+  <g id="ps-sticker" transform="rotate(5 1128 222)">
+    <rect x="1044" y="206" width="184" height="48" rx="16" fill="#111111"/>
+    <rect x="1036" y="198" width="184" height="48" rx="16" fill="#3D5AFE" stroke="#111111" stroke-width="3"/>
+    <text x="1128" y="228.5" text-anchor="middle" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" letter-spacing="0.5" fill="#FFFFFF">{{STICKER}}</text>
+  </g>
+
+  <g id="problem-content">
+    <rect x="96" y="256" width="184" height="40" rx="16" fill="#111111"/>
+    <text x="188" y="282" text-anchor="middle" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" letter-spacing="0.5" fill="#FFFFFF">{{PROBLEM_TAG}}</text>
+    <text x="96" y="360" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="32" letter-spacing="-0.5" fill="#111111">{{PROBLEM_TITLE}}</text>
+    <text x="96" y="412" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#111111">{{PROBLEM_BODY}}</text>
+  </g>
+
+  <g id="solution-content">
+    <rect x="768" y="256" width="184" height="40" rx="16" fill="#111111"/>
+    <text x="860" y="282" text-anchor="middle" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" letter-spacing="0.5" fill="#FFFFFF">{{SOLUTION_TAG}}</text>
+    <text x="768" y="360" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="32" letter-spacing="-0.5" fill="#111111">{{SOLUTION_TITLE}}</text>
+    <text x="768" y="412" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#111111">{{SOLUTION_BODY}}</text>
+  </g>
+
+  <g id="page-foot">
+    <text x="64" y="684" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="0.5" fill="#111111">{{BRAND_MARK}}</text>
+    <text x="1216" y="684" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="0.5" fill="#111111">{{PAGE_LABEL}}</text>
+  </g>
+</svg>

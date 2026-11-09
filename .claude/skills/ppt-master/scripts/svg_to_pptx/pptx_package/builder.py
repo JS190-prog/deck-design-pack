@@ -115,6 +115,9 @@ SLIDE_LAYOUT_REL_TYPE = (
 SLIDE_MASTER_REL_TYPE = (
     "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster"
 )
+THEME_REL_TYPE = (
+    "http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme"
+)
 PML_NS = "http://schemas.openxmlformats.org/presentationml/2006/main"
 DML_NS = "http://schemas.openxmlformats.org/drawingml/2006/main"
 REL_NS = "http://schemas.openxmlformats.org/officeDocument/2006/relationships"
@@ -939,6 +942,33 @@ def _clone_structured_master(
     for rel_id, attrs in tuple(_read_relationships(master_rels).items()):
         if attrs.get("Type") == SLIDE_LAYOUT_REL_TYPE:
             _remove_relationship(master_rels, rel_id)
+        elif attrs.get("Type") == THEME_REL_TYPE:
+            # PowerPoint는 마스터끼리 테마 파트를 공유하면 파일을 열지 못한다 — 마스터마다 사본을 둔다
+            source_theme = posixpath.normpath(posixpath.join(
+                posixpath.dirname(source_master_part), attrs["Target"]
+            ))
+            theme_numbers = [
+                int(match.group(1))
+                for path in (extract_dir / "ppt" / "theme").glob("theme*.xml")
+                if (match := re.fullmatch(r"theme(\d+)\.xml", path.name))
+            ]
+            theme_part = f"ppt/theme/theme{max(theme_numbers, default=0) + 1}.xml"
+            shutil.copyfile(extract_dir / source_theme, extract_dir / theme_part)
+            _remove_relationship(master_rels, rel_id)
+            _append_relationship(
+                master_rels,
+                THEME_REL_TYPE,
+                posixpath.relpath(theme_part, posixpath.dirname(master_part)),
+            )
+            content_types_path = extract_dir / "[Content_Types].xml"
+            content_types_path.write_text(
+                _add_content_type_override(
+                    content_types_path.read_text(encoding="utf-8"),
+                    theme_part,
+                    "application/vnd.openxmlformats-officedocument.theme+xml",
+                ),
+                encoding="utf-8",
+            )
 
     presentation_rels = extract_dir / "ppt" / "_rels" / "presentation.xml.rels"
     relationship_target = posixpath.relpath(master_part, "ppt")
@@ -1586,6 +1616,11 @@ def _unwrap_placeholder_carrier(
     sp_tree.insert(wrapper_index, carrier)
     wrapper_id = _shape_id(wrapper)
     carrier_id = _shape_id(carrier)
+    if wrapper_id and carrier_id and wrapper_id != carrier_id:
+        # 애니메이션이 감싼 그룹을 가리켰다면 남는 carrier로 옮긴다(그룹은 방금 사라졌다)
+        for target in state.root.iter(f"{{{PML_NS}}}spTgt"):
+            if target.get("spid") == wrapper_id:
+                target.set("spid", carrier_id)
     if wrapper_id:
         state.shapes.pop(wrapper_id, None)
     if carrier_id:

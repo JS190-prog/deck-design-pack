@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="scroll-rail-master" data-pptx-master-name="Scroll Rail" data-pptx-layout="01_cover" data-pptx-layout-name="Cover · Rail Start">
+  <!-- Scroll Rail — 01 Cover: title on anchor line A, rail ruler, marker at the rail start -->
+  <rect id="master-bg" width="1280" height="720" fill="#FAFAF7" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-rail" x1="80" y1="628" x2="1200" y2="628" stroke="#D5D8DE" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-rail-start" x1="80" y1="621" x2="80" y2="635" stroke="#8A8F98" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="master-rail-end" x1="1200" y1="621" x2="1200" y2="635" stroke="#8A8F98" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <path id="layout-ruler" d="M108 622V628 M136 622V628 M164 622V628 M192 622V628 M220 616V628 M248 622V628 M276 622V628 M304 622V628 M332 622V628 M360 616V628 M388 622V628 M416 622V628 M444 622V628 M472 622V628 M500 616V628 M528 622V628 M556 622V628 M584 622V628 M612 622V628 M640 616V628 M668 622V628 M696 622V628 M724 622V628 M752 622V628 M780 616V628 M808 622V628 M836 622V628 M864 622V628 M892 622V628 M920 616V628 M948 622V628 M976 622V628 M1004 622V628 M1032 622V628 M1060 616V628 M1088 622V628 M1116 622V628 M1144 622V628 M1172 622V628" fill="none" stroke="#D5D8DE" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="80 272 1120 104">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="80" y="352" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="72" letter-spacing="-1.6" fill="#14161A">{{TITLE}}</text>
+  </g>
+
+  <g id="subtitle-slot" data-pptx-placeholder="subtitle" data-pptx-placeholder-idx="1" data-pptx-placeholder-bounds="80 384 1120 44">
+    <text id="subtitle-carrier" data-pptx-placeholder-carrier="true" x="80" y="412" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="24" fill="#3C4048">{{SUBTITLE}}</text>
+  </g>
+
+  <g id="deck-brand">
+    <text x="80" y="104" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="16" letter-spacing="0.2" fill="#14161A">{{BRAND_MARK}}</text>
+  </g>
+
+  <g id="cover-meta">
+    <text x="80" y="572" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#14161A">{{PRESENTER}}</text>
+    <text x="1200" y="572" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="18" fill="#8A8F98">{{DATE}}</text>
+  </g>
+
+  <!-- stop marker — page 1 of 10: x = 80 + 1120 × (1−1)/(10−1) = 80 -->
+  <g id="rail-marker">
+    <circle cx="80" cy="628" r="12" fill="#FF4F2E" fill-opacity="0.16"/>
+    <circle cx="80" cy="628" r="6" fill="#FF4F2E"/>
+    <text x="80" y="658" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="13" letter-spacing="0.4" fill="#14161A">{{STOP_LABEL}}</text>
+  </g>
+</svg>

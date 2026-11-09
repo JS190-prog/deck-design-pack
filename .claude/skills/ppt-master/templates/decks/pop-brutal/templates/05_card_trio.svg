@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-master="pop-master" data-pptx-master-name="Pop Brutal" data-pptx-layout="05_card_trio" data-pptx-layout-name="Card Trio">
+  <!-- Pop Brutal — 05 Card trio: offset cards in color rotation, one sticker -->
+  <rect id="master-bg" width="1280" height="720" fill="#FFF6E0" data-pptx-layer="master" data-pptx-editable="false"/>
+  <g id="title-slot" data-pptx-placeholder="title" data-pptx-placeholder-bounds="64 60 920 84">
+    <text id="title-carrier" data-pptx-placeholder-carrier="true" x="64" y="124" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="52" letter-spacing="-1" fill="#111111">{{TITLE}}</text>
+  </g>
+
+  <g id="page-lead">
+    <text x="64" y="174" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="22" fill="#111111">{{LEAD}}</text>
+  </g>
+
+  <g id="card-1">
+    <rect x="72" y="232" width="352" height="320" rx="16" fill="#111111"/>
+    <rect x="64" y="224" width="352" height="320" rx="16" fill="#FFD23F" stroke="#111111" stroke-width="3"/>
+    <text x="96" y="308" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="56" letter-spacing="-2" fill="#111111">01</text>
+    <text x="96" y="408" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="30" letter-spacing="-0.5" fill="#111111">{{CARD_1_TITLE}}</text>
+    <text x="96" y="454" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#111111">{{CARD_1_BODY}}</text>
+  </g>
+
+  <g id="card-2">
+    <rect x="472" y="272" width="352" height="320" rx="16" fill="#111111"/>
+    <rect x="464" y="264" width="352" height="320" rx="16" fill="#FF5C8A" stroke="#111111" stroke-width="3"/>
+    <text x="496" y="348" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="56" letter-spacing="-2" fill="#111111">02</text>
+    <text x="496" y="448" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="30" letter-spacing="-0.5" fill="#111111">{{CARD_2_TITLE}}</text>
+    <text x="496" y="494" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#111111">{{CARD_2_BODY}}</text>
+  </g>
+
+  <g id="card-3">
+    <rect x="872" y="232" width="352" height="320" rx="16" fill="#111111"/>
+    <rect x="864" y="224" width="352" height="320" rx="16" fill="#3D5AFE" stroke="#111111" stroke-width="3"/>
+    <text x="896" y="308" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="56" letter-spacing="-2" fill="#FFFFFF">03</text>
+    <text x="896" y="408" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="30" letter-spacing="-0.5" fill="#FFFFFF">{{CARD_3_TITLE}}</text>
+    <text x="896" y="454" font-family="'Pretendard Medium', Pretendard, 'Malgun Gothic', sans-serif" font-size="20" fill="#FFFFFF">{{CARD_3_BODY}}</text>
+  </g>
+
+  <g id="card-sticker" transform="rotate(6 744 262)">
+    <rect x="660" y="246" width="184" height="48" rx="16" fill="#111111"/>
+    <rect x="652" y="238" width="184" height="48" rx="16" fill="#2EC4B6" stroke="#111111" stroke-width="3"/>
+    <text x="744" y="268.5" text-anchor="middle" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="18" letter-spacing="0.5" fill="#111111">{{STICKER}}</text>
+  </g>
+
+  <g id="page-foot">
+    <text x="64" y="684" font-family="'Pretendard ExtraBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="0.5" fill="#111111">{{BRAND_MARK}}</text>
+    <text x="1216" y="684" text-anchor="end" font-family="'Pretendard SemiBold', Pretendard, 'Malgun Gothic', sans-serif" font-size="14" letter-spacing="0.5" fill="#111111">{{PAGE_LABEL}}</text>
+  </g>
+</svg>
