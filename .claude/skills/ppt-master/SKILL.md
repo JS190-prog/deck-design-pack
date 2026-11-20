@@ -90,6 +90,10 @@ enhancement do not load or inherit this file.
 | Failure recovery | [`workflows/failure-recovery.md`](workflows/failure-recovery.md) | Owns stop/continue decisions for common failures |
 | Confirm UI details | [`scripts/docs/confirm_ui.md`](scripts/docs/confirm_ui.md) | Owns schema, launcher behavior, port strategy, and chat fallback details |
 
+## Path Resolution
+
+`${SKILL_DIR}` is this skill's own folder. Paths written as `.claude/skills/<skill>/…` — here and in every workflow or reference this skill loads — assume the pack repository root is the working directory. When the working directory has no `.claude/skills/ppt-master/` (a skill-only install), read each such path as `${SKILL_DIR}/../<skill>/…`. `docs/…` links exist only in the repository.
+
 ## Main Pipeline Scripts
 
 | Script | Purpose |

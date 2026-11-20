@@ -7,7 +7,7 @@ description: Fill a raw PowerPoint (.pptx) template with new content by cloning 
 
 > Run when the user provides a raw `.pptx` template plus new content / a new topic and asks to generate a `.pptx` from that template. This skill treats the existing `.pptx` as a native slide library and produces a new `.pptx` by selecting, cloning, and patching source slides.
 
-This skill is **independent** from the ppt-master SVG generation pipeline. It keeps the original PowerPoint design intact and writes a new `.pptx` by cloning selected source slides and replacing text directly in OOXML. Executable scripts are shared with ppt-master and stay at `.claude/skills/ppt-master/scripts/`.
+This skill is **independent** from the ppt-master SVG generation pipeline. It keeps the original PowerPoint design intact and writes a new `.pptx` by cloning selected source slides and replacing text directly in OOXML. Executable scripts are shared with ppt-master and stay at `.claude/skills/ppt-master/scripts/`. That path assumes the pack repository root is the working directory. When the working directory has no `.claude/skills/ppt-master/` (a skill-only install), run every command below from the sibling folder instead: `<this skill's folder>/../ppt-master/scripts/`.
 
 ## Route Entry and Authority
 
