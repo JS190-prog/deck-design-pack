@@ -17,7 +17,10 @@ selects native enhancement.
 
 1. Read
    [`../ppt-master/workflows/native-enhance-pptx.md`](../ppt-master/workflows/native-enhance-pptx.md)
-   in full.
+   in full. Its `.claude/skills/ppt-master/...` paths assume the pack repository
+   root is the working directory; when the working directory has no
+   `.claude/skills/ppt-master/` (a skill-only install), read them as
+   `../ppt-master/...` relative to this skill's folder.
 2. Execute that workflow step by step, including its enhancement-plan
    confirmation, any separate voice/settings confirmation, apply, and read-back
    gates.
